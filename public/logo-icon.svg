@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 34" fill="none">
+  <!-- Paper body with dog-ear fold -->
+  <path d="M2 3C2 1.9 2.9 1 4 1H17L26 10V31C26 32.1 25.1 33 24 33H4C2.9 33 2 32.1 2 31V3Z" fill="#fdf6ec" stroke="#c8963a" stroke-width="1.5"/>
+  <!-- Folded corner triangle -->
+  <path d="M17 1L26 10H19C17.9 10 17 9.1 17 8V1Z" fill="#c8963a" opacity="0.65"/>
+  <!-- Three content lines -->
+  <line x1="6.5" y1="16" x2="21.5" y2="16" stroke="#c8963a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="6.5" y1="21" x2="21.5" y2="21" stroke="#c8963a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="6.5" y1="26" x2="15.5" y2="26" stroke="#c8963a" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
