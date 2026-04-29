@@ -5,12 +5,6 @@ import nodemailer from "nodemailer";
 import { sanitizeText, validateEmail, validateFile } from "@/lib/sanitize";
 import { rateLimit } from "@/lib/rateLimit";
 
-const ALLOWED_PRODUCT_TYPES = new Set([
-  "Custom Wax Paper", "Greaseproof Paper", "Printed Greaseproof Paper",
-  "Burger Wrapping Paper", "Sandwich Paper", "Deli Paper", "Butcher Paper",
-  "Bakery Paper", "Cheese Wrapping Paper", "Kraft Paper",
-  "Wholesale / Bulk Order", "Other",
-]);
 
 export async function POST(req: NextRequest) {
   // Rate limiting
@@ -57,9 +51,6 @@ export async function POST(req: NextRequest) {
   }
   if (!quantity) {
     return NextResponse.json({ ok: false, error: "Quantity is required" }, { status: 400 });
-  }
-  if (productType && !ALLOWED_PRODUCT_TYPES.has(productType)) {
-    return NextResponse.json({ ok: false, error: "Invalid product type" }, { status: 400 });
   }
 
   // File validation
