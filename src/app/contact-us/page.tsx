@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import ContactForm from "@/components/ContactForm";
 import { SITE_URL, SITE_PHONE, SITE_EMAIL, SITE_ADDRESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -68,30 +69,12 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Simple contact form */}
+          {/* Contact form */}
           <div className="bg-white rounded-2xl p-8" style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.08)" }}>
             <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>
               Send Us a Message
             </h2>
-            <form className="space-y-5" action="mailto:Info@thewaxpapers.co.uk" method="get" encType="text/plain">
-              <div>
-                <label className="form-label" htmlFor="c-name">Name</label>
-                <input id="c-name" name="name" type="text" className="form-input" placeholder="Your name" />
-              </div>
-              <div>
-                <label className="form-label" htmlFor="c-email">Email</label>
-                <input id="c-email" name="email" type="email" className="form-input" placeholder="your@email.co.uk" />
-              </div>
-              <div>
-                <label className="form-label" htmlFor="c-subject">Subject</label>
-                <input id="c-subject" name="subject" type="text" className="form-input" placeholder="How can we help?" />
-              </div>
-              <div>
-                <label className="form-label" htmlFor="c-message">Message</label>
-                <textarea id="c-message" name="body" rows={5} className="form-input resize-none" placeholder="Tell us about your requirements…" />
-              </div>
-              <button type="submit" className="btn-primary w-full justify-center">Send Message</button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>

@@ -20,14 +20,30 @@ const PRODUCT_TYPES = [
 export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    setError("");
+
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        body: new FormData(e.currentTarget),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await res.json();
+        setError(data?.errors?.[0]?.message ?? "Something went wrong. Please try again or email us directly.");
+      }
+    } catch {
+      setError("Could not send your request. Please email us at Info@thewaxpapers.co.uk");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 800);
+    }
   }
 
   if (submitted) {
@@ -67,6 +83,12 @@ export default function QuoteForm() {
       <p className="text-sm mb-7" style={{ color: "var(--color-text-muted)" }}>
         Fill in the form below and we&apos;ll respond within 24 hours.
       </p>
+
+      {error && (
+        <div className="mb-5 p-4 rounded-lg text-sm" style={{ backgroundColor: "#fef2f2", color: "#991b1b", border: "1px solid #fecaca" }}>
+          {error}
+        </div>
+      )}
 
       <div className="grid sm:grid-cols-2 gap-5">
         {/* Name */}
