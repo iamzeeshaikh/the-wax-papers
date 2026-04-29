@@ -2,36 +2,89 @@ export const runtime = "nodejs";
 
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { sanitizeText, validateEmail, validateFile } from "@/lib/sanitize";
+import { rateLimit } from "@/lib/rateLimit";
+
+const ALLOWED_PRODUCT_TYPES = new Set([
+  "Custom Wax Paper", "Greaseproof Paper", "Printed Greaseproof Paper",
+  "Burger Wrapping Paper", "Sandwich Paper", "Deli Paper", "Butcher Paper",
+  "Bakery Paper", "Cheese Wrapping Paper", "Kraft Paper",
+  "Wholesale / Bulk Order", "Other",
+]);
 
 export async function POST(req: NextRequest) {
+  // Rate limiting
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0].trim() ?? "unknown";
+  const { allowed, retryAfter } = rateLimit(ip);
+  if (!allowed) {
+    return NextResponse.json(
+      { ok: false, error: "Too many requests. Please wait before trying again." },
+      { status: 429, headers: { "Retry-After": String(retryAfter) } }
+    );
+  }
+
+  // Only accept multipart/form-data
+  const ct = req.headers.get("content-type") ?? "";
+  if (!ct.includes("multipart/form-data")) {
+    return NextResponse.json({ ok: false, error: "Invalid request" }, { status: 400 });
+  }
+
+  let data: FormData;
   try {
-    const data = await req.formData();
+    data = await req.formData();
+  } catch {
+    return NextResponse.json({ ok: false, error: "Invalid form data" }, { status: 400 });
+  }
 
-    const name        = (data.get("name")        as string) || "";
-    const email       = (data.get("email")       as string) || "";
-    const phone       = (data.get("phone")       as string) || "";
-    const company     = (data.get("company")     as string) || "";
-    const productType = (data.get("productType") as string) || "";
-    const quantity    = (data.get("quantity")    as string) || "";
-    const size        = (data.get("size")        as string) || "";
-    const colour      = (data.get("colour")      as string) || "";
-    const message     = (data.get("message")     as string) || "";
-    const artwork     = data.get("artwork") as File | null;
+  // Sanitize and validate inputs
+  const name        = sanitizeText(data.get("name"), 100);
+  const email       = sanitizeText(data.get("email"), 254);
+  const phone       = sanitizeText(data.get("phone"), 30);
+  const company     = sanitizeText(data.get("company"), 100);
+  const productType = sanitizeText(data.get("productType"), 60);
+  const quantity    = sanitizeText(data.get("quantity"), 100);
+  const size        = sanitizeText(data.get("size"), 100);
+  const colour      = sanitizeText(data.get("colour"), 100);
+  const message     = sanitizeText(data.get("message"), 2000);
+  const artwork     = data.get("artwork") instanceof File ? (data.get("artwork") as File) : null;
 
-    const attachments: { filename: string; content: Buffer }[] = [];
-    if (artwork && artwork.size > 0) {
-      const buffer = Buffer.from(await artwork.arrayBuffer());
-      attachments.push({ filename: artwork.name, content: buffer });
+  // Required field validation
+  if (!name || name.length < 2) {
+    return NextResponse.json({ ok: false, error: "Valid name is required" }, { status: 400 });
+  }
+  if (!validateEmail(email)) {
+    return NextResponse.json({ ok: false, error: "Valid email address is required" }, { status: 400 });
+  }
+  if (!quantity) {
+    return NextResponse.json({ ok: false, error: "Quantity is required" }, { status: 400 });
+  }
+  if (productType && !ALLOWED_PRODUCT_TYPES.has(productType)) {
+    return NextResponse.json({ ok: false, error: "Invalid product type" }, { status: 400 });
+  }
+
+  // File validation
+  const attachments: { filename: string; content: Buffer }[] = [];
+  if (artwork && artwork.size > 0) {
+    const fileError = validateFile(artwork);
+    if (fileError) {
+      return NextResponse.json({ ok: false, error: fileError }, { status: 400 });
     }
+    const buffer = Buffer.from(await artwork.arrayBuffer());
+    attachments.push({ filename: artwork.name.replace(/[^a-zA-Z0-9._-]/g, "_"), content: buffer });
+  }
 
+  // Verify SMTP config is present
+  if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+    console.error("SMTP environment variables not configured");
+    return NextResponse.json({ ok: false, error: "Mail service unavailable" }, { status: 503 });
+  }
+
+  try {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,
       secure: Number(process.env.SMTP_PORT) === 465,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
+      auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
     });
 
     await transporter.sendMail({
@@ -53,9 +106,9 @@ export async function POST(req: NextRequest) {
               ${company  ? `<tr><td style="padding:8px 0;color:#6b7280;">Company</td><td style="padding:8px 0;color:#111;">${company}</td></tr>` : ""}
               <tr><td style="padding:8px 0;color:#6b7280;">Product</td><td style="padding:8px 0;font-weight:600;color:#111;">${productType}</td></tr>
               <tr><td style="padding:8px 0;color:#6b7280;">Quantity</td><td style="padding:8px 0;color:#111;">${quantity}</td></tr>
-              ${size     ? `<tr><td style="padding:8px 0;color:#6b7280;">Size</td><td style="padding:8px 0;color:#111;">${size}</td></tr>` : ""}
-              ${colour   ? `<tr><td style="padding:8px 0;color:#6b7280;">Colour / Print</td><td style="padding:8px 0;color:#111;">${colour}</td></tr>` : ""}
-              ${artwork && artwork.size > 0 ? `<tr><td style="padding:8px 0;color:#6b7280;">Artwork</td><td style="padding:8px 0;color:#111;">✓ Attached (${artwork.name})</td></tr>` : ""}
+              ${size   ? `<tr><td style="padding:8px 0;color:#6b7280;">Size</td><td style="padding:8px 0;color:#111;">${size}</td></tr>` : ""}
+              ${colour ? `<tr><td style="padding:8px 0;color:#6b7280;">Colour / Print</td><td style="padding:8px 0;color:#111;">${colour}</td></tr>` : ""}
+              ${artwork && artwork.size > 0 ? `<tr><td style="padding:8px 0;color:#6b7280;">Artwork</td><td style="padding:8px 0;color:#111;">&#10003; Attached (${artwork.name})</td></tr>` : ""}
             </table>
             ${message ? `
               <div style="margin-top:20px;padding:16px;background:#fdf6ec;border-radius:6px;border-left:3px solid #c8963a;">
@@ -73,7 +126,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error("Quote email error:", err);
-    return NextResponse.json({ ok: false, error: "Failed to send" }, { status: 500 });
+    console.error("Quote email error:", err instanceof Error ? err.message : "Unknown error");
+    return NextResponse.json({ ok: false, error: "Failed to send. Please email us directly." }, { status: 500 });
   }
 }
