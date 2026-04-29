@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getProduct, getAllSlugs } from "@/lib/products";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
+import ProductLeadForm from "@/components/ProductLeadForm";
 import { SITE_URL } from "@/lib/constants";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -482,7 +483,45 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── 9. RELATED PRODUCTS ── */}
+      {/* ── 9. INLINE LEAD FORM ── */}
+      <section className="py-14" style={{ backgroundColor: "white" }}>
+        <div className="container-wide grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+          {/* Left: persuasive copy */}
+          <div>
+            <div className="gold-bar mb-4" />
+            <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>
+              Get a Free Quote for {product.title}
+            </h2>
+            <p className="mb-6 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
+              Tell us your quantity and requirements — we&apos;ll send a detailed quote within 24 hours. No obligation, no minimum spend to enquire.
+            </p>
+            <ul className="space-y-3">
+              {[
+                "Free digital proof with every order",
+                "UK-based team — fast, friendly response",
+                "Food-safe certified materials and inks",
+                "Low minimum order quantities available",
+                "Competitive wholesale pricing for bulk orders",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2.5">
+                  <svg className="w-4 h-4 mt-0.5 shrink-0" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm" style={{ color: "var(--color-text)" }}>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right: form */}
+          <div className="rounded-2xl p-8" style={{ backgroundColor: "var(--color-cream)", boxShadow: "0 4px 24px rgba(0,0,0,0.07)" }}>
+            <ProductLeadForm productName={product.title} />
+          </div>
+        </div>
+      </section>
+
+      {/* ── 10. RELATED PRODUCTS ── */}
       <section className="py-12" style={{ backgroundColor: "var(--color-cream-light)" }}>
         <div className="container-wide">
           <div className="gold-bar mb-4" />
@@ -521,7 +560,7 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── 10. FINAL CTA ── */}
+      {/* ── 11. FINAL CTA ── */}
       <CTASection
         heading={`Order Custom ${product.title} Today`}
         subtext="Send us your size, quantity, and artwork — we respond with a quote within 24 hours. UK-based, food-safe, and ready to print."
