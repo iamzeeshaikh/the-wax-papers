@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -49,12 +50,9 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');$.src='https://v2.zopim.com/?4h3lbyJihoT1mCOqDA0VoQOaVQE9qTOP';z.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');`,
-          }}
-        />
+        <Script id="zendesk-chat" strategy="afterInteractive">
+          {`window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');$.src='https://v2.zopim.com/?4h3lbyJihoT1mCOqDA0VoQOaVQE9qTOP';z.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');`}
+        </Script>
       </head>
       <body className="flex flex-col min-h-screen">
         <Header />
