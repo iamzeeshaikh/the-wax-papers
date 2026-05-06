@@ -141,6 +141,7 @@ export default async function ProductPage({ params }: Props) {
     },
     offers: {
       "@type": "Offer",
+      price: "0.80",
       priceCurrency: "GBP",
       availability: "https://schema.org/InStock",
       seller: { "@type": "Organization", name: "The Wax Papers" },
