@@ -1,3 +1,5 @@
+"use client";
+
 import { SITE_NAME, SITE_PHONE, SITE_URL } from "@/lib/constants";
 
 const phone = SITE_PHONE.replace(/\D/g, "");
