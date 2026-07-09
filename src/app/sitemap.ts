@@ -4,17 +4,22 @@ import { getAllBlogSlugs } from "@/lib/blog";
 
 const BASE = "https://thewaxpapers.co.uk";
 
+// Stable last-modified date. Bump this when content is materially updated. Using
+// a fixed date instead of new Date() stops every URL's lastmod resetting on each
+// build/deploy, which Google learns to distrust.
+const LASTMOD = new Date("2026-07-09");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const productUrls = getAllSlugs().map((slug) => ({
     url: `${BASE}/${slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD,
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
   const blogUrls = getAllBlogSlugs().map((slug) => ({
     url: `${BASE}/blog/${slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD,
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
@@ -30,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/terms-and-conditions`, priority: 0.3 },
   ].map((p) => ({
     ...p,
-    lastModified: new Date(),
+    lastModified: LASTMOD,
     changeFrequency: "monthly" as const,
   }));
 
