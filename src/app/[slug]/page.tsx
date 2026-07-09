@@ -125,6 +125,41 @@ export default async function ProductPage({ params }: Props) {
   const product = getProduct(slug);
   if (!product) notFound();
 
+  // Vary the generic section headings per product (name plus a slug-seeded
+  // phrasing) so they are not identical across every product page.
+  const headingSeed = slug.split("").reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
+  const pickHeading = (options: string[], offset = 0) =>
+    options[(headingSeed + offset) % options.length];
+  const benefitsHeading = pickHeading([
+    `Key Benefits of ${product.title}`,
+    `Why Choose ${product.title}`,
+    `What Sets ${product.title} Apart`,
+  ]);
+  const usesHeading = pickHeading(
+    [
+      `Common Uses for ${product.title}`,
+      `Where ${product.title} Are Used`,
+      `${product.title} Applications`,
+    ],
+    1,
+  );
+  const materialsHeading = pickHeading(
+    [
+      `${product.title} Material Options`,
+      `Materials for ${product.title}`,
+      `Stock Choices for ${product.title}`,
+    ],
+    2,
+  );
+  const printingHeading = pickHeading(
+    [
+      `Printing Options for ${product.title}`,
+      `How to Print ${product.title}`,
+      `${product.title} Print Choices`,
+    ],
+    1,
+  );
+
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -258,7 +293,7 @@ export default async function ProductPage({ params }: Props) {
           <div>
             <div className="gold-bar mb-4" />
             <h2 className="text-xl font-bold mb-5" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>
-              Key Benefits
+              {benefitsHeading}
             </h2>
             <ul className="space-y-3">
               {product.benefits.map((b) => (
@@ -274,7 +309,7 @@ export default async function ProductPage({ params }: Props) {
           <div>
             <div className="gold-bar mb-4" />
             <h2 className="text-xl font-bold mb-5" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>
-              Common Uses
+              {usesHeading}
             </h2>
             <ul className="space-y-3">
               {product.uses.map((u) => (
@@ -336,7 +371,7 @@ export default async function ProductPage({ params }: Props) {
         <div className="container-wide grid md:grid-cols-2 gap-10">
           <div>
             <h2 className="text-xl font-bold mb-5" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>
-              Material Options
+              {materialsHeading}
             </h2>
             <ul className="space-y-2.5">
               {product.materials.map((m) => (
@@ -346,7 +381,7 @@ export default async function ProductPage({ params }: Props) {
           </div>
           <div>
             <h2 className="text-xl font-bold mb-5" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>
-              Printing Options
+              {printingHeading}
             </h2>
             <ul className="space-y-2.5">
               {product.printingOptions.map((p) => (
