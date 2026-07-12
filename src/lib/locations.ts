@@ -469,3 +469,46 @@ export function getNearbyLocations(slugs: string[]): LocationCity[] {
     .map(s => locations.find(l => l.slug === s))
     .filter((l): l is LocationCity => Boolean(l));
 }
+
+// ── Varied internal linking: unique product target + anchor per city page ──
+export const UK_LINK_POOL = [
+  "greaseproof-paper", "burger-wrapping-paper", "deli-paper", "food-wrapping-paper",
+  "custom-food-paper", "sandwich-wrapping-paper", "kraft-wax-paper", "eco-friendly-wax-paper",
+  "butcher-paper", "bakery-wrapping-paper", "cheese-wrapping-paper", "printed-greaseproof-paper",
+  "custom-burger-paper", "custom-deli-paper",
+];
+export const UK_ANCHORS: Record<string, string[]> = {
+  "greaseproof-paper": ["greaseproof paper", "grease-tight greaseproof sheets", "greaseproof liners"],
+  "burger-wrapping-paper": ["burger wrapping paper", "branded burger wraps"],
+  "deli-paper": ["deli paper", "deli counter sheets"],
+  "food-wrapping-paper": ["food wrapping paper", "printed food paper"],
+  "custom-food-paper": ["custom food paper", "branded food sheets"],
+  "sandwich-wrapping-paper": ["sandwich wrapping paper", "sandwich wrap"],
+  "kraft-wax-paper": ["kraft wax paper", "natural kraft paper"],
+  "eco-friendly-wax-paper": ["eco-friendly wax paper", "recyclable wax paper"],
+  "butcher-paper": ["butcher paper", "butcher wrap"],
+  "bakery-wrapping-paper": ["bakery wrapping paper", "bakery paper"],
+  "cheese-wrapping-paper": ["cheese wrapping paper", "cheese paper"],
+  "printed-greaseproof-paper": ["printed greaseproof paper"],
+  "custom-burger-paper": ["custom burger paper"],
+  "custom-deli-paper": ["custom deli paper"],
+};
+export function ukSeed(text: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < text.length; i++) { h ^= text.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return Math.abs(h | 0);
+}
+export function ukLinkTargets(seedText: string, n: number): string[] {
+  const arr = [...UK_LINK_POOL];
+  let a = ukSeed(seedText) || 1;
+  const rand = () => { a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; }
+  return arr.slice(0, n);
+}
+export function ukAnchor(slug: string, seedText: string, off = 0): string {
+  const list = UK_ANCHORS[slug] ?? [slug.replace(/-/g, " ")];
+  return list[(ukSeed(seedText) + off) % list.length];
+}
+export function ukPick<T>(arr: T[], seedText: string, off = 0): T {
+  return arr[(ukSeed(seedText) + off) % arr.length];
+}

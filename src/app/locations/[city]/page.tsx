@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { locations, getLocationBySlug, getNearbyLocations } from "@/lib/locations";
+import { locations, getLocationBySlug, getNearbyLocations, ukLinkTargets, ukAnchor, ukPick } from "@/lib/locations";
 import { getProduct } from "@/lib/products";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
@@ -39,6 +39,29 @@ export default async function LocationPage({ params }: Props) {
     .map((s) => getProduct(s))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
   const nearby = getNearbyLocations(loc.nearbyCities);
+
+  // Varied internal links — unique product target, anchor, and sentence per city.
+  const wlt = ukLinkTargets(loc.slug, 3);
+  const WL = wlt.map((s, i) => ({ href: `/${s}`, text: ukAnchor(s, loc.slug, i) }));
+  // Varied "choose your paper" grid — different four formats per city page.
+  const FMT = ukLinkTargets("fmt-" + loc.slug, 4)
+    .map((s) => getProduct(s))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const answerLine = ukPick([
+    { pre: `A go-to for ${loc.city} kitchens is our `, post: `, printed to order and dispatched to keep up with local demand.` },
+    { pre: `${loc.city} operators often reach for our `, post: ` first.` },
+    { pre: `One of the most-ordered choices in ${loc.city} is our `, post: `.` },
+  ], loc.slug, 0);
+  const sceneLine = ukPick([
+    { pre: `Whatever you serve — from ${loc.signatureDish} to a full weekend menu — the right wrap keeps it sharp. Our `, post: ` fit the way ${loc.city} eats.` },
+    { pre: `To match the way ${loc.city} eats, kitchens lean on our `, post: `.` },
+    { pre: `Our `, post: ` suit ${loc.city} service from the pass to the customer's hands.` },
+  ], loc.slug, 1);
+  const industryLine = ukPick([
+    { pre: `Not sure which stock suits your menu? Our `, post: ` are a popular starting point.` },
+    { pre: `If you're weighing options, start with our `, post: `.` },
+    { pre: `A safe first choice for many ${loc.city} menus is our `, post: `.` },
+  ], loc.slug, 2);
 
   // Per-slug heading rotation so no two city pages share identical section
   // headings, on top of each city's unique prose fields.
@@ -198,8 +221,8 @@ export default async function LocationPage({ params }: Props) {
         <div className="container-wide max-w-4xl">
           <h2 className="font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)", fontSize: "clamp(1.4rem, 2.6vw, 1.9rem)" }}>{answerHeading}</h2>
           <p className="text-base leading-relaxed mb-4" style={{ color: "var(--color-text-muted)" }}>
-            The Wax Papers prints custom, food-safe wrapping papers for restaurants, takeaways, cafes and street-food traders across {loc.city} and {loc.county}. Every sheet is produced to your artwork with food-grade inks, so your branding travels with the food from the counter to the customer. Popular choices for {loc.city} kitchens include our{" "}
-            <Link href={`/${featured[0].slug}`} className="font-semibold underline" style={{ color: "var(--color-brown)" }}>{featured[0].title.toLowerCase()}</Link>, printed to order and dispatched on a schedule that keeps up with local demand.
+            The Wax Papers prints custom, food-safe wrapping papers for restaurants, takeaways, cafes and street-food traders across {loc.city} and {loc.county}. Every sheet is produced to your artwork with food-grade inks, so your branding travels with the food from the counter to the customer. {answerLine.pre}
+            <Link href={WL[0].href} className="font-semibold underline" style={{ color: "var(--color-brown)" }}>{WL[0].text}</Link>{answerLine.post}
           </p>
           <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
             <strong style={{ color: "var(--color-charcoal)" }}>Key facts:</strong> Low minimum order · Printed to your design · Free digital proof · No setup fees on standard orders · Delivered throughout {loc.city}.
@@ -215,9 +238,8 @@ export default async function LocationPage({ params }: Props) {
             <h2 className="font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)", fontSize: "clamp(1.4rem, 2.6vw, 1.9rem)" }}>{loc.sceneHeading}</h2>
             <p className="text-base leading-relaxed mb-4" style={{ color: "var(--color-text-muted)" }}>{loc.localScene}</p>
             <p className="text-base leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
-              Whatever you serve — from {loc.signatureDish} to a full weekend menu — the right wrap keeps it looking sharp. Our{" "}
-              <Link href={`/${featured[1].slug}`} className="font-semibold underline" style={{ color: "var(--color-brown)" }}>{featured[1].title.toLowerCase()}</Link>{" "}
-              is a natural fit for the way {loc.city} eats.
+              {sceneLine.pre}
+              <Link href={WL[1].href} className="font-semibold underline" style={{ color: "var(--color-brown)" }}>{WL[1].text}</Link>{sceneLine.post}
             </p>
           </div>
           <div>
@@ -237,9 +259,8 @@ export default async function LocationPage({ params }: Props) {
           <span className="badge mb-3 inline-block">Who It’s For</span>
           <h2 className="font-bold mb-3" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)", fontSize: "clamp(1.4rem, 2.6vw, 1.9rem)" }}>{industriesHeading}</h2>
           <p className="text-base leading-relaxed mb-8 max-w-3xl" style={{ color: "var(--color-text-muted)" }}>
-            We print for the full range of {loc.city} food businesses — and match the paper to the job. If you’re not sure which stock suits your menu, our{" "}
-            <Link href={`/${featured[2].slug}`} className="font-semibold underline" style={{ color: "var(--color-brown)" }}>{featured[2].title.toLowerCase()}</Link>{" "}
-            is a popular starting point.
+            We print for the full range of {loc.city} food businesses — and match the paper to the job. {industryLine.pre}
+            <Link href={WL[2].href} className="font-semibold underline" style={{ color: "var(--color-brown)" }}>{WL[2].text}</Link>{industryLine.post}
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {loc.industries.map((ind) => (
@@ -261,15 +282,10 @@ export default async function LocationPage({ params }: Props) {
             Match the stock to the job. Every format below is printable with your branding and food-safe for direct contact.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { href: "/greaseproof-paper", title: "Greaseproof", desc: "Grease-tight liners and wraps for fried and oily food." },
-              { href: "/burger-wrapping-paper", title: "Burger Wrap", desc: "Sturdy wraps that hold a loaded burger together." },
-              { href: "/deli-paper", title: "Deli Paper", desc: "Clean sheets for counters, meats, and cheese." },
-              { href: "/kraft-wax-paper", title: "Kraft", desc: "Natural, recyclable stock with a craft look." },
-            ].map((f) => (
-              <Link key={f.href} href={f.href} className="rounded-xl p-5 border block transition-shadow hover:shadow-lg" style={{ backgroundColor: "white", borderColor: "var(--color-paper)" }}>
+            {FMT.map((f) => (
+              <Link key={f.slug} href={`/${f.slug}`} className="rounded-xl p-5 border block transition-shadow hover:shadow-lg" style={{ backgroundColor: "white", borderColor: "var(--color-paper)" }}>
                 <h3 className="font-bold mb-1 text-base" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>{f.title}</h3>
-                <p className="text-sm mb-2 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>{f.desc}</p>
+                <p className="text-sm mb-2 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>{f.intro.slice(0, 70)}…</p>
                 <span className="text-sm font-semibold" style={{ color: "var(--color-gold)" }}>Explore {f.title} →</span>
               </Link>
             ))}
