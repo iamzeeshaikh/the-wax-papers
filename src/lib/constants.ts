@@ -59,6 +59,7 @@ export const FOOTER_QUICK_LINKS = [
   { label: "About Us", href: "/about-us" },
   { label: "Get a Free Quote", href: "/get-quote" },
   { label: "Blog", href: "/blog" },
+  { label: "UK Delivery Locations", href: "/locations" },
   { label: "Contact Us", href: "/contact-us" },
   { label: "Sitemap", href: "/sitemap-page" },
 ];
