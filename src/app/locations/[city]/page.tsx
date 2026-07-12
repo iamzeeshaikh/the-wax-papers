@@ -97,6 +97,22 @@ export default async function LocationPage({ params }: Props) {
       q: `Do you supply both single sites and multi-site groups in ${loc.city}?`,
       a: `Both. We print to order and store your design for consistent reorders, so whether you run one ${loc.city} site or several, your branding stays identical across every location.`,
     },
+    {
+      q: `What paper types can ${loc.city} kitchens choose from?`,
+      a: `You can choose greaseproof, kraft, deli, burger, sandwich and butcher papers, plus tissue and liners — matched to your food and format. See the full range on our products page or ask us to recommend the right stock for your menu.`,
+    },
+    {
+      q: `Are the papers grease-resistant enough for hot and oily food?`,
+      a: `Yes. Our papers resist grease and moisture, so they hold up under burgers, chips, fried food and saucy dishes without soaking through or bleeding the print — ideal for busy ${loc.city} service.`,
+    },
+    {
+      q: `Do you offer both sheets and rolls?`,
+      a: `We supply pre-cut sheets in standard and bespoke sizes, plus rolls for wrapping and lining. Tell us your format and we'll quote the option that suits your ${loc.city} operation.`,
+    },
+    {
+      q: `Can you deliver to ${loc.city} for events, pop-ups and markets?`,
+      a: `Yes. Many ${loc.city} operators stock up ahead of events, markets and festivals. Share your dates and volume and we'll make sure your branded papers arrive in good time.`,
+    },
   ];
 
   const serviceSchema = {
@@ -236,8 +252,33 @@ export default async function LocationPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── FEATURED PRODUCTS (navigational) ── */}
+      {/* ── PAPER FORMATS (navigational) ── */}
       <section className="py-12" style={{ backgroundColor: "var(--color-cream)" }}>
+        <div className="container-wide">
+          <span className="badge mb-3 inline-block">Choose Your Paper</span>
+          <h2 className="font-bold mb-3" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)", fontSize: "clamp(1.4rem, 2.6vw, 1.9rem)" }}>Paper Formats for {loc.city} Kitchens</h2>
+          <p className="text-base leading-relaxed mb-8 max-w-3xl" style={{ color: "var(--color-text-muted)" }}>
+            Match the stock to the job. Every format below is printable with your branding and food-safe for direct contact.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { href: "/greaseproof-paper", title: "Greaseproof", desc: "Grease-tight liners and wraps for fried and oily food." },
+              { href: "/burger-wrapping-paper", title: "Burger Wrap", desc: "Sturdy wraps that hold a loaded burger together." },
+              { href: "/deli-paper", title: "Deli Paper", desc: "Clean sheets for counters, meats, and cheese." },
+              { href: "/kraft-wax-paper", title: "Kraft", desc: "Natural, recyclable stock with a craft look." },
+            ].map((f) => (
+              <Link key={f.href} href={f.href} className="rounded-xl p-5 border block transition-shadow hover:shadow-lg" style={{ backgroundColor: "white", borderColor: "var(--color-paper)" }}>
+                <h3 className="font-bold mb-1 text-base" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>{f.title}</h3>
+                <p className="text-sm mb-2 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>{f.desc}</p>
+                <span className="text-sm font-semibold" style={{ color: "var(--color-gold)" }}>Explore {f.title} →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FEATURED PRODUCTS (navigational) ── */}
+      <section className="py-12" style={{ backgroundColor: "white" }}>
         <div className="container-wide">
           <span className="badge mb-3 inline-block">Popular in {loc.city}</span>
           <h2 className="font-bold mb-8" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)", fontSize: "clamp(1.4rem, 2.6vw, 1.9rem)" }}>Food Papers {loc.city} Businesses Order Most</h2>
@@ -258,6 +299,22 @@ export default async function LocationPage({ params }: Props) {
           <div className="mt-6 text-center">
             <Link href="/locations" className="text-sm font-semibold underline" style={{ color: "var(--color-brown)" }}>View All UK Delivery Locations →</Link>
           </div>
+        </div>
+      </section>
+
+      {/* ── REASSURANCE BAND ── */}
+      <section className="py-10" style={{ backgroundColor: "var(--color-cream)" }}>
+        <div className="container-wide grid sm:grid-cols-3 gap-6 text-center">
+          {[
+            { t: "Food-safe & UK-compliant", d: "Food-grade inks and materials, safe for direct contact." },
+            { t: "Free digital proof", d: "Approve your artwork before anything goes to print." },
+            { t: "Low minimums, bulk pricing", d: "Accessible for independents, priced for scale." },
+          ].map((r) => (
+            <div key={r.t}>
+              <h3 className="font-bold mb-1 text-base" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>{r.t}</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-muted)" }}>{r.d}</p>
+            </div>
+          ))}
         </div>
       </section>
 
