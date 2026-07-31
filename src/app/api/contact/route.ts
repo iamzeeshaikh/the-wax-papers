@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { sanitizeText, validateEmail } from "@/lib/sanitize";
 import { rateLimit } from "@/lib/rateLimit";
+import { getMailFrom, getMailRecipient, getSmtpConfig } from "@/lib/mail";
 
 export async function POST(req: NextRequest) {
   // Rate limiting
@@ -44,22 +45,23 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: "Message is required" }, { status: 400 });
   }
 
-  if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+  const smtp = getSmtpConfig();
+  if (!smtp.configured) {
     console.error("SMTP environment variables not configured");
     return NextResponse.json({ ok: false, error: "Mail service unavailable" }, { status: 503 });
   }
 
   try {
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: Number(process.env.SMTP_PORT) === 465,
-      auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+      host: smtp.host,
+      port: smtp.port,
+      secure: smtp.secure,
+      auth: { user: smtp.user, pass: smtp.pass },
     });
 
     await transporter.sendMail({
-      from: `"The Wax Papers" <${process.env.SMTP_USER}>`,
-      to: "shanzeeshan571@gmail.com",
+      from: getMailFrom(),
+      to: getMailRecipient(),
       replyTo: email,
       subject: `Contact: ${subject || "General Enquiry"} — from ${name}`,
       html: `
