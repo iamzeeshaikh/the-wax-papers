@@ -51,8 +51,10 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <Script id="zendesk-chat" strategy="afterInteractive">
-          {`window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');$.src='https://v2.zopim.com/?4h3lbyJihoT1mCOqDA0VoQOaVQE9qTOP';z.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');`}
+        {/* Chat widget waits for the first interaction (or 6s of idle) so it
+            never competes with the page's own render and LCP. */}
+        <Script id="zendesk-chat" strategy="lazyOnload">
+          {`(function(){var loaded=false;function load(){if(loaded)return;loaded=true;window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');$.src='https://v2.zopim.com/?4h3lbyJihoT1mCOqDA0VoQOaVQE9qTOP';z.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');}['pointerdown','keydown','touchstart','scroll'].forEach(function(evt){window.addEventListener(evt,load,{once:true,passive:true})});setTimeout(load,6000);})();`}
         </Script>
       </head>
       <body className="flex flex-col min-h-screen">

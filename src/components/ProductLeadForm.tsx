@@ -10,6 +10,7 @@ export default function ProductLeadForm({ productName }: Props) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [artworkName, setArtworkName] = useState("");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -119,14 +120,38 @@ export default function ProductLeadForm({ productName }: Props) {
         </div>
       </div>
 
-      <div className="mb-5">
-        <label className="form-label" htmlFor="plf-message">Requirements / Notes</label>
+      <div className="mb-4">
+        <label className="form-label" htmlFor="plf-message">Message / Instructions</label>
         <textarea
           id="plf-message"
           name="message"
           rows={3}
-          className="form-input resize-none"
+          className="form-input resize-y"
           placeholder="Tell us your size, print requirements, or any questions…"
+        />
+      </div>
+
+      <div className="mb-5">
+        <label className="form-label" htmlFor="plf-artwork">Upload Artwork <span style={{ color: "var(--color-text-muted)", fontWeight: 400 }}>(optional)</span></label>
+        <label
+          htmlFor="plf-artwork"
+          className="flex items-center gap-3 px-4 py-3 rounded-lg cursor-pointer text-sm transition-colors"
+          style={{ border: "1.5px dashed var(--color-paper)", backgroundColor: "white" }}
+        >
+          <svg className="w-4 h-4 shrink-0" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" />
+          </svg>
+          <span className="truncate" style={{ color: artworkName ? "var(--color-text)" : "var(--color-text-muted)" }}>
+            {artworkName || "PDF, AI, EPS, PNG, JPG — max 10MB"}
+          </span>
+        </label>
+        <input
+          id="plf-artwork"
+          name="artwork"
+          type="file"
+          className="sr-only"
+          accept=".pdf,.ai,.eps,.png,.jpg,.jpeg"
+          onChange={(e) => setArtworkName(e.target.files?.[0]?.name ?? "")}
         />
       </div>
 

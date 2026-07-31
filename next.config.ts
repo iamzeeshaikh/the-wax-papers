@@ -17,6 +17,12 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  images: {
+    // AVIF first (roughly 20-30% smaller than WebP), WebP as the fallback
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 31536000,
+  },
+
   async headers() {
     return [
       {

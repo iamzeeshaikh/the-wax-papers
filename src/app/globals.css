@@ -398,3 +398,54 @@
     background-color: var(--color-brown);
   }
 }
+
+/* ── Mobile safety net ──────────────────────────────────────────
+   Grid/flex children shrink to their column instead of pushing the
+   page wider than the viewport, and touch targets stay finger-sized. */
+@layer base {
+  .grid > *,
+  .flex > * {
+    min-width: 0;
+  }
+
+  table {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-link,
+  .footer-link-dim {
+    display: inline-block;
+    padding: 0.3rem 0;
+  }
+
+  /* Breadcrumb and inline contact links get a taller hit area */
+  nav[aria-label="Breadcrumb"] a,
+  ol a.hover\:underline {
+    display: inline-block;
+    padding: 0.35rem 0;
+  }
+
+  /* iOS zooms the page when a focused field is smaller than 16px */
+  .form-input,
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

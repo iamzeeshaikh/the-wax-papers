@@ -6,6 +6,7 @@ import { getProduct, getAllSlugs } from "@/lib/products";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import ProductLeadForm from "@/components/ProductLeadForm";
+import PaperConfigurator from "@/components/PaperConfigurator";
 import { SITE_URL } from "@/lib/constants";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -287,7 +288,10 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── 2. BENEFITS + USES ── */}
+      {/* ── 2. CONFIGURATOR ── */}
+      <PaperConfigurator productName={product.title} />
+
+      {/* ── 3. BENEFITS + USES ── */}
       <section className="py-12" style={{ backgroundColor: "white" }}>
         <div className="container-wide grid md:grid-cols-2 gap-10">
           <div>
