@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const PRODUCT_TYPES = [
   "Custom Wax Paper",
@@ -18,6 +19,7 @@ const PRODUCT_TYPES = [
 ];
 
 export default function QuoteForm() {
+  const router = useRouter();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -34,7 +36,8 @@ export default function QuoteForm() {
       });
 
       if (res.ok) {
-        setSubmitted(true);
+        router.push("/thank-you");
+        return;
       } else {
         const data = await res.json();
         setError(data?.errors?.[0]?.message ?? "Something went wrong. Please try again or email us directly.");

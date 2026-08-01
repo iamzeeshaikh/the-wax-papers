@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface Props {
   productName: string;
 }
 
 export default function ProductLeadForm({ productName }: Props) {
+  const router = useRouter();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -24,7 +26,8 @@ export default function ProductLeadForm({ productName }: Props) {
       });
 
       if (res.ok) {
-        setSubmitted(true);
+        router.push("/thank-you");
+        return;
       } else {
         const data = await res.json().catch(() => ({}));
         setError(data?.error ?? "Something went wrong. Please try again.");

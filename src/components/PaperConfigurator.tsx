@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface Option {
   id: string;
@@ -89,6 +90,7 @@ function priceOf(options: Option[], ids: string[]) {
  * live and submits the whole spec (plus artwork) to the quote inbox.
  */
 export default function PaperConfigurator({ productName }: { productName: string }) {
+  const router = useRouter();
   const [size, setSize] = useState("");
   const [customSize, setCustomSize] = useState({ width: "", height: "", unit: "cm" });
   const [material, setMaterial] = useState("");
@@ -164,7 +166,8 @@ export default function PaperConfigurator({ productName }: { productName: string
     try {
       const res = await fetch("/api/quote", { method: "POST", body: form });
       if (res.ok) {
-        setSubmitted(true);
+        router.push("/thank-you");
+        return;
       } else {
         const data = await res.json().catch(() => ({}));
         setError(data?.error ?? "Something went wrong. Please try again.");

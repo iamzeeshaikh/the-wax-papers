@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ContactForm() {
+  const router = useRouter();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -19,7 +21,8 @@ export default function ContactForm() {
       });
 
       if (res.ok) {
-        setSubmitted(true);
+        router.push("/thank-you");
+        return;
       } else {
         setError("Something went wrong. Please email us at Info@thewaxpapers.co.uk");
       }
