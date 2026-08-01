@@ -288,7 +288,7 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── 2. CONFIGURATOR ── */}
+      {/* ── 2. QUICK QUOTE FORM ── */}
       <section className="py-14" style={{ backgroundColor: "white" }}>
         <div className="container-wide grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -325,8 +325,6 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
       </section>
-
-      <PaperConfigurator productName={product.title} />
 
       {/* ── 3. BENEFITS + USES ── */}
       <section className="py-12" style={{ backgroundColor: "white" }}>
@@ -432,6 +430,8 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <PaperConfigurator productName={product.title} />
 
       {/* ── 5. SEO SECTION 2: Image left, Content right ── */}
       <section className="py-12" style={{ backgroundColor: "var(--color-cream-light)" }}>
