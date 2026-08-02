@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
 interface Option {
@@ -104,6 +104,21 @@ export default function PaperConfigurator({ productName }: { productName: string
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [summaryOpen, setSummaryOpen] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // On phones the summary is a fixed bar; show it only while the tool is on screen.
+  useEffect(() => {
+    const section = sectionRef.current;
+    const panel = section?.querySelector<HTMLElement>("[data-summary-panel]");
+    if (!section || !panel || !window.matchMedia("(max-width: 1023px)").matches) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => panel.setAttribute("data-visible", String(entry.isIntersecting)),
+      { rootMargin: "-10% 0px -20% 0px" },
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
 
   const effectiveQuantity = customQuantity ? Number(customQuantity) || 0 : quantity;
 
@@ -126,6 +141,15 @@ export default function PaperConfigurator({ productName }: { productName: string
         ? `Custom: ${customSize.width || "?"} × ${customSize.height || "?"} ${customSize.unit}`
         : "Custom size"
       : SIZES.find((option) => option.id === size)?.label ?? "";
+
+  const selectedCount = [
+    sizeLabel,
+    material,
+    printing.length ? "y" : "",
+    finishes.length ? "y" : "",
+    effectiveQuantity ? "y" : "",
+    addOns.length ? "y" : "",
+  ].filter(Boolean).length;
 
   const summaryRows: Array<[string, string]> = [
     ["Size", sizeLabel],
@@ -201,7 +225,12 @@ export default function PaperConfigurator({ productName }: { productName: string
   }
 
   return (
-    <section id="configurator" className="py-14 scroll-mt-24" style={{ backgroundColor: "var(--color-cream-light)" }}>
+    <section
+      id="configurator"
+      ref={sectionRef}
+      className="py-14 scroll-mt-24"
+      style={{ backgroundColor: "var(--color-cream-light)" }}
+    >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
           <span className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: "var(--color-gold)" }}>
@@ -434,14 +463,30 @@ export default function PaperConfigurator({ productName }: { productName: string
             </Step>
           </div>
 
-          <aside className="lg:sticky lg:top-24 min-w-0">
-            <div className="rounded-xl overflow-hidden" style={{ backgroundColor: "white", border: "1px solid var(--color-paper)" }}>
-              <div className="px-6 py-4" style={{ backgroundColor: "var(--color-cream)", borderBottom: "1px solid var(--color-paper)" }}>
-                <p className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: "var(--color-text-muted)" }}>
+          <aside
+            data-summary-panel
+            className="max-lg:fixed max-lg:inset-x-0 max-lg:bottom-0 max-lg:z-40 max-lg:translate-y-[110%] max-lg:transition-transform max-lg:duration-200 max-lg:data-[visible=true]:translate-y-0 lg:sticky lg:top-24 min-w-0"
+          >
+            <div
+              className="rounded-xl overflow-hidden max-lg:rounded-b-none max-lg:max-h-[80vh] max-lg:overflow-y-auto max-lg:shadow-[0_-10px_30px_rgba(45,42,38,0.22)]"
+              style={{ backgroundColor: "white", border: "1px solid var(--color-paper)" }}
+            >
+              <button
+                type="button"
+                onClick={() => setSummaryOpen((open) => !open)}
+                aria-expanded={summaryOpen}
+                className="flex w-full items-center justify-between gap-3 px-6 py-3 text-left lg:pointer-events-none"
+                style={{ backgroundColor: "var(--color-cream)", borderBottom: "1px solid var(--color-paper)" }}
+              >
+                <span className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: "var(--color-text-muted)" }}>
                   Your Selections
-                </p>
-              </div>
-              <dl className="px-6">
+                </span>
+                <span className="text-xs font-semibold lg:hidden" style={{ color: "var(--color-gold)" }}>
+                  {selectedCount ? `${selectedCount} selected · ` : ""}
+                  {summaryOpen ? "Hide" : "Show"}
+                </span>
+              </button>
+              <dl className={`px-6 ${summaryOpen ? "block" : "max-lg:hidden"}`}>
                 {summaryRows.map(([label, value]) => (
                   <div key={label} className="flex items-start justify-between gap-4 py-3" style={{ borderBottom: "1px solid var(--color-cream-light)" }}>
                     <dt className="text-sm" style={{ color: "var(--color-text-muted)" }}>{label}</dt>
