@@ -41,7 +41,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-wax-paper",
     title: "Custom Wax Paper",
-    metaTitle: "Custom Wax Paper UK | Printed Wax Paper Sheets & Rolls",
+    metaTitle: "Custom Wax Paper Sheets & Rolls UK",
     metaDesc: "Order custom wax paper printed with your logo or brand. Food-safe, grease-resistant wax paper sheets and rolls for UK food businesses. Fast turnaround.",
     h1: "Custom Wax Paper — Printed for Your Brand",
     intro: "Custom wax paper is one of the most versatile food wrapping solutions for UK businesses. Whether you run a deli, bakery, burger bar, or food market, wax paper keeps food fresh while putting your brand front and centre. We supply printed wax paper in sheets and rolls, with full-colour and single-colour options.",
@@ -118,7 +118,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-printed-wax-paper",
     title: "Custom Printed Wax Paper",
-    metaTitle: "Custom Printed Wax Paper UK | Logo Wax Paper Supplier",
+    metaTitle: "Custom Printed Wax Paper UK",
     metaDesc: "Custom printed wax paper with your logo or design. Food-safe UK supplier with low minimums, full-colour print, and fast turnaround on wax paper sheets.",
     h1: "Custom Printed Wax Paper for UK Food Businesses",
     intro: "Printed wax paper turns everyday food wrapping into a branded experience. Your logo, pattern, or artwork is printed directly onto food-safe wax paper — ideal for restaurants, delis, bakeries, and market traders who want their packaging to stand out.",
@@ -188,7 +188,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "greaseproof-paper",
     title: "Greaseproof Paper",
-    metaTitle: "Custom Greaseproof Paper UK | Printed Greaseproof Paper Supplier",
+    metaTitle: "Custom Greaseproof Paper UK",
     metaDesc: "Custom greaseproof paper for UK bakeries, cafés, and food businesses. Printed or plain, sheets or rolls. Food-safe, grease-resistant, fast turnaround.",
     h1: "Custom Greaseproof Paper — Printed for UK Food Businesses",
     intro: "Greaseproof paper is a staple in bakeries, fish and chip shops, delis, and cafés across the UK. Unlike wax paper, greaseproof paper achieves its resistance through a dense paper structure rather than a coating — making it ideal for baked goods, fried foods, and direct food contact. We supply plain and custom printed greaseproof paper to food businesses of all sizes.",
@@ -258,7 +258,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "burger-wrapping-paper",
     title: "Burger Wrapping Paper",
-    metaTitle: "Custom Burger Wrapping Paper UK | Printed Burger Paper",
+    metaTitle: "Custom Burger Wrapping Paper UK",
     metaDesc: "Custom burger wrapping paper printed with your logo. Grease-resistant, food-safe burger paper for UK restaurants, takeaways, and food vans. Fast turnaround.",
     h1: "Custom Burger Wrapping Paper for UK Restaurants",
     intro: "Burger wrapping paper keeps your burgers hot, fresh, and branded. Our printed burger paper is grease-resistant and moisture-proof — built to handle messy fillings without letting grease soak through. Whether you run a single burger van or a multi-site restaurant group, we supply burger wrapping paper printed with your logo.",
@@ -328,7 +328,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "sandwich-wrapping-paper",
     title: "Sandwich Wrapping Paper",
-    metaTitle: "Custom Sandwich Wrapping Paper UK | Printed Sandwich Paper",
+    metaTitle: "Custom Sandwich Wrapping Paper UK",
     metaDesc: "Custom sandwich wrapping paper for UK cafés, delis, and sandwich shops. Printed with your logo. Food-safe, grease-resistant, low minimums.",
     h1: "Custom Sandwich Wrapping Paper for UK Cafés & Delis",
     intro: "Sandwich wrapping paper does more than keep your sandwiches fresh — it communicates your brand to every customer. Our printed sandwich paper is available in wax, greaseproof, and kraft finishes, in sheet and roll formats suited to busy café and deli counters.",
@@ -398,7 +398,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "deli-paper",
     title: "Deli Paper",
-    metaTitle: "Custom Deli Paper UK | Printed Deli Wrapping Paper Supplier",
+    metaTitle: "Custom Deli Wrapping Paper UK",
     metaDesc: "Custom deli paper printed with your brand. Food-safe interleaved deli sheets and rolls for UK delis, sandwich shops, and food counters.",
     h1: "Custom Deli Paper for UK Delis & Food Counters",
     intro: "Deli paper is the paper of choice for counters, wraps, and baskets across UK food businesses. Thin, strong, and grease-resistant, it is ideal for wrapping everything from sliced meats to filled rolls. We supply plain and custom-printed deli paper in sheets and interleaved pop-up formats.",
@@ -468,7 +468,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "bakery-wrapping-paper",
     title: "Bakery Wrapping Paper",
-    metaTitle: "Custom Bakery Wrapping Paper UK | Printed Bakery Paper",
+    metaTitle: "Custom Bakery Wrapping Paper UK",
     metaDesc: "Custom bakery wrapping paper for UK bakeries and patisseries. Printed greaseproof, parchment, and wax paper for bread, pastries, and baked goods.",
     h1: "Custom Bakery Wrapping Paper for UK Bakeries",
     intro: "Bakery wrapping paper protects baked goods while giving your brand a premium presentation. From sourdough loaves to croissants and pastries, the right paper makes a difference. We supply printed parchment, greaseproof, and wax paper to independent bakeries, artisan patisseries, and wholesale bakers across the UK.",
@@ -538,7 +538,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "butcher-paper",
     title: "Butcher Paper",
-    metaTitle: "Custom Butcher Paper UK | Printed Kraft Butcher Paper Supplier",
+    metaTitle: "Custom Kraft Butcher Paper UK",
     metaDesc: "Custom butcher paper for UK butchers and meat counters. Printed kraft and white butcher paper rolls and sheets. Food-safe, moisture-resistant, fast turnaround.",
     h1: "Custom Butcher Paper for UK Butchers & Meat Counters",
     intro: "Butcher paper is a robust, moisture-resistant paper used for wrapping raw and cooked meats. Its breathable structure prevents steam build-up while keeping moisture in — ideal for beef, pork, lamb, and poultry. We supply plain and custom-printed butcher paper to UK butchers, farm shops, and meat processors.",
@@ -608,7 +608,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "cheese-wrapping-paper",
     title: "Cheese Wrapping Paper",
-    metaTitle: "Custom Cheese Wrapping Paper UK | Branded Cheese Paper Supplier",
+    metaTitle: "Custom Cheese Wrapping Paper UK",
     metaDesc: "Custom cheese wrapping paper for UK cheesemongers and delis. Breathable, food-safe cheese paper printed with your brand. Sheets and rolls available.",
     h1: "Custom Cheese Wrapping Paper for UK Cheesemongers & Delis",
     intro: "Cheese wrapping paper is specially designed to allow cheese to breathe while retaining moisture — the key to keeping cheese in perfect condition. We supply printed and plain cheese paper to UK cheesemongers, deli counters, farm shops, and artisan cheese producers.",
@@ -677,7 +677,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "kraft-wax-paper",
     title: "Kraft Wax Paper",
-    metaTitle: "Custom Kraft Wax Paper UK | Brown Kraft Paper Supplier",
+    metaTitle: "Custom Brown Kraft Wax Paper UK",
     metaDesc: "Custom kraft wax paper for UK food businesses. Brown kraft paper printed with your logo — eco-friendly, food-safe, and available in sheets and rolls.",
     h1: "Custom Kraft Wax Paper — Natural Brown Food Paper UK",
     intro: "Kraft wax paper has a warm, natural appearance that works particularly well for artisan food brands, farm shops, and eco-conscious businesses. The unbleached brown paper gives a rustic, premium feel while still being grease-resistant and food-safe. We print logos and designs on kraft paper in single and full colour.",
@@ -747,8 +747,8 @@ export const PRODUCTS: Product[] = [
   {
     slug: "wholesale-wax-paper",
     title: "Wholesale Wax Paper",
-    metaTitle: "Wholesale Wax Paper UK | Bulk Food Paper Supplier",
-    metaDesc: "Wholesale wax paper and bulk food paper for UK businesses. Competitive pricing on large orders of greaseproof, kraft, and printed wax paper. Trade accounts available.",
+    metaTitle: "Wholesale Bulk Wax Paper UK",
+    metaDesc: "Wholesale wax paper and bulk food paper for UK businesses. Competitive pricing on large greaseproof, kraft and printed orders. Trade accounts available.",
     h1: "Wholesale Wax Paper — Bulk Food Paper for UK Businesses",
     intro: "We supply wholesale wax paper and bulk food paper to restaurants, caterers, food manufacturers, and packaging distributors across the UK. The more you order, the better the unit cost. We offer trade accounts, palletised delivery, and consistent supply for repeat orders.",
     image: "/images/fry-paper/Custom Fry Paper-TCB-1.png",
@@ -816,7 +816,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "wax-paper-sheets",
     title: "Wax Paper Sheets",
-    metaTitle: "Custom Wax Paper Sheets UK | Pre-Cut Food Paper Sheets",
+    metaTitle: "Pre-Cut Custom Wax Paper Sheets UK",
     metaDesc: "Pre-cut custom wax paper sheets for UK food businesses. Printed or plain, food-safe wax paper sheets in standard and custom sizes. Low minimums.",
     h1: "Custom Wax Paper Sheets for UK Food Businesses",
     intro: "Wax paper sheets are pre-cut to size, ready to use straight from the box. They are the most convenient format for deli counters, café service, and food wrapping stations. We supply plain and printed wax paper sheets in standard sizes and fully custom dimensions.",
@@ -886,7 +886,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "wax-paper-rolls",
     title: "Wax Paper Rolls",
-    metaTitle: "Custom Wax Paper Rolls UK | Food Paper Rolls Supplier",
+    metaTitle: "Custom Wax Paper Rolls UK",
     metaDesc: "Custom wax paper rolls for UK food businesses. Plain and printed wax paper on rolls for high-volume wrapping stations, delis, and food manufacturers.",
     h1: "Custom Wax Paper Rolls for UK Food Service",
     intro: "Wax paper rolls are the preferred format for high-volume food wrapping operations. Continuous roll format reduces waste and speeds up service — ideal for busy sandwich shops, production kitchens, and deli operations. We supply plain and custom-printed rolls in a wide range of widths.",
@@ -956,7 +956,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "food-wrapping-paper",
     title: "Food Wrapping Paper",
-    metaTitle: "Custom Food Wrapping Paper UK | Printed Food Paper Supplier",
+    metaTitle: "Printed Food Wrapping Paper UK",
     metaDesc: "Custom food wrapping paper for UK food businesses. Printed or plain wax paper, greaseproof, and kraft paper for wrapping any food product. Fast turnaround.",
     h1: "Custom Food Wrapping Paper for UK Businesses",
     intro: "Food wrapping paper is the broad category that covers everything from sandwich paper and burger wrappers to bakery tissue and deli sheets. We supply the full range of food-safe wrapping papers to restaurants, cafés, bakeries, delis, and food manufacturers across the UK — all available with custom printing.",
@@ -1024,8 +1024,8 @@ export const PRODUCTS: Product[] = [
   {
     slug: "printed-greaseproof-paper",
     title: "Printed Greaseproof Paper",
-    metaTitle: "Printed Greaseproof Paper UK | Custom Logo Greaseproof Paper",
-    metaDesc: "Printed greaseproof paper for UK food businesses. Custom logo and design printing on food-safe greaseproof paper sheets and rolls. Low minimums, fast turnaround.",
+    metaTitle: "Printed Logo Greaseproof Paper UK",
+    metaDesc: "Printed greaseproof paper for UK food businesses. Custom logo printing on food-safe sheets and rolls. Low minimums and fast turnaround.",
     h1: "Printed Greaseproof Paper for UK Food Businesses",
     intro: "Printed greaseproof paper is one of the most effective ways to brand your food packaging. Your logo or design is printed directly onto food-safe greaseproof paper using vibrant, food-contact certified inks. Popular with fish and chip shops, bakeries, burger bars, and delis.",
     image: "/images/fish-chip-paper/Custom Fish and Chip Paper-TCB-1.png",
@@ -1094,7 +1094,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-deli-paper",
     title: "Custom Deli Paper",
-    metaTitle: "Custom Deli Paper UK | Printed Deli Wrap Supplier",
+    metaTitle: "Custom Printed Deli Paper UK",
     metaDesc: "Custom printed deli paper for UK delis and sandwich shops. Logo-printed deli sheets and interleaved deli paper. Food-safe, fast turnaround.",
     h1: "Custom Deli Paper — Printed for UK Delis & Sandwich Shops",
     intro: "Custom deli paper lets your wrapping do the talking. With your logo or design printed on every sheet, every sandwich, wrap, or deli portion becomes a branded moment. We supply interleaved and flat deli sheets to busy delis, cafés, and food counters across the UK.",
@@ -1164,7 +1164,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-burger-paper",
     title: "Custom Burger Paper",
-    metaTitle: "Custom Burger Paper UK | Printed Burger Wrap Supplier",
+    metaTitle: "Custom Printed Burger Paper UK",
     metaDesc: "Custom burger paper printed with your logo. Grease-resistant, food-safe burger wrap for UK restaurants, takeaways, and burger bars. Low minimums.",
     h1: "Custom Burger Paper — Branded Burger Wrap UK",
     intro: "Custom burger paper is one of the highest-impact packaging choices for food businesses. Every burger that leaves your kitchen carries your brand. Our printed burger paper is grease-resistant, moisture-proof, and available in wax and greaseproof finishes — sized to fit everything from sliders to double-stack burgers.",
@@ -1234,7 +1234,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-sandwich-paper",
     title: "Custom Sandwich Paper",
-    metaTitle: "Custom Sandwich Paper UK | Printed Sandwich Wrap Supplier",
+    metaTitle: "Custom Printed Sandwich Paper UK",
     metaDesc: "Custom sandwich paper printed with your logo for UK cafés, delis, and sandwich bars. Food-safe, grease-resistant, available in sheets and rolls.",
     h1: "Custom Sandwich Paper — Printed for UK Cafés & Delis",
     intro: "Custom sandwich paper gives every sandwich, baguette, or wrap your brand's signature. Our printed sandwich paper is thin enough to fold easily around any filling, while still being strong and grease-resistant. We supply cafés, delis, sandwich bars, and catering businesses across the UK.",
@@ -1304,7 +1304,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "branded-greaseproof-paper",
     title: "Branded Greaseproof Paper",
-    metaTitle: "Branded Greaseproof Paper UK | Logo Greaseproof Paper Supplier",
+    metaTitle: "Branded Logo Greaseproof Paper UK",
     metaDesc: "Branded greaseproof paper for UK food businesses. Custom logo and full-colour design on food-safe greaseproof paper sheets. Low minimums, fast turnaround.",
     h1: "Branded Greaseproof Paper for UK Food Businesses",
     intro: "Branded greaseproof paper puts your logo on one of the most common food-contact surfaces in your business. Every serve, every wrap, and every basket liner becomes a brand touchpoint. We print logos and full designs on food-safe greaseproof paper for UK restaurants, bakeries, delis, and takeaways.",
@@ -1374,8 +1374,8 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-bakery-paper",
     title: "Custom Bakery Paper",
-    metaTitle: "Custom Bakery Paper UK | Printed Bakery Wrap & Parchment",
-    metaDesc: "Custom bakery paper for UK bakeries and patisseries. Printed parchment, greaseproof, and wax bakery paper. Brand your bread, pastries, and baked goods packaging.",
+    metaTitle: "Custom Bakery Wrap & Parchment UK",
+    metaDesc: "Custom bakery paper for UK bakeries and patisseries. Printed parchment, greaseproof and wax paper for bread, pastries and baked goods.",
     h1: "Custom Bakery Paper — Branded Packaging for UK Bakeries",
     intro: "Custom bakery paper gives artisan bakeries and patisseries a packaging identity that matches the quality of their products. We supply printed parchment, greaseproof, and wax paper to UK bakeries — branded with your logo and ready to wrap everything from sourdough to croissants.",
     image: "/images/bagel-paper/bagel paper-TCB-1.png",
@@ -1444,7 +1444,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "eco-friendly-wax-paper",
     title: "Eco-Friendly Wax Paper",
-    metaTitle: "Eco-Friendly Wax Paper UK | Compostable Food Paper Supplier",
+    metaTitle: "Compostable Eco Wax Paper UK",
     metaDesc: "Eco-friendly and compostable wax paper for UK food businesses. Recyclable greaseproof and uncoated kraft paper options. Custom printed with your brand.",
     h1: "Eco-Friendly Wax Paper for UK Food Businesses",
     intro: "Eco-friendly wax paper lets your business wrap food responsibly without compromising on quality or branding. We supply compostable, recyclable, and uncoated food paper options — printed with your logo using water-based, food-safe inks. Ideal for food brands committed to sustainability.",
@@ -1514,7 +1514,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "christmas-wax-paper",
     title: "Christmas Wax Paper",
-    metaTitle: "Christmas Wax Paper UK | Festive Food Wrapping Paper Supplier",
+    metaTitle: "Christmas Festive Wax Paper UK",
     metaDesc: "Custom Christmas wax paper and festive food wrapping paper for UK food businesses. Seasonal printed paper for bakeries, delis, restaurants, and gift packaging.",
     h1: "Christmas Wax Paper — Festive Food Wrapping Paper UK",
     intro: "Christmas wax paper adds seasonal warmth to your food packaging during the festive period. Whether you are wrapping Christmas hampers, seasonal baked goods, or gift food products, our festive printed paper creates a memorable presentation. We supply seasonal wax paper and greaseproof paper to UK food businesses.",
@@ -1583,7 +1583,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "personalised-wax-paper-uk",
     title: "Personalised Wax Paper UK",
-    metaTitle: "Personalised Wax Paper UK | Custom Printed Food Paper",
+    metaTitle: "Personalised Printed Wax Paper UK",
     metaDesc: "Personalised wax paper for UK food businesses and events. Custom printed with names, logos, or bespoke designs. Food-safe, low minimums, fast turnaround.",
     h1: "Personalised Wax Paper UK — Custom Printed Food Paper",
     intro: "Personalised wax paper is ideal for businesses and events that want something truly tailored. Whether it is your restaurant name, a wedding celebration, a corporate event, or a seasonal message — we print bespoke designs on food-safe wax paper for any occasion.",
@@ -1653,7 +1653,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "wax-paper-packaging",
     title: "Wax Paper Packaging",
-    metaTitle: "Custom Wax Paper Packaging UK | Food Paper Packaging Supplier",
+    metaTitle: "Custom Wax Paper Packaging UK",
     metaDesc: "Wax paper packaging for UK food businesses. Custom printed wax paper packaging solutions for restaurants, delis, bakeries, and food manufacturers.",
     h1: "Wax Paper Packaging for UK Food Businesses",
     intro: "Wax paper packaging covers the full range of food wrapping and lining solutions — from single sandwich sheets to tray liners, basket covers, and bulk roll supply. We supply complete food paper packaging to UK businesses, with custom printing available across the entire range.",
@@ -1722,7 +1722,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-food-wrapping-paper",
     title: "Custom Food Wrapping Paper",
-    metaTitle: "Custom Food Wrapping Paper UK | Branded Food Paper Supplier",
+    metaTitle: "Custom Branded Food Wrap Paper UK",
     metaDesc: "Custom food wrapping paper for UK restaurants, bakeries, and delis. Printed with your logo or design on food-safe paper. Sheets and rolls, fast turnaround.",
     h1: "Custom Food Wrapping Paper for UK Businesses",
     intro: "Custom food wrapping paper turns functional packaging into a brand asset. Your logo, design, and brand colours on food-safe paper — wrapping every product that leaves your business. We supply printed food wrapping paper to UK restaurants, bakeries, delis, and food producers.",
@@ -1791,7 +1791,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "printed-food-wrapping-paper",
     title: "Printed Food Wrapping Paper",
-    metaTitle: "Printed Food Wrapping Paper UK | Custom Print Food Paper",
+    metaTitle: "Printed Food Wrapping Paper UK",
     metaDesc: "Printed food wrapping paper for UK food businesses. Full-colour and single-colour printing on food-safe wax, greaseproof, and kraft paper. Fast turnaround.",
     h1: "Printed Food Wrapping Paper for UK Restaurants & Food Businesses",
     intro: "Printed food wrapping paper is the most visible form of food packaging branding. Whether your food is wrapped at the counter, boxed for delivery, or presented on a plate, printed paper communicates your brand at close range. We supply printed food paper across all paper types to UK food businesses.",
@@ -1861,7 +1861,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "logo-printed-wax-paper",
     title: "Logo Printed Wax Paper",
-    metaTitle: "Logo Printed Wax Paper UK | Custom Logo Wax Paper Supplier",
+    metaTitle: "Logo Printed Wax Paper UK",
     metaDesc: "Logo printed wax paper for UK food businesses. Your brand logo on food-safe wax paper sheets and rolls. Low minimums, full-colour options, fast turnaround.",
     h1: "Logo Printed Wax Paper — Your Brand on Every Wrap",
     intro: "Logo printed wax paper is one of the most cost-effective forms of food business branding. Every wrapped item becomes a brand impression. We print your logo — in one colour or full colour — on food-safe wax paper for UK restaurants, delis, bakeries, and takeaways.",
@@ -1930,8 +1930,8 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-branded-wax-paper",
     title: "Custom Branded Wax Paper",
-    metaTitle: "Custom Branded Wax Paper UK | Branded Food Paper Supplier",
-    metaDesc: "Custom branded wax paper for UK food businesses. Full-colour branding on food-safe wax paper. For restaurants, delis, bakeries, and food brands. Fast turnaround.",
+    metaTitle: "Custom Branded Wax Paper UK",
+    metaDesc: "Custom branded wax paper for UK food businesses. Full-colour branding on food-safe paper for restaurants, delis and bakeries.",
     h1: "Custom Branded Wax Paper for UK Food Brands",
     intro: "Custom branded wax paper takes your food packaging beyond a logo stamp. With full-colour branding — your colours, typography, and imagery — every wrap becomes a premium brand experience. We supply branded wax paper to established food brands and growing independent businesses across the UK.",
     image: "/images/hot-paper/Custom Hot Paper-TCB-1.png",
@@ -2000,7 +2000,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "custom-food-paper",
     title: "Custom Food Paper",
-    metaTitle: "Custom Food Paper UK | Printed Food Grade Paper Supplier",
+    metaTitle: "Custom Food Grade Paper UK",
     metaDesc: "Custom food paper for UK food businesses. Printed food-grade paper in any format — sheets, rolls, basket liners, and tray paper. Low minimums.",
     h1: "Custom Food Paper for UK Food Businesses",
     intro: "Custom food paper covers all the food-grade paper products your business needs — from counter sheets and basket liners to tray paper and wrapping sheets. We print your branding on food-safe paper and supply it in the format that best suits your operation.",
@@ -2069,7 +2069,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "white-wax-paper",
     title: "White Wax Paper",
-    metaTitle: "White Wax Paper UK | Custom Printed White Food Paper Supplier",
+    metaTitle: "Custom White Wax Paper UK",
     metaDesc: "White wax paper for UK food businesses. Plain and custom printed white wax paper sheets and rolls. Food-safe, grease-resistant. Low minimums, fast turnaround.",
     h1: "White Wax Paper for UK Food Businesses",
     intro: "White wax paper is the classic food wrapping paper — clean, bright, and grease-resistant. The white base makes colours pop in printing, giving the crispest results for logos and designs. We supply plain and custom printed white wax paper to UK food businesses in sheets and rolls.",
@@ -2139,7 +2139,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "black-wax-paper",
     title: "Black Wax Paper",
-    metaTitle: "Black Wax Paper UK | Custom Dark Food Wrapping Paper",
+    metaTitle: "Custom Black Wax Paper UK",
     metaDesc: "Black wax paper for UK restaurants and food businesses. Dark custom food paper printed with gold, white, or coloured designs. Premium feel, food-safe.",
     h1: "Black Wax Paper — Premium Dark Food Wrapping Paper UK",
     intro: "Black wax paper creates a striking, premium presentation for food businesses that want to stand out. Dark packaging with gold, white, or colour printing communicates quality and confidence. We supply black food paper to UK restaurants, luxury delis, and premium food brands.",

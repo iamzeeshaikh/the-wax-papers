@@ -14,9 +14,9 @@ export interface BlogPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "what-is-custom-wax-paper-used-for",
-    metaTitle: "What Is Custom Wax Paper Used For? | The Wax Papers",
+    metaTitle: "What Is Custom Wax Paper Used For",
     metaDesc: "Discover the many uses of custom wax paper in UK food businesses — from wrapping sandwiches to lining bakery trays and branded deli service.",
-    title: "What Is Custom Wax Paper Used For?",
+    title: "What Is Custom Wax Paper Used For",
     date: "2026-03-10",
     readTime: "5 min read",
     excerpt: "Custom wax paper is one of the most adaptable materials in food service packaging. Here is a straightforward breakdown of how UK food businesses use it every day.",
@@ -85,7 +85,7 @@ Most custom wax paper uses flexographic printing — a process that applies food
   },
   {
     slug: "wax-paper-vs-greaseproof-paper",
-    metaTitle: "Wax Paper vs Greaseproof Paper | Which Is Right for Your Business?",
+    metaTitle: "Wax Paper vs Greaseproof Paper",
     metaDesc: "What is the difference between wax paper and greaseproof paper? Find out which type is best for your UK food business — bakeries, delis, restaurants, and more.",
     title: "Wax Paper vs Greaseproof Paper: What's the Difference?",
     date: "2026-03-17",
@@ -166,7 +166,7 @@ To discuss which paper type is right for your business, [contact our team](/cont
   },
   {
     slug: "best-food-wrapping-paper-for-cafes-and-takeaways",
-    metaTitle: "Best Food Wrapping Paper for Cafes and Takeaways UK | The Wax Papers",
+    metaTitle: "Best Food Wrapping Paper for UK Cafes",
     metaDesc: "Choosing the right food wrapping paper for your café or takeaway in the UK. A practical guide to wax paper, greaseproof paper, and kraft paper options.",
     title: "Best Food Wrapping Paper for Cafes and Takeaways in the UK",
     date: "2026-03-24",
@@ -245,9 +245,9 @@ Standard lead time is 7–10 working days from artwork approval.
   },
   {
     slug: "how-printed-wax-paper-helps-food-brands",
-    metaTitle: "How Printed Wax Paper Helps Food Brands | The Wax Papers",
+    metaTitle: "How Printed Wax Paper Helps Brands",
     metaDesc: "Find out how custom printed wax paper helps UK food brands build recognition, communicate quality, and turn everyday packaging into a marketing asset.",
-    title: "How Printed Wax Paper Helps Food Brands",
+    title: "How Printed Wax Paper Helps Brands",
     date: "2026-04-01",
     readTime: "5 min read",
     excerpt: "Printed wax paper is one of the most cost-effective branding tools available to food businesses. Here is why it works and how to get the most from it.",
@@ -317,9 +317,9 @@ Not necessarily. If you have a vector logo, our team can prepare print-ready art
   },
   {
     slug: "burger-wrapping-paper-ideas-for-uk-restaurants",
-    metaTitle: "Burger Wrapping Paper Ideas for UK Restaurants | The Wax Papers",
+    metaTitle: "Burger Wrapping Paper Ideas UK",
     metaDesc: "Creative burger wrapping paper ideas for UK restaurants, takeaways, and burger bars. How to use branded burger paper to improve presentation and recognition.",
-    title: "Burger Wrapping Paper Ideas for UK Restaurants",
+    title: "Burger Wrapping Paper Ideas UK",
     date: "2026-04-08",
     readTime: "5 min read",
     excerpt: "Burger wrapping paper is one of the highest-impact packaging decisions for a UK burger restaurant. Here are ideas to make yours stand out.",
@@ -393,7 +393,7 @@ Standard turnaround is 7–10 working days from artwork approval.
   },
   {
     slug: "wholesale-wax-paper-buying-guide",
-    metaTitle: "Wholesale Wax Paper Buying Guide UK | The Wax Papers",
+    metaTitle: "Wholesale Wax Paper Buying Guide",
     metaDesc: "Everything UK food businesses need to know about buying wax paper wholesale — quantities, pricing, paper types, and how to find the right supplier.",
     title: "Wholesale Wax Paper Buying Guide for UK Businesses",
     date: "2026-04-15",

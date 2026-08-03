@@ -211,7 +211,7 @@ export default function PaperConfigurator({ productName }: { productName: string
             className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4"
             style={{ backgroundColor: "var(--color-gold-pale)" }}
           >
-            <svg className="w-7 h-7" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="w-7 h-7" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
@@ -233,7 +233,7 @@ export default function PaperConfigurator({ productName }: { productName: string
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
-          <span className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: "var(--color-gold)" }}>
+          <span className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: "var(--color-gold-text)" }}>
             Interactive Configurator
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold mt-3">Build Your {productName} Spec</h2>
@@ -376,7 +376,7 @@ export default function PaperConfigurator({ productName }: { productName: string
                 className="flex flex-col items-center gap-2 px-6 py-8 rounded-xl cursor-pointer text-center"
                 style={{ border: "1.5px dashed var(--color-paper)", backgroundColor: "white" }}
               >
-                <svg className="w-6 h-6" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden>
+                <svg className="w-6 h-6" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" />
                 </svg>
                 <span className="text-sm font-semibold">
@@ -431,13 +431,13 @@ export default function PaperConfigurator({ productName }: { productName: string
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="form-label" htmlFor="cfg-name">
-                    Full Name <span style={{ color: "var(--color-gold)" }}>*</span>
+                    Full Name <span style={{ color: "var(--color-gold-text)" }}>*</span>
                   </label>
                   <input id="cfg-name" name="name" type="text" required className="form-input" placeholder="Jane Smith" />
                 </div>
                 <div>
                   <label className="form-label" htmlFor="cfg-email">
-                    Email Address <span style={{ color: "var(--color-gold)" }}>*</span>
+                    Email Address <span style={{ color: "var(--color-gold-text)" }}>*</span>
                   </label>
                   <input id="cfg-email" name="email" type="email" required className="form-input" placeholder="jane@yourbusiness.co.uk" />
                 </div>
@@ -481,7 +481,7 @@ export default function PaperConfigurator({ productName }: { productName: string
                 <span className="text-xs font-semibold uppercase tracking-[0.18em]" style={{ color: "var(--color-text-muted)" }}>
                   Your Selections
                 </span>
-                <span className="text-xs font-semibold lg:hidden" style={{ color: "var(--color-gold)" }}>
+                <span className="text-xs font-semibold lg:hidden" style={{ color: "var(--color-gold-text)" }}>
                   {selectedCount ? `${selectedCount} selected · ` : ""}
                   {summaryOpen ? "Hide" : "Show"}
                 </span>
@@ -518,7 +518,7 @@ export default function PaperConfigurator({ productName }: { productName: string
               <ul className="px-6 pb-6 grid gap-2">
                 {ASSURANCES.map((point) => (
                   <li key={point} className="flex items-start gap-2 text-sm">
-                    <svg className="w-3.5 h-3.5 mt-1 shrink-0" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3} aria-hidden>
+                    <svg className="w-3.5 h-3.5 mt-1 shrink-0" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3} aria-hidden>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                     {point}

@@ -199,7 +199,7 @@ export default async function LocationPage({ params }: Props) {
           </div>
           <div className="rounded-xl p-6 border" style={{ backgroundColor: "white", borderColor: "var(--color-paper)" }}>
             <div className="flex items-center gap-2.5 pb-4 mb-4" style={{ borderBottom: "1px solid var(--color-paper)" }}>
-              <svg className="w-5 h-5 flex-shrink-0" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="w-5 h-5 flex-shrink-0" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
@@ -208,7 +208,7 @@ export default async function LocationPage({ params }: Props) {
             <ul className="space-y-2.5 text-sm" style={{ color: "var(--color-charcoal)" }}>
               {["Printed to your logo & brand colours", "Food-safe, grease-resistant papers", `Delivered across ${loc.city}`, "Free digital proof · low minimums"].map((t) => (
                 <li key={t} className="flex items-start gap-2">
-                  <span style={{ color: "var(--color-gold)" }} aria-hidden>✓</span>{t}
+                  <span style={{ color: "var(--color-gold-text)" }} aria-hidden>✓</span>{t}
                 </li>
               ))}
             </ul>
@@ -265,7 +265,7 @@ export default async function LocationPage({ params }: Props) {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {loc.industries.map((ind) => (
               <div key={ind} className="flex items-start gap-2.5 rounded-lg p-4 border" style={{ backgroundColor: "var(--color-cream)", borderColor: "var(--color-paper)", color: "var(--color-charcoal)" }}>
-                <span className="font-bold flex-shrink-0" style={{ color: "var(--color-gold)" }} aria-hidden>✓</span>
+                <span className="font-bold flex-shrink-0" style={{ color: "var(--color-gold-text)" }} aria-hidden>✓</span>
                 <span className="text-sm">{ind}</span>
               </div>
             ))}
@@ -286,7 +286,7 @@ export default async function LocationPage({ params }: Props) {
               <Link key={f.slug} href={`/${f.slug}`} className="rounded-xl p-5 border block transition-shadow hover:shadow-lg" style={{ backgroundColor: "white", borderColor: "var(--color-paper)" }}>
                 <h3 className="font-bold mb-1 text-base" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>{f.title}</h3>
                 <p className="text-sm mb-2 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>{f.intro.slice(0, 70)}…</p>
-                <span className="text-sm font-semibold" style={{ color: "var(--color-gold)" }}>Explore {f.title} →</span>
+                <span className="text-sm font-semibold" style={{ color: "var(--color-gold-text)" }}>Explore {f.title} →</span>
               </Link>
             ))}
           </div>
@@ -307,7 +307,7 @@ export default async function LocationPage({ params }: Props) {
                 <div className="p-4">
                   <h3 className="font-bold mb-1 text-base" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>{p.title}</h3>
                   <p className="text-sm mb-2 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>{p.intro.slice(0, 85)}…</p>
-                  <span className="text-sm font-semibold" style={{ color: "var(--color-gold)" }}>View {p.title} →</span>
+                  <span className="text-sm font-semibold" style={{ color: "var(--color-gold-text)" }}>View {p.title} →</span>
                 </div>
               </Link>
             ))}
@@ -345,7 +345,7 @@ export default async function LocationPage({ params }: Props) {
             </p>
             <ul className="space-y-2 mb-6 text-sm" style={{ color: "var(--color-charcoal)" }}>
               {["Low minimum orders for independents", "Free digital proof before every print run", "Consistent branding across multiple sites", "Grease-resistant stocks for real service conditions"].map((t) => (
-                <li key={t} className="flex items-start gap-2"><span style={{ color: "var(--color-gold)" }} aria-hidden>✓</span>{t}</li>
+                <li key={t} className="flex items-start gap-2"><span style={{ color: "var(--color-gold-text)" }} aria-hidden>✓</span>{t}</li>
               ))}
             </ul>
             <Link href="/get-quote" className="btn-primary text-sm">Start Your {loc.city} Quote</Link>
@@ -368,7 +368,7 @@ export default async function LocationPage({ params }: Props) {
                 <Link key={n.slug} href={`/locations/${n.slug}`} className="rounded-xl p-5 border block transition-shadow hover:shadow-lg" style={{ backgroundColor: "white", borderColor: "var(--color-paper)" }}>
                   <h3 className="font-bold text-lg mb-1" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>{n.city}</h3>
                   <p className="text-xs mb-2" style={{ color: "var(--color-text-muted)" }}>{n.county} · {n.nation}</p>
-                  <span className="text-sm font-semibold" style={{ color: "var(--color-gold)" }}>Food papers in {n.city} →</span>
+                  <span className="text-sm font-semibold" style={{ color: "var(--color-gold-text)" }}>Food papers in {n.city} →</span>
                 </Link>
               ))}
             </div>
@@ -389,7 +389,7 @@ export default async function LocationPage({ params }: Props) {
               <details key={faq.q} className="group" style={{ borderBottom: "1px solid var(--color-paper)" }}>
                 <summary className="flex items-center justify-between gap-4 py-4 cursor-pointer font-semibold text-sm list-none" style={{ color: "var(--color-charcoal)" }}>
                   {faq.q}
-                  <span className="transition-transform group-open:rotate-45 flex-shrink-0 text-lg" style={{ color: "var(--color-gold)" }} aria-hidden>+</span>
+                  <span className="transition-transform group-open:rotate-45 flex-shrink-0 text-lg" style={{ color: "var(--color-gold-text)" }} aria-hidden>+</span>
                 </summary>
                 <div className="pb-4 text-sm leading-relaxed" style={{ color: "var(--color-text-muted)" }}>{faq.a}</div>
               </details>

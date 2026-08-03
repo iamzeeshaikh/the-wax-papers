@@ -99,7 +99,7 @@ function renderContent(content: string) {
         <ul key={key++} className="my-4 space-y-2">
           {items.map((item, ii) => (
             <li key={ii} className="flex gap-2.5 text-sm items-start" style={{ color: "var(--color-text)" }}>
-              <svg className="w-4 h-4 mt-0.5 shrink-0" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <svg className="w-4 h-4 mt-0.5 shrink-0" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
               <span dangerouslySetInnerHTML={{ __html: item.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" style="color:var(--color-gold);text-decoration:underline">$1</a>') }} />
@@ -232,7 +232,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <h3 className="text-base font-bold mb-2" style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}>
                       <Link href={`/blog/${p.slug}`} className="hover:underline">{p.title}</Link>
                     </h3>
-                    <Link href={`/blog/${p.slug}`} className="text-xs font-semibold" style={{ color: "var(--color-gold)" }}>Read more →</Link>
+                    <Link href={`/blog/${p.slug}`} className="text-xs font-semibold" style={{ color: "var(--color-gold-text)" }}>Read the full guide →</Link>
                   </div>
                 </article>
               ))}

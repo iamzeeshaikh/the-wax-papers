@@ -56,7 +56,7 @@ export default function QuoteForm() {
           className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5"
           style={{ backgroundColor: "var(--color-gold-pale)" }}
         >
-          <svg className="w-8 h-8" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg className="w-8 h-8" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
@@ -96,13 +96,13 @@ export default function QuoteForm() {
       <div className="grid sm:grid-cols-2 gap-5">
         {/* Name */}
         <div>
-          <label className="form-label" htmlFor="q-name">Full Name <span style={{ color: "var(--color-gold)" }}>*</span></label>
+          <label className="form-label" htmlFor="q-name">Full Name <span style={{ color: "var(--color-gold-text)" }}>*</span></label>
           <input id="q-name" name="name" type="text" required className="form-input" placeholder="Jane Smith" />
         </div>
 
         {/* Email */}
         <div>
-          <label className="form-label" htmlFor="q-email">Email Address <span style={{ color: "var(--color-gold)" }}>*</span></label>
+          <label className="form-label" htmlFor="q-email">Email Address <span style={{ color: "var(--color-gold-text)" }}>*</span></label>
           <input id="q-email" name="email" type="email" required className="form-input" placeholder="jane@yourbusiness.co.uk" />
         </div>
 
@@ -120,7 +120,7 @@ export default function QuoteForm() {
 
         {/* Product type */}
         <div>
-          <label className="form-label" htmlFor="q-product">Product Type <span style={{ color: "var(--color-gold)" }}>*</span></label>
+          <label className="form-label" htmlFor="q-product">Product Type <span style={{ color: "var(--color-gold-text)" }}>*</span></label>
           <select id="q-product" name="productType" required className="form-input">
             <option value="">Select a product…</option>
             {PRODUCT_TYPES.map((p) => (
@@ -131,7 +131,7 @@ export default function QuoteForm() {
 
         {/* Quantity */}
         <div>
-          <label className="form-label" htmlFor="q-qty">Quantity Required <span style={{ color: "var(--color-gold)" }}>*</span></label>
+          <label className="form-label" htmlFor="q-qty">Quantity Required <span style={{ color: "var(--color-gold-text)" }}>*</span></label>
           <input id="q-qty" name="quantity" type="text" required className="form-input" placeholder="e.g. 500 sheets, 10 rolls" />
         </div>
 
@@ -156,7 +156,7 @@ export default function QuoteForm() {
           >
             <input id="q-artwork" name="artwork" type="file" accept=".pdf,.ai,.eps,.png,.jpg" className="hidden" />
             <label htmlFor="q-artwork" className="cursor-pointer">
-              <svg className="w-8 h-8 mx-auto mb-2" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <svg className="w-8 h-8 mx-auto mb-2" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
               </svg>
               <span className="text-sm font-medium" style={{ color: "var(--color-charcoal)" }}>

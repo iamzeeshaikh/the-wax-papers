@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { NAV_PRODUCTS, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Sitemap | The Wax Papers",
+  title: "Sitemap",
   description: "Browse all pages on The Wax Papers website — products, blog, and information pages.",
   alternates: { canonical: `${SITE_URL}/sitemap-page` },
 };
@@ -21,11 +21,11 @@ const MAIN_PAGES = [
 ];
 
 const BLOG_POSTS = [
-  { label: "What Is Custom Wax Paper Used For?", href: "/blog/what-is-custom-wax-paper-used-for" },
+  { label: "What Is Custom Wax Paper Used For", href: "/blog/what-is-custom-wax-paper-used-for" },
   { label: "Wax Paper vs Greaseproof Paper", href: "/blog/wax-paper-vs-greaseproof-paper" },
   { label: "Best Food Wrapping Paper for Cafes and Takeaways", href: "/blog/best-food-wrapping-paper-for-cafes-and-takeaways" },
-  { label: "How Printed Wax Paper Helps Food Brands", href: "/blog/how-printed-wax-paper-helps-food-brands" },
-  { label: "Burger Wrapping Paper Ideas for UK Restaurants", href: "/blog/burger-wrapping-paper-ideas-for-uk-restaurants" },
+  { label: "How Printed Wax Paper Helps Brands", href: "/blog/how-printed-wax-paper-helps-food-brands" },
+  { label: "Burger Wrapping Paper Ideas UK", href: "/blog/burger-wrapping-paper-ideas-for-uk-restaurants" },
   { label: "Wholesale Wax Paper Buying Guide", href: "/blog/wholesale-wax-paper-buying-guide" },
 ];
 

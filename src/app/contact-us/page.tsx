@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import { SITE_URL, SITE_PHONE, SITE_EMAIL, SITE_ADDRESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact Us | The Wax Papers — UK Food Paper Supplier",
+  title: "Contact Us",
   description: "Contact The Wax Papers for custom wax paper, greaseproof paper, and food wrapping paper enquiries. UK-based team — we respond within 24 hours.",
   alternates: { canonical: `${SITE_URL}/contact-us` },
 };
@@ -54,12 +54,12 @@ export default function ContactPage() {
                 { label: "Email", value: SITE_EMAIL, href: `mailto:${SITE_EMAIL}` },
               ].map((c) => (
                 <div key={c.label} className="bg-white rounded-xl p-5" style={{ boxShadow: "0 1px 6px rgba(0,0,0,0.06)" }}>
-                  <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: "var(--color-gold)" }}>{c.label}</p>
+                  <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: "var(--color-gold-text)" }}>{c.label}</p>
                   <a href={c.href} className="text-lg font-semibold hover:underline" style={{ color: "var(--color-charcoal)" }}>{c.value}</a>
                 </div>
               ))}
               <div className="bg-white rounded-xl p-5" style={{ boxShadow: "0 1px 6px rgba(0,0,0,0.06)" }}>
-                <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: "var(--color-gold)" }}>Address</p>
+                <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: "var(--color-gold-text)" }}>Address</p>
                 <address className="not-italic text-base" style={{ color: "var(--color-charcoal)" }}>{SITE_ADDRESS}</address>
               </div>
             </div>

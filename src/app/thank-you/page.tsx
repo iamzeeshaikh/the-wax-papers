@@ -26,7 +26,7 @@ export default function ThankYouPage() {
         >
           <svg
             className="w-8 h-8"
-            style={{ color: "var(--color-gold)" }}
+            style={{ color: "var(--color-gold-text)" }}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -71,11 +71,11 @@ export default function ThankYouPage() {
 
         <p className="text-sm" style={{ color: "var(--color-text-muted)" }}>
           Need it sooner? Call{" "}
-          <a href={`tel:${SITE_PHONE}`} style={{ color: "var(--color-gold)", fontWeight: 600 }}>
+          <a href={`tel:${SITE_PHONE}`} style={{ color: "var(--color-gold-text)", fontWeight: 600 }}>
             {SITE_PHONE}
           </a>{" "}
           or email{" "}
-          <a href={`mailto:${SITE_EMAIL}`} style={{ color: "var(--color-gold)", fontWeight: 600 }}>
+          <a href={`mailto:${SITE_EMAIL}`} style={{ color: "var(--color-gold-text)", fontWeight: 600 }}>
             {SITE_EMAIL}
           </a>
           .

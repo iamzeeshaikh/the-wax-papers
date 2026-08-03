@@ -40,7 +40,7 @@ export default function ContactForm() {
           className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4"
           style={{ backgroundColor: "var(--color-gold-pale)" }}
         >
-          <svg className="w-7 h-7" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg className="w-7 h-7" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>

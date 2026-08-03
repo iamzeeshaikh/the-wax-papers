@@ -14,6 +14,18 @@ export default function GetQuotePage() {
     <>
       <Breadcrumb crumbs={[{ label: "Get a Free Quote" }]} />
       <section className="py-16" style={{ backgroundColor: "var(--color-cream)" }}>
+        <div className="container-wide">
+          <h1
+            className="text-3xl md:text-4xl font-bold mb-3"
+            style={{ fontFamily: "var(--font-heading)", color: "var(--color-charcoal)" }}
+          >
+            Get a Free Quote for Custom Wax Paper
+          </h1>
+          <p className="max-w-2xl mb-10" style={{ color: "var(--color-text-muted)" }}>
+            Tell us the paper type, size and quantity you need and we will come back with pricing
+            within one business day.
+          </p>
+        </div>
         <div className="container-wide grid lg:grid-cols-3 gap-12">
           {/* Form */}
           <div className="lg:col-span-2">
@@ -29,11 +41,11 @@ export default function GetQuotePage() {
               <div className="space-y-4 text-sm" style={{ color: "var(--color-text-muted)" }}>
                 <div>
                   <p className="font-semibold mb-1" style={{ color: "var(--color-charcoal)" }}>Phone</p>
-                  <a href={`tel:${SITE_PHONE}`} className="hover:underline" style={{ color: "var(--color-gold)" }}>{SITE_PHONE}</a>
+                  <a href={`tel:${SITE_PHONE}`} className="hover:underline" style={{ color: "var(--color-gold-text)" }}>{SITE_PHONE}</a>
                 </div>
                 <div>
                   <p className="font-semibold mb-1" style={{ color: "var(--color-charcoal)" }}>Email</p>
-                  <a href={`mailto:${SITE_EMAIL}`} className="hover:underline" style={{ color: "var(--color-gold)" }}>{SITE_EMAIL}</a>
+                  <a href={`mailto:${SITE_EMAIL}`} className="hover:underline" style={{ color: "var(--color-gold-text)" }}>{SITE_EMAIL}</a>
                 </div>
                 <div>
                   <p className="font-semibold mb-1" style={{ color: "var(--color-charcoal)" }}>Address</p>

@@ -6,7 +6,7 @@ import { BLOG_POSTS } from "@/lib/blog";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Blog | Custom Wax Paper & Food Packaging Insights",
+  title: "Food Packaging Insights & Guides",
   description: "Advice, guides, and insights for UK food businesses on custom wax paper, greaseproof paper, and food packaging. From The Wax Papers.",
   alternates: { canonical: `${SITE_URL}/blog` },
 };
@@ -53,9 +53,9 @@ export default function BlogIndexPage() {
                   <Link
                     href={`/blog/${post.slug}`}
                     className="text-sm font-semibold inline-flex items-center gap-1"
-                    style={{ color: "var(--color-gold)" }}
+                    style={{ color: "var(--color-gold-text)" }}
                   >
-                    Read more
+                    Read the full guide
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>

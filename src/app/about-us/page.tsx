@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About Us | The Wax Papers — UK Food Paper Supplier",
+  title: "About Us",
   description: "Learn about The Wax Papers — a UK-based supplier of custom wax paper, greaseproof paper, and branded food wrapping paper based in Warrington.",
   alternates: { canonical: `${SITE_URL}/about-us` },
 };

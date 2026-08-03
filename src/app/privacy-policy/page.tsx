@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL, SITE_NAME, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | The Wax Papers",
+  title: "Privacy Policy",
   description: "Privacy policy for The Wax Papers — how we collect, use, and protect your personal data in line with UK GDPR.",
   alternates: { canonical: `${SITE_URL}/privacy-policy` },
 };
@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
             <p>This website may use essential cookies to ensure basic functionality. No third-party tracking or advertising cookies are used without your consent.</p>
 
             <h2>Contact</h2>
-            <p>For any data-related requests or queries, contact us at <a href={`mailto:${SITE_EMAIL}`} style={{ color: "var(--color-gold)" }}>{SITE_EMAIL}</a>.</p>
+            <p>For any data-related requests or queries, contact us at <a href={`mailto:${SITE_EMAIL}`} style={{ color: "var(--color-gold-text)" }}>{SITE_EMAIL}</a>.</p>
           </div>
         </div>
       </section>

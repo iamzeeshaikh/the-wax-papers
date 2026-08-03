@@ -46,7 +46,7 @@ export default function ProductLeadForm({ productName }: Props) {
           className="w-14 h-14 rounded-full flex items-center justify-center mb-4"
           style={{ backgroundColor: "var(--color-gold-pale)" }}
         >
-          <svg className="w-7 h-7" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg className="w-7 h-7" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
@@ -74,7 +74,7 @@ export default function ProductLeadForm({ productName }: Props) {
       <div className="grid sm:grid-cols-2 gap-4 mb-4">
         <div>
           <label className="form-label" htmlFor="plf-name">
-            Full Name <span style={{ color: "var(--color-gold)" }}>*</span>
+            Full Name <span style={{ color: "var(--color-gold-text)" }}>*</span>
           </label>
           <input
             id="plf-name"
@@ -87,7 +87,7 @@ export default function ProductLeadForm({ productName }: Props) {
         </div>
         <div>
           <label className="form-label" htmlFor="plf-email">
-            Email Address <span style={{ color: "var(--color-gold)" }}>*</span>
+            Email Address <span style={{ color: "var(--color-gold-text)" }}>*</span>
           </label>
           <input
             id="plf-email"
@@ -110,7 +110,7 @@ export default function ProductLeadForm({ productName }: Props) {
         </div>
         <div>
           <label className="form-label" htmlFor="plf-qty">
-            Quantity Required <span style={{ color: "var(--color-gold)" }}>*</span>
+            Quantity Required <span style={{ color: "var(--color-gold-text)" }}>*</span>
           </label>
           <input
             id="plf-qty"
@@ -141,7 +141,7 @@ export default function ProductLeadForm({ productName }: Props) {
           className="flex items-center gap-3 px-4 py-3 rounded-lg cursor-pointer text-sm transition-colors"
           style={{ border: "1.5px dashed var(--color-paper)", backgroundColor: "white" }}
         >
-          <svg className="w-4 h-4 shrink-0" style={{ color: "var(--color-gold)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden>
+          <svg className="w-4 h-4 shrink-0" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden>
             <path strokeLinecap="round" strokeLinejoin="round" d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" />
           </svg>
           <span className="truncate" style={{ color: artworkName ? "var(--color-text)" : "var(--color-text-muted)" }}>

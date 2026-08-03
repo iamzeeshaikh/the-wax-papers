@@ -53,7 +53,7 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-shadow duration-200 ${
+      className={`on-dark sticky top-0 z-50 w-full transition-shadow duration-200 ${
         scrolled ? "shadow-md" : ""
       }`}
       style={{ backgroundColor: "var(--color-charcoal)" }}
@@ -92,7 +92,7 @@ export default function Header() {
           <div className="flex flex-col">
             <span
               className="text-xl font-bold tracking-tight"
-              style={{ fontFamily: "var(--font-heading)", color: "var(--color-gold)" }}
+              style={{ fontFamily: "var(--font-heading)", color: "var(--color-gold-text)" }}
             >
               The Wax Papers
             </span>
@@ -236,7 +236,7 @@ export default function Header() {
                 <div className="grid grid-cols-4 gap-3 p-4">
                   {LOCATIONS_BY_NATION.map((group) => (
                     <div key={group.nation}>
-                      <p className="px-2 pb-1.5 mb-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--color-gold)", borderBottom: "1px solid var(--color-paper)" }}>
+                      <p className="px-2 pb-1.5 mb-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--color-gold-text)", borderBottom: "1px solid var(--color-paper)" }}>
                         {group.nation}
                       </p>
                       <ul className="space-y-0.5">
@@ -338,7 +338,7 @@ export default function Header() {
             <div className="pt-2">
               <p
                 className="px-4 pb-2 text-xs font-semibold uppercase tracking-widest"
-                style={{ color: "var(--color-gold)" }}
+                style={{ color: "var(--color-gold-text)" }}
               >
                 Products
               </p>
@@ -356,7 +356,7 @@ export default function Header() {
 
             {/* Mobile locations list */}
             <div className="pt-2">
-              <p className="px-4 pb-2 text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--color-gold)" }}>
+              <p className="px-4 pb-2 text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--color-gold-text)" }}>
                 Locations
               </p>
               <Link

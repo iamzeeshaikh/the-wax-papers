@@ -35,7 +35,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer aria-label="Site footer" style={{ backgroundColor: "#38322c" }}>
+    <footer aria-label="Site footer" className="on-dark" style={{ backgroundColor: "#38322c" }}>
 
       {/* Main grid */}
       <div className="py-10" style={{ borderBottom: "1px solid rgba(255,255,255,0.07)" }}>
@@ -52,15 +52,15 @@ export default function Footer() {
               />
               <span
                 className="text-lg font-bold"
-                style={{ fontFamily: "var(--font-heading)", color: "var(--color-gold)" }}
+                style={{ fontFamily: "var(--font-heading)", color: "var(--color-gold-text)" }}
               >
                 The Wax Papers
               </span>
             </Link>
-            <p className="text-xs leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.62)" }}>
+            <p className="text-xs leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.72)" }}>
               UK-based supplier of custom wax paper, printed greaseproof paper, and branded food wrapping paper for businesses of all sizes.
             </p>
-            <address className="not-italic space-y-1.5 text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
+            <address className="not-italic space-y-1.5 text-xs" style={{ color: "rgba(255,255,255,0.66)" }}>
               <p>{SITE_ADDRESS}</p>
               <p>
                 <a href={`tel:${SITE_PHONE}`} className="footer-link">{SITE_PHONE}</a>
@@ -75,7 +75,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-xs font-semibold uppercase tracking-widest mb-3"
-              style={{ color: "var(--color-gold)" }}
+              style={{ color: "var(--color-gold-text)" }}
             >
               Products
             </h3>
@@ -112,7 +112,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-xs font-semibold uppercase tracking-widest mb-3"
-              style={{ color: "var(--color-gold)" }}
+              style={{ color: "var(--color-gold-text)" }}
             >
               Quick Links
             </h3>
@@ -143,16 +143,16 @@ export default function Footer() {
           <div>
             <h3
               className="text-xs font-semibold uppercase tracking-widest mb-3"
-              style={{ color: "var(--color-gold)" }}
+              style={{ color: "var(--color-gold-text)" }}
             >
               Why Choose Us
             </h3>
             <ul className="space-y-2 mb-5">
               {WHY_ITEMS.map((item) => (
-                <li key={item} className="flex items-start gap-1.5 text-xs" style={{ color: "rgba(255,255,255,0.62)" }}>
+                <li key={item} className="flex items-start gap-1.5 text-xs" style={{ color: "rgba(255,255,255,0.72)" }}>
                   <svg
                     className="w-3.5 h-3.5 mt-px shrink-0"
-                    style={{ color: "var(--color-gold)" }}
+                    style={{ color: "var(--color-gold-text)" }}
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -175,7 +175,7 @@ export default function Footer() {
       <div className="py-3.5">
         <div
           className="container-wide flex flex-col sm:flex-row items-center justify-between gap-2 text-xs"
-          style={{ color: "rgba(255,255,255,0.38)" }}
+          style={{ color: "rgba(255,255,255,0.66)" }}
         >
           <p>&copy; {year} {SITE_NAME}. All rights reserved.</p>
           <p>Registered in England &amp; Wales &middot; Warrington, UK</p>

@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | The Wax Papers",
+  title: "Terms & Conditions",
   description: "Terms and conditions for purchasing custom wax paper and food wrapping paper from The Wax Papers, UK.",
   alternates: { canonical: `${SITE_URL}/terms-and-conditions` },
 };
@@ -51,7 +51,7 @@ export default function TermsPage() {
             <p>These terms are governed by English law. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
 
             <h2>11. Contact</h2>
-            <p>For any queries regarding these terms, contact us at <a href={`mailto:${SITE_EMAIL}`} style={{ color: "var(--color-gold)" }}>{SITE_EMAIL}</a>.</p>
+            <p>For any queries regarding these terms, contact us at <a href={`mailto:${SITE_EMAIL}`} style={{ color: "var(--color-gold-text)" }}>{SITE_EMAIL}</a>.</p>
           </div>
         </div>
       </section>
