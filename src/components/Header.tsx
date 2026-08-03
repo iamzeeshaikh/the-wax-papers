@@ -96,7 +96,7 @@ export default function Header() {
             >
               The Wax Papers
             </span>
-            <span className="text-[10px] tracking-widest uppercase text-white/45 mt-0.5">
+            <span className="text-[10px] tracking-widest uppercase text-white/70 mt-0.5">
               Custom Food Paper · UK
             </span>
           </div>

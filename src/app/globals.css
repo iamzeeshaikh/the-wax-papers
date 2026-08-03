@@ -384,7 +384,8 @@
   }
 
   .footer-link-dim {
-    color: rgba(255, 255, 255, 0.4);
+    /* 0.4 gave 3.4:1 on the footer panel; 0.66 clears AA at this size. */
+    color: rgba(255, 255, 255, 0.66);
     transition: color 0.15s;
   }
   .footer-link-dim:hover {
@@ -400,7 +401,7 @@
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     background-color: var(--color-gold);
-    color: white;
+    color: var(--color-charcoal);
     transition: background-color 0.15s;
   }
   .footer-cta-btn:hover {

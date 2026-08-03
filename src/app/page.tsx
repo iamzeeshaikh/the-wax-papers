@@ -611,7 +611,7 @@ export default function HomePage() {
                   className="w-14 h-14 rounded-full flex items-center justify-center text-lg font-bold mb-5 relative z-10"
                   style={{
                     backgroundColor: "var(--color-gold)",
-                    color: "white",
+                    color: "var(--color-charcoal)",
                     fontFamily: "var(--font-heading)",
                   }}
                 >
