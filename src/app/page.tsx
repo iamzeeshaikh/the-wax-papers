@@ -74,7 +74,7 @@ const PRODUCT_GRID = [
   {
     label: "Food Wrapping Paper",
     href: "/food-wrapping-paper",
-    img: "/images/food-paper/custom food paper-TCB-1.png",
+    img: "/images/food-paper/custom food paper-PBEE-1.png",
     alt: "Custom food wrapping paper",
   },
   {
