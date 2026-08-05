@@ -89,7 +89,7 @@ export async function POST(req: NextRequest) {
         <div style="font-family:sans-serif;max-width:600px;margin:0 auto;background:#fff;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
           <div style="background:#4a2c15;padding:24px 32px;">
             <h1 style="color:#c8963a;margin:0;font-size:20px;">New Quote Request</h1>
-            <p style="color:rgba(255,255,255,0.7);margin:4px 0 0;font-size:13px;">The Wax Papers — thewaxpapers.co.uk</p>
+            <p style="color:rgba(255,255,255,0.7);margin:4px 0 0;font-size:13px;">The Wax Papers UK — thewaxpapers.co.uk</p>
           </div>
           <div style="padding:32px;">
             <table style="width:100%;border-collapse:collapse;font-size:14px;">

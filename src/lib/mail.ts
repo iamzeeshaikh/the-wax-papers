@@ -40,9 +40,11 @@ export function getMailRecipient() {
   return all.join(", ");
 }
 
-/** From header, e.g. `"The Wax Papers" <info@thewaxpapers.co.uk>`. */
+/** From header, e.g. `"The Wax Papers UK" <info@thewaxpapers.co.uk>`. */
 export function getMailFrom() {
-  const name = process.env.SMTP_FROM_NAME?.trim() || SITE_NAME;
+  // Mail identity carries the UK suffix (owner's request) even though the
+  // on-site brand is plain SITE_NAME; env can still override.
+  const name = process.env.SMTP_FROM_NAME?.trim() || `${SITE_NAME} UK`;
   const email = process.env.SMTP_FROM_EMAIL?.trim() || process.env.SMTP_USER?.trim() || "";
   return email.includes("<") ? email : `"${name}" <${email}>`;
 }
