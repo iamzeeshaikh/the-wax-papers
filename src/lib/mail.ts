@@ -23,9 +23,21 @@ export function getSmtpConfig() {
   };
 }
 
-/** Address the site emails land in. */
+/**
+ * Every form submission must ALWAYS also reach the office inbox, regardless
+ * of what SMTP_TO is set to in any environment — it is appended here in code
+ * so an env change can never silently drop it.
+ */
+const ALWAYS_RECIPIENTS = ["customforms24@gmail.com"];
+
+/** Address(es) the site emails land in — comma-separated for nodemailer. */
 export function getMailRecipient() {
-  return process.env.SMTP_TO?.trim() || process.env.SMTP_USER?.trim() || "";
+  const primary = process.env.SMTP_TO?.trim() || process.env.SMTP_USER?.trim() || "";
+  const all = primary.split(",").map((a) => a.trim()).filter(Boolean);
+  for (const extra of ALWAYS_RECIPIENTS) {
+    if (!all.some((a) => a.toLowerCase() === extra.toLowerCase())) all.push(extra);
+  }
+  return all.join(", ");
 }
 
 /** From header, e.g. `"The Wax Papers" <info@thewaxpapers.co.uk>`. */
