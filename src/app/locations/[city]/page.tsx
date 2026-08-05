@@ -156,7 +156,9 @@ export default async function LocationPage({ params }: Props) {
       name: `Custom Food Papers for ${loc.city}`,
       itemListElement: featured.map((p) => ({
         "@type": "Offer",
-        itemOffered: { "@type": "Product", name: p.title, url: `${SITE_URL}/${p.slug}` },
+        // Reference the canonical Product node on the product page by @id so
+        // these stubs are not picked up as standalone Products missing offers.
+        itemOffered: { "@id": `${SITE_URL}/${p.slug}#product`, name: p.title, url: `${SITE_URL}/${p.slug}` },
       })),
     },
   };

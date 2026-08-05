@@ -161,13 +161,21 @@ export default async function ProductPage({ params }: Props) {
     1,
   );
 
+  const productUrl = `${SITE_URL}/${slug}`;
+  const productImages = (product.images.length > 0 ? product.images : [product.image]).map(
+    (img) => `${SITE_URL}${img}`,
+  );
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": `${productUrl}#product`,
     name: product.title,
     description: product.intro,
-    image: `${SITE_URL}${product.image}`,
+    image: productImages,
+    sku: slug,
     brand: { "@type": "Brand", name: "The Wax Papers" },
+    url: productUrl,
+    // Matches the "4.8/5 · 142 reviews" badge shown in the product hero.
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.8",
@@ -177,10 +185,29 @@ export default async function ProductPage({ params }: Props) {
     },
     offers: {
       "@type": "Offer",
-      price: "0.80",
+      url: productUrl,
+      // Per-sheet "from" price — lowest configurator combination
+      // (greaseproof base £0.08 with plain/no-print adjustment −£0.02).
+      price: "0.06",
       priceCurrency: "GBP",
+      priceValidUntil: "2027-08-04",
       availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
       seller: { "@type": "Organization", name: "The Wax Papers" },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingDestination: { "@type": "DefinedRegion", addressCountry: "GB" },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: { "@type": "QuantitativeValue", minValue: 7, maxValue: 10, unitCode: "DAY" },
+          transitTime: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3, unitCode: "DAY" },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: "GB",
+        returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+      },
     },
   };
 
