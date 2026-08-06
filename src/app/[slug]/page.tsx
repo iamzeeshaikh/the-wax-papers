@@ -6,6 +6,7 @@ import { getProduct, getAllSlugs } from "@/lib/products";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import ProductLeadForm from "@/components/ProductLeadForm";
+import ProductGallery from "@/components/ProductGallery";
 import PaperConfigurator from "@/components/PaperConfigurator";
 import { SITE_URL } from "@/lib/constants";
 
@@ -175,14 +176,8 @@ export default async function ProductPage({ params }: Props) {
     sku: slug,
     brand: { "@type": "Brand", name: "The Wax Papers" },
     url: productUrl,
-    // Matches the "4.8/5 · 142 reviews" badge shown in the product hero.
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "142",
-      bestRating: "5",
-      worstRating: "1",
-    },
+    // No aggregateRating: the site does not render individual named customer
+    // reviews, so a rating cannot be claimed in structured data.
     offers: {
       "@type": "Offer",
       url: productUrl,
@@ -199,8 +194,9 @@ export default async function ProductPage({ params }: Props) {
         shippingDestination: { "@type": "DefinedRegion", addressCountry: "GB" },
         deliveryTime: {
           "@type": "ShippingDeliveryTime",
+          // "7–10 Day Dispatch" / "7–10 working day turnaround" is the only
+          // delivery timing the site publishes, so only handlingTime is declared.
           handlingTime: { "@type": "QuantitativeValue", minValue: 7, maxValue: 10, unitCode: "DAY" },
-          transitTime: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3, unitCode: "DAY" },
         },
       },
       hasMerchantReturnPolicy: {
@@ -229,6 +225,9 @@ export default async function ProductPage({ params }: Props) {
 
   const img2 = product.images[1] ?? product.image;
   const img3 = product.images[2] ?? product.image;
+
+  // Unique gallery images for the hero (main image first).
+  const galleryImages = Array.from(new Set([product.image, ...product.images]));
 
   return (
     <>
@@ -299,19 +298,8 @@ export default async function ProductPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Right: hero image */}
-          <div className="relative overflow-hidden rounded-2xl group" style={{ boxShadow: "0 8px 40px rgba(0,0,0,0.13)" }}>
-            <Image
-              src={product.image}
-              alt={product.imageAlt}
-              width={760}
-              height={560}
-              className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              style={{ height: "clamp(320px, 42vw, 520px)" }}
-              priority
-            />
-            <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(to top, rgba(45,42,38,0.12) 0%, transparent 60%)" }} />
-          </div>
+          {/* Right: hero image gallery (click a thumbnail to swap) */}
+          <ProductGallery images={galleryImages} alt={product.imageAlt} title={product.title} />
         </div>
       </section>
 
