@@ -1,8 +1,9 @@
 "use client";
 
-import { SITE_NAME, SITE_PHONE, SITE_URL } from "@/lib/constants";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
-const phone = SITE_PHONE.replace(/\D/g, "");
+// WhatsApp uses the shared +1 503-358-0443 line, not the UK display number.
+const phone = "15033580443";
 const message = `Hi ${SITE_NAME}! I need more info about ${SITE_NAME} ${SITE_URL}/`;
 const href = `https://api.whatsapp.com/send/?phone=${phone}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
 
