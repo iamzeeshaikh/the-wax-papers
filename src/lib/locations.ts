@@ -477,18 +477,20 @@ export const UK_LINK_POOL = [
   "butcher-paper", "bakery-wrapping-paper", "cheese-wrapping-paper", "printed-greaseproof-paper",
   "custom-burger-paper", "custom-deli-paper",
 ];
+// Every variant is 3-8 words: a two-word anchor like "deli paper" names the
+// product but does not tell the reader what the destination page holds.
 export const UK_ANCHORS: Record<string, string[]> = {
-  "greaseproof-paper": ["greaseproof paper", "grease-tight greaseproof sheets", "greaseproof liners"],
+  "greaseproof-paper": ["greaseproof paper for food service", "grease-tight greaseproof sheets", "greaseproof liners for counters"],
   "burger-wrapping-paper": ["burger wrapping paper", "branded burger wraps"],
-  "deli-paper": ["deli paper", "deli counter sheets"],
+  "deli-paper": ["deli paper for counter service", "deli counter sheets"],
   "food-wrapping-paper": ["food wrapping paper", "printed food paper"],
   "custom-food-paper": ["custom food paper", "branded food sheets"],
-  "sandwich-wrapping-paper": ["sandwich wrapping paper", "sandwich wrap"],
+  "sandwich-wrapping-paper": ["sandwich wrapping paper", "custom printed sandwich wrap"],
   "kraft-wax-paper": ["kraft wax paper", "natural kraft paper"],
   "eco-friendly-wax-paper": ["eco-friendly wax paper", "recyclable wax paper"],
-  "butcher-paper": ["butcher paper", "butcher wrap"],
-  "bakery-wrapping-paper": ["bakery wrapping paper", "bakery paper"],
-  "cheese-wrapping-paper": ["cheese wrapping paper", "cheese paper"],
+  "butcher-paper": ["butcher paper for meat counters", "butcher wrap for fresh meat"],
+  "bakery-wrapping-paper": ["bakery wrapping paper", "greaseproof bakery paper"],
+  "cheese-wrapping-paper": ["cheese wrapping paper", "breathable cheese wrap sheets"],
   "printed-greaseproof-paper": ["printed greaseproof paper"],
   "custom-burger-paper": ["custom burger paper"],
   "custom-deli-paper": ["custom deli paper"],

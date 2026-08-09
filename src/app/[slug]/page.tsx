@@ -33,19 +33,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// Internal link map for contextual linking within body copy
+// Internal link map for contextual linking within body copy.
+//
+// Every phrase is three words or more on purpose. Two-word keys such as
+// "deli paper" used to be here, and because they occur constantly in the copy
+// they produced anchors below the 3-8 word rule — and, on the greaseproof and
+// deli pages, four links to the same URL inside a single paragraph.
 const INTERNAL_LINKS: Record<string, string> = {
   "custom wax paper": "/custom-wax-paper",
-  "greaseproof paper": "/greaseproof-paper",
   "printed greaseproof paper": "/printed-greaseproof-paper",
   "branded greaseproof paper": "/branded-greaseproof-paper",
   "burger wrapping paper": "/burger-wrapping-paper",
   "custom burger paper": "/custom-burger-paper",
   "sandwich wrapping paper": "/sandwich-wrapping-paper",
   "custom sandwich paper": "/custom-sandwich-paper",
-  "deli paper": "/deli-paper",
   "custom deli paper": "/custom-deli-paper",
-  "butcher paper": "/butcher-paper",
   "cheese wrapping paper": "/cheese-wrapping-paper",
   "kraft wax paper": "/kraft-wax-paper",
   "wax paper sheets": "/wax-paper-sheets",
@@ -56,53 +58,47 @@ const INTERNAL_LINKS: Record<string, string> = {
   "wholesale wax paper": "/wholesale-wax-paper",
 };
 
-function addInternalLinks(text: string, currentSlug: string): React.ReactNode[] {
-  const words = text;
-  const parts: React.ReactNode[] = [];
-  let remaining = words;
-  let keyCount = 0;
-
-  // Sort by length descending so longer phrases match first
+/**
+ * Link at most ONE phrase in a block of body copy.
+ *
+ * Each call renders into a single <p>, so one link per call is one link per
+ * paragraph. `used` is shared across the calls on a page so the same
+ * destination is never linked twice.
+ */
+function addInternalLinks(
+  text: string,
+  currentSlug: string,
+  used: Set<string>
+): React.ReactNode[] {
+  // Longest phrase first, so "custom deli paper" wins over a shorter overlap.
   const phrases = Object.keys(INTERNAL_LINKS).sort((a, b) => b.length - a.length);
+  const lower = text.toLowerCase();
 
-  while (remaining.length > 0) {
-    let matched = false;
-    const lowerRemaining = remaining.toLowerCase();
-
-    for (const phrase of phrases) {
-      const href = INTERNAL_LINKS[phrase];
-      // Skip linking to the current page
-      if (href === `/${currentSlug}`) continue;
-
-      const idx = lowerRemaining.indexOf(phrase);
-      if (idx !== -1) {
-        if (idx > 0) {
-          parts.push(remaining.slice(0, idx));
-        }
-        const exactText = remaining.slice(idx, idx + phrase.length);
-        parts.push(
-          <Link
-            key={`link-${keyCount++}`}
-            href={href}
-            className="underline decoration-dotted underline-offset-2"
-            style={{ color: "var(--color-brown)" }}
-          >
-            {exactText}
-          </Link>
-        );
-        remaining = remaining.slice(idx + phrase.length);
-        matched = true;
-        break;
-      }
-    }
-
-    if (!matched) {
-      parts.push(remaining);
-      remaining = "";
+  let best: { idx: number; phrase: string; href: string } | null = null;
+  for (const phrase of phrases) {
+    const href = INTERNAL_LINKS[phrase];
+    if (href === `/${currentSlug}` || used.has(href)) continue;
+    const idx = lower.indexOf(phrase);
+    if (idx !== -1 && (best === null || idx < best.idx)) {
+      best = { idx, phrase, href };
     }
   }
 
-  return parts;
+  if (!best) return [text];
+
+  used.add(best.href);
+  return [
+    text.slice(0, best.idx),
+    <Link
+      key={`link-${best.href}`}
+      href={best.href}
+      className="underline decoration-dotted underline-offset-2"
+      style={{ color: "var(--color-brown)" }}
+    >
+      {text.slice(best.idx, best.idx + best.phrase.length)}
+    </Link>,
+    text.slice(best.idx + best.phrase.length),
+  ];
 }
 
 const TRUST_BADGES = [
@@ -126,6 +122,9 @@ export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) notFound();
+
+  // Shared across both body sections so a destination is linked once per page.
+  const linkedDestinations = new Set<string>();
 
   // Vary the generic section headings per product (name plus a slug-seeded
   // phrasing) so they are not identical across every product page.
@@ -393,7 +392,7 @@ export default async function ProductPage({ params }: Props) {
               {product.seoSection1.heading}
             </h2>
             <p className="mb-6 leading-relaxed" style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem" }}>
-              {addInternalLinks(product.seoSection1.body, slug)}
+              {addInternalLinks(product.seoSection1.body, slug, linkedDestinations)}
             </p>
             <ul className="space-y-2.5">
               {product.seoSection1.points.map((pt) => (
@@ -468,7 +467,7 @@ export default async function ProductPage({ params }: Props) {
               {product.seoSection2.heading}
             </h2>
             <p className="mb-6 leading-relaxed" style={{ color: "var(--color-text-muted)", fontSize: "0.9375rem" }}>
-              {addInternalLinks(product.seoSection2.body, slug)}
+              {addInternalLinks(product.seoSection2.body, slug, linkedDestinations)}
             </p>
             <ul className="space-y-2.5">
               {product.seoSection2.points.map((pt) => (

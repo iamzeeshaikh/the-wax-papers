@@ -45,7 +45,7 @@ Restaurant-printed [custom burger paper](/custom-burger-paper) has become a stan
 
 ### Deli Counter Lining and Wrapping
 
-Delis use wax paper in two ways — as interleaved sheets between sliced meats and cheeses to prevent sticking, and as wrapping material at the counter. Printed [deli paper](/deli-paper) with the shop name reinforces the local, artisan feel that many deli customers value.
+Delis use wax paper in two ways — as interleaved sheets between sliced meats and cheeses to prevent sticking, and as wrapping material at the counter. Printed [deli paper for counter service](/deli-paper) with the shop name reinforces the local, artisan feel that many deli customers value.
 
 ### Bakery Tray and Basket Lining
 
@@ -115,7 +115,7 @@ Wax paper is a paper product coated on one or both sides with a thin layer of fo
 
 ## What Is Greaseproof Paper?
 
-[Greaseproof paper](/greaseproof-paper) is made from a densely calendered paper that resists grease through its structure rather than a coating. The fibres are pressed tightly together during manufacture, leaving very little space for grease molecules to pass through.
+[Greaseproof paper for food service](/greaseproof-paper) is made from a densely calendered paper that resists grease through its structure rather than a coating. The fibres are pressed tightly together during manufacture, leaving very little space for grease molecules to pass through.
 
 **Advantages of greaseproof paper:**
 - Oven-safe at moderate temperatures
@@ -161,7 +161,7 @@ Uncoated greaseproof paper is generally recyclable, giving it an environmental a
 **Can both types be custom printed?**
 Yes. Both wax paper and greaseproof paper can be printed with logos and full-colour designs using food-safe inks.
 
-To discuss which paper type is right for your business, [contact our team](/contact-us) or [request a free quote](/get-quote).
+To discuss which paper type is right for your business, [request a free quote](/get-quote) and our team will advise on the right stock.
     `,
   },
   {
@@ -183,7 +183,7 @@ For UK cafés and takeaways, packaging is often the only branded touchpoint in t
 
 ## Wax Paper — The Most Versatile Option
 
-[Wax paper](/custom-wax-paper) is the most popular choice for cafés and takeaways that serve a wide variety of foods. Its grease and moisture resistance handles most food service conditions, and it is available in all standard sizes.
+[Custom printed wax paper](/custom-wax-paper) is the most popular choice for cafés and takeaways that serve a wide variety of foods. Its grease and moisture resistance handles most food service conditions, and it is available in all standard sizes.
 
 **Best for:** Sandwiches, wraps, baguettes, pastries, doughnuts, fried chicken, fish and chips, burgers.
 
@@ -193,7 +193,7 @@ For UK cafés and takeaways, packaging is often the only branded touchpoint in t
 
 ## Greaseproof Paper — The Bakery Standard
 
-[Greaseproof paper](/greaseproof-paper) is the traditional choice for UK bakeries and fish and chip shops. It is oven-safe at moderate temperatures and generally recyclable, which appeals to sustainability-conscious businesses.
+[Greaseproof paper for food service](/greaseproof-paper) is the traditional choice for UK bakeries and fish and chip shops. It is oven-safe at moderate temperatures and generally recyclable, which appeals to sustainability-conscious businesses.
 
 **Best for:** Baked goods, pastries, fish and chips, basket liners, tray lining.
 
@@ -203,7 +203,7 @@ For UK cafés and takeaways, packaging is often the only branded touchpoint in t
 
 ## Kraft Paper — For Artisan Brands
 
-Natural brown [kraft paper](/kraft-wax-paper) has a warm, artisan aesthetic that suits farm shops, independent bakeries, and street food businesses that want to signal quality and sustainability.
+Natural brown [natural kraft wax paper](/kraft-wax-paper) has a warm, artisan aesthetic that suits farm shops, independent bakeries, and street food businesses that want to signal quality and sustainability.
 
 **Best for:** Bread and loaf wrapping, artisan sandwich wrapping, deli and farm shop use.
 
@@ -215,7 +215,7 @@ Natural brown [kraft paper](/kraft-wax-paper) has a warm, artisan aesthetic that
 
 For sandwich shops and cafés, [custom sandwich paper](/custom-sandwich-paper) comes in formats specifically designed for wrapping filled rolls, baguettes, and wraps. Larger sheets wrap baguettes cleanly; smaller squares suit rolls and hot wraps.
 
-The [deli paper](/deli-paper) format — thinner and more flexible — is popular for interleaving sliced meats at the counter and wrapping lighter sandwiches.
+The [deli paper for counter service](/deli-paper) format — thinner and more flexible — is popular for interleaving sliced meats at the counter and wrapping lighter sandwiches.
 
 ## Questions to Ask When Choosing
 
@@ -229,7 +229,7 @@ The [deli paper](/deli-paper) format — thinner and more flexible — is popula
 
 The best approach is to request a sample pack before placing a full order. We supply material samples so you can assess weight, texture, and print quality in your own operation.
 
-[Contact us](/contact-us) or [request a free quote](/get-quote) to discuss your requirements.
+You can [contact our UK paper team](/contact-us) to talk through your requirements and get a quote.
 
 ## Frequently Asked Questions
 
@@ -268,7 +268,7 @@ When every serve is wrapped in the same branded paper, your business looks organ
 
 ### Generates Organic Social Sharing
 
-Customers photograph food. A well-branded wrap with a striking logo or interesting design gets noticed and shared. [Custom burger paper](/custom-burger-paper) and [branded deli paper](/custom-deli-paper) regularly appear in customer social media posts, extending your reach without any paid promotion.
+Customers photograph food. A well-branded wrap with a striking logo or interesting design gets noticed and shared. [Custom burger paper printed with your logo](/custom-burger-paper) regularly appears in customer social media posts, extending your reach without any paid promotion.
 
 ### Works During Delivery
 
@@ -276,7 +276,7 @@ For businesses that do delivery, the moment a customer opens their order at home
 
 ### Signals Quality at the Counter
 
-At a busy food counter, customers make quick judgements. Branded packaging — even something as simple as your name printed on [greaseproof paper](/greaseproof-paper) — signals that you run a serious food business, not an afterthought.
+At a busy food counter, customers make quick judgements. Branded packaging — even something as simple as your name printed on [greaseproof paper for food service](/greaseproof-paper) — signals that you run a serious food business, not an afterthought.
 
 ## What Makes Printed Wax Paper Effective?
 
@@ -299,7 +299,7 @@ And unlike a social ad that disappears after seconds, a branded wrap is held, ha
 
 1. **Choose your paper type** — wax, greaseproof, or kraft
 2. **Prepare your artwork** — PDF, AI, or EPS preferred
-3. **Request a free quote** — [get-quote](/get-quote)
+3. **Request a free quote** — [request a free quote](/get-quote)
 4. **Approve a free digital proof**
 5. **Receive your order in 7–10 working days**
 
@@ -364,7 +364,7 @@ Think about what the paper will look like in a phone photo, not just in your han
 
 **Size:** Standard burger paper is 300×300mm, 350×350mm, or 400×400mm. Gourmet and double-stack burgers may need the larger size.
 
-**Paper type:** Wax-coated paper provides the best grease resistance for burgers. [Greaseproof paper](/greaseproof-paper) is a good alternative for lighter burgers.
+**Paper type:** Wax-coated paper provides the best grease resistance for burgers. [Greaseproof paper for food service](/greaseproof-paper) is a good alternative for lighter burgers.
 
 **Finish:** White gives the cleanest print results. Kraft gives an artisan feel. Both work.
 
@@ -377,7 +377,7 @@ The process is straightforward:
 3. Approve a free digital proof
 4. Receive your order in 7–10 working days
 
-[Request a free quote](/get-quote) or [view our custom burger paper options](/custom-burger-paper).
+[View our custom burger paper options](/custom-burger-paper) to compare stocks, sizes, and print finishes.
 
 ## Frequently Asked Questions
 
@@ -422,7 +422,9 @@ Before approaching any supplier, calculate your approximate monthly or quarterly
 
 ### 2. Decide on Printed or Plain
 
-Plain [wholesale wax paper](/wholesale-wax-paper) is less expensive and faster to supply. [Custom printed wax paper](/custom-printed-wax-paper) in wholesale quantities brings down the per-unit cost significantly compared to smaller runs, but requires an artwork approval stage.
+Plain [wholesale wax paper](/wholesale-wax-paper) is less expensive and faster to supply.
+
+[Custom printed wax paper](/custom-printed-wax-paper) in wholesale quantities brings down the per-unit cost significantly compared to smaller runs, but requires an artwork approval stage.
 
 If you are buying wholesale for a branded business, printed wholesale paper is almost always worth the investment at high volumes.
 
@@ -439,7 +441,9 @@ Most wholesale buyers stock one primary type and supplement with others as neede
 
 ### 4. Consider Sheets vs Rolls
 
-[Wax paper sheets](/wax-paper-sheets) are more convenient for manual wrapping at counters. [Wax paper rolls](/wax-paper-rolls) are more economical per square metre for high-volume wrapping stations and production lines.
+[Wax paper sheets for counter wrapping](/wax-paper-sheets) are more convenient for manual wrapping at counters.
+
+[Wax paper rolls for high-volume use](/wax-paper-rolls) are more economical per square metre for busy wrapping stations and production lines.
 
 For large-scale operations, rolls are typically the better choice. For counter-based businesses, sheets or interleaved formats may be more practical.
 
@@ -478,7 +482,7 @@ As a general guide, doubling your order quantity typically reduces the per-unit 
 4. **Confirm the order** — production begins
 5. **Receive delivery** — large orders are palletised and delivered to your premises
 
-[Request a wholesale quote](/get-quote) or [view our wholesale wax paper page](/wholesale-wax-paper).
+[Request a wholesale quote](/get-quote) with your volumes and we will price the run.
 
 ## Frequently Asked Questions
 
