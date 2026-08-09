@@ -48,6 +48,13 @@ const INTERNAL_LINKS: Record<string, string> = {
   "sandwich wrapping paper": "/sandwich-wrapping-paper",
   "custom sandwich paper": "/custom-sandwich-paper",
   "custom deli paper": "/custom-deli-paper",
+  "printed deli paper": "/custom-deli-paper",
+  // Butcher and deli copy usually says the bare product name, which cannot be
+  // linked under the anchor rule. These qualified forms do occur and read as
+  // proper descriptive anchors.
+  "printed butcher paper": "/butcher-paper",
+  "pink butcher paper": "/butcher-paper",
+  "unwaxed butcher paper": "/butcher-paper",
   "cheese wrapping paper": "/cheese-wrapping-paper",
   "kraft wax paper": "/kraft-wax-paper",
   "wax paper sheets": "/wax-paper-sheets",
