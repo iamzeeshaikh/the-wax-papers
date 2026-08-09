@@ -9,6 +9,14 @@ export const metadata: Metadata = {
     "UK supplier of custom wax paper, printed greaseproof paper, and branded food wrapping paper. Low minimum orders, fast turnaround, food-safe materials.",
   alternates: { canonical: SITE_URL },
   openGraph: {
+      images: [
+        {
+          url: `${SITE_URL}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: `${SITE_NAME} — custom wax paper packaging in the UK`,
+        },
+      ],
     title: `Custom Wax Paper Packaging UK | ${SITE_NAME}`,
     description:
       "UK supplier of custom wax paper, printed greaseproof paper, and branded food wrapping paper. Low minimum orders, fast turnaround, food-safe materials.",

@@ -6,7 +6,7 @@ import { locations, getLocationBySlug, getNearbyLocations, ukLinkTargets, ukAnch
 import { getProduct } from "@/lib/products";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 type Props = { params: Promise<{ city: string }> };
 
@@ -23,6 +23,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: loc.metaDescription,
     alternates: { canonical: `${SITE_URL}/locations/${loc.slug}` },
     openGraph: {
+      images: [
+        {
+          url: `${SITE_URL}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: `${SITE_NAME} — custom wax paper packaging in the UK`,
+        },
+      ],
       title: loc.metaTitle,
       description: loc.metaDescription,
       url: `${SITE_URL}/locations/${loc.slug}`,

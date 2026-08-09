@@ -956,9 +956,9 @@ export const PRODUCTS: Product[] = [
   {
     slug: "food-wrapping-paper",
     title: "Food Wrapping Paper",
-    metaTitle: "Printed Food Wrapping Paper UK",
+    metaTitle: "Food Wrapping Paper UK — Wax & Greaseproof",
     metaDesc: "Custom food wrapping paper for UK food businesses. Printed or plain wax paper, greaseproof, and kraft paper for wrapping any food product. Fast turnaround.",
-    h1: "Custom Food Wrapping Paper for UK Businesses",
+    h1: "Food Wrapping Paper for UK Food Businesses",
     intro: "Food wrapping paper is the broad category that covers everything from sandwich paper and burger wrappers to bakery tissue and deli sheets. We supply the full range of food-safe wrapping papers to restaurants, cafés, bakeries, delis, and food manufacturers across the UK — all available with custom printing.",
     image: "/images/food-paper/custom food paper-PBEE-1.png",
     images: [
@@ -1653,7 +1653,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: "wax-paper-packaging",
     title: "Wax Paper Packaging",
-    metaTitle: "Custom Wax Paper Packaging UK",
+    metaTitle: "Wax Paper Packaging for UK Food Businesses",
     metaDesc: "Wax paper packaging for UK food businesses. Custom printed wax paper packaging solutions for restaurants, delis, bakeries, and food manufacturers.",
     h1: "Wax Paper Packaging for UK Food Businesses",
     intro: "Wax paper packaging covers the full range of food wrapping and lining solutions — from single sandwich sheets to tray liners, basket covers, and bulk roll supply. We supply complete food paper packaging to UK businesses, with custom printing available across the entire range.",
@@ -1724,7 +1724,7 @@ export const PRODUCTS: Product[] = [
     title: "Custom Food Wrapping Paper",
     metaTitle: "Custom Branded Food Wrap Paper UK",
     metaDesc: "Custom food wrapping paper for UK restaurants, bakeries, and delis. Printed with your logo or design on food-safe paper. Sheets and rolls, fast turnaround.",
-    h1: "Custom Food Wrapping Paper for UK Businesses",
+    h1: "Custom Branded Food Wrap Paper for UK Businesses",
     intro: "Custom food wrapping paper turns functional packaging into a brand asset. Your logo, design, and brand colours on food-safe paper — wrapping every product that leaves your business. We supply printed food wrapping paper to UK restaurants, bakeries, delis, and food producers.",
     image: "/images/wrapping-paper/custom wrapping paper-PBEE-1.png",
     images: [

@@ -32,6 +32,17 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: SITE_URL,
     siteName: SITE_NAME,
+    // A page that declares its own openGraph replaces this block wholesale, so
+    // product and blog pages name their own image; everything else inherits the
+    // generated card from src/app/opengraph-image.tsx.
+    images: [
+      {
+        url: `${SITE_URL}/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} — custom wax paper packaging in the UK`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
