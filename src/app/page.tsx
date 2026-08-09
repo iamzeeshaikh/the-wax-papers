@@ -229,6 +229,8 @@ const orgSchema = {
   "@type": ["Organization", "LocalBusiness"],
   name: "The Wax Papers",
   url: "https://thewaxpapers.co.uk",
+  logo: { "@type": "ImageObject", url: "https://thewaxpapers.co.uk/logo-icon.svg" },
+  image: "https://thewaxpapers.co.uk/logo-icon.svg",
   telephone: SITE_PHONE,
   email: SITE_EMAIL,
   address: {
