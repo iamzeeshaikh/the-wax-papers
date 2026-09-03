@@ -2,8 +2,11 @@
 
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
-// WhatsApp uses the shared +1 503-461-4788 line, not the UK display number.
-const phone = "15034614788";
+// The UK line, the same number SITE_PHONE displays and the same one
+// conesleeves.co.uk uses. It was pointed at the shared +1 503-461-4788 line,
+// which meant a UK customer tapping WhatsApp on a UK site reached a US number
+// that was not even registered on WhatsApp at the time.
+const phone = "447458651107";
 const message = `Hi ${SITE_NAME}! I need more info about ${SITE_NAME} ${SITE_URL}/`;
 const href = `https://api.whatsapp.com/send/?phone=${phone}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
 
