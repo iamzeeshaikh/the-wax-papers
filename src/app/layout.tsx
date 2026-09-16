@@ -69,6 +69,7 @@ export default function RootLayout({
         <Script id="ga4" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7XP328GFN9');`}
         </Script>
+        <Script src="/ga4-events.js" strategy="afterInteractive" />
         {/* Chat widget waits for the first interaction (or 6s of idle) so it
             never competes with the page's own render and LCP. */}
         <Script id="zendesk-chat" strategy="lazyOnload">
