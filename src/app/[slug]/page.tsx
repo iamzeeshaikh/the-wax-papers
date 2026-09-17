@@ -8,7 +8,14 @@ import CTASection from "@/components/CTASection";
 import ProductLeadForm from "@/components/ProductLeadForm";
 import ProductGallery from "@/components/ProductGallery";
 import PaperConfigurator from "@/components/PaperConfigurator";
-import { SITE_URL } from "@/lib/constants";
+import {
+  SITE_URL,
+  FROM_PRICE_SCHEMA,
+  FROM_PRICE_DISPLAY,
+  FROM_PRICE_BASIS,
+  PRICE_CURRENCY,
+  priceValidUntil,
+} from "@/lib/constants";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -187,11 +194,11 @@ export default async function ProductPage({ params }: Props) {
     offers: {
       "@type": "Offer",
       url: productUrl,
-      // Per-sheet "from" price — lowest configurator combination
-      // (greaseproof base £0.08 with plain/no-print adjustment −£0.02).
-      price: "0.06",
-      priceCurrency: "GBP",
-      priceValidUntil: "2027-08-04",
+      // Per-sheet "from" price. Same constant as the price line rendered in
+      // the hero below, so the markup and the page always agree.
+      price: FROM_PRICE_SCHEMA,
+      priceCurrency: PRICE_CURRENCY,
+      priceValidUntil: priceValidUntil(),
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",
       seller: { "@type": "Organization", name: "The Wax Papers" },
@@ -276,6 +283,33 @@ export default async function ProductPage({ params }: Props) {
             >
               {product.intro}
             </p>
+
+            {/* From-price — rendered from the same constant as the Offer in the
+                JSON-LD above, so the figure Google reads and the figure a
+                shopper reads are one and the same. */}
+            <div className="mb-7">
+              <div className="flex flex-wrap items-baseline gap-x-2">
+                <span
+                  className="font-bold"
+                  style={{
+                    fontFamily: "var(--font-heading)",
+                    color: "var(--color-charcoal)",
+                    fontSize: "clamp(1.5rem, 2.4vw, 1.875rem)",
+                  }}
+                >
+                  {/* One string, not "From {price}": React splits an
+                      interpolated child into separate text nodes, and a naive
+                      scraper then reads the price away from its "From". */}
+                  {`From ${FROM_PRICE_DISPLAY}`}
+                </span>
+                <span className="text-sm font-medium" style={{ color: "var(--color-text-muted)" }}>
+                  per sheet
+                </span>
+              </div>
+              <p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--color-text-muted)", maxWidth: "460px" }}>
+                {FROM_PRICE_BASIS}. Your price depends on size, material, printing and quantity — we send a full quote within 24 hours.
+              </p>
+            </div>
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-3 mb-7">

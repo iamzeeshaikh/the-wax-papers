@@ -5,6 +5,43 @@ export const SITE_EMAIL = "Info@thewaxpapers.co.uk";
 export const SITE_PHONE = "+447458651107";
 export const SITE_ADDRESS = "7 Greys Court, Kingsland Grange, Warrington, United Kingdom, WA1 4SH";
 
+/**
+ * Per-sheet "from" price in GBP — the lowest combination the configurator can
+ * produce (greaseproof base £0.08 with the plain / no-print adjustment of
+ * −£0.02, at the 10,000-sheet tier where the quantity scale is 1.0).
+ *
+ * This is the ONLY place the figure is written. Both the Product Offer in the
+ * product page's JSON-LD and the price line shoppers read in the hero are
+ * derived from it, so the number Google finds in the markup and the number on
+ * the page cannot drift apart. A price in the markup that appears nowhere on
+ * the landing page is what Merchant Center treats as misrepresentation.
+ */
+export const FROM_PRICE_GBP = 0.06;
+
+/** Offer `priceCurrency`. This is the UK site: prices are in pounds. */
+export const PRICE_CURRENCY = "GBP";
+
+/** Offer `price`, as the string the markup carries (e.g. "0.06"). */
+export const FROM_PRICE_SCHEMA = FROM_PRICE_GBP.toFixed(2);
+
+/** The same figure as shoppers see it (e.g. "£0.06"). */
+export const FROM_PRICE_DISPLAY = `£${FROM_PRICE_SCHEMA}`;
+
+/** What the "from" price is quoted against, shown alongside it. */
+export const FROM_PRICE_BASIS = "Plain greaseproof at 10,000 sheets";
+
+/**
+ * `priceValidUntil` one year after the build, as YYYY-MM-DD.
+ *
+ * Computed rather than hard-coded: a literal date silently goes stale, and an
+ * offer whose price has expired is dropped from Google's product results.
+ */
+export function priceValidUntil(from: Date = new Date()): string {
+  const until = new Date(from);
+  until.setFullYear(until.getFullYear() + 1);
+  return until.toISOString().slice(0, 10);
+}
+
 export const NAV_PRODUCTS = [
   { label: "Custom Wax Paper", href: "/custom-wax-paper" },
   { label: "Custom Printed Wax Paper", href: "/custom-printed-wax-paper" },
