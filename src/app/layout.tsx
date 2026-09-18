@@ -70,6 +70,9 @@ export default function RootLayout({
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7XP328GFN9');`}
         </Script>
         <Script src="/ga4-events.js" strategy="afterInteractive" />
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "yk7d21q01g");`}
+        </Script>
         {/* Chat widget waits for the first interaction (or 6s of idle) so it
             never competes with the page's own render and LCP. */}
         <Script id="zendesk-chat" strategy="lazyOnload">
