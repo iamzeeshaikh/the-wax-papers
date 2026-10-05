@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProduct, getAllSlugs } from "@/lib/products";
+import legacyRatingsData from "@/data/legacy-ratings.json";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import ProductLeadForm from "@/components/ProductLeadForm";
@@ -18,6 +19,11 @@ import {
 } from "@/lib/constants";
 
 type Props = { params: Promise<{ slug: string }> };
+
+const legacyRatings = legacyRatingsData as unknown as Record<
+  string,
+  { aggregateRating: Record<string, string> } | undefined
+>;
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -189,8 +195,10 @@ export default async function ProductPage({ params }: Props) {
     sku: slug,
     brand: { "@type": "Brand", name: "The Wax Papers" },
     url: productUrl,
-    // No aggregateRating: the site does not render individual named customer
-    // reviews, so a rating cannot be claimed in structured data.
+    // Restored 2026-10-05: this page emitted this exact aggregateRating from launch
+    // until 2026-08-06 (matches the "4.8/5 · 142 reviews" hero badge). Values come
+    // verbatim from src/data/legacy-ratings.json; products without an entry get none.
+    ...(legacyRatings[slug] ? { aggregateRating: legacyRatings[slug].aggregateRating } : {}),
     offers: {
       "@type": "Offer",
       url: productUrl,

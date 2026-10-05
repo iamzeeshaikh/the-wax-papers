@@ -1,0 +1,313 @@
+{
+  "_source": "git: iamzeeshaikh/the-wax-papers @ 1a00cb5^ (cc23cc7) src/app/[slug]/page.tsx — Product.aggregateRating emitted on every product page from 880072c (2026-04-28) until 1a00cb5 (2026-08-06); thewaxpapers.co.uk never had a Wayback capture",
+  "custom-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "custom-printed-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "greaseproof-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "burger-wrapping-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "sandwich-wrapping-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "deli-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "bakery-wrapping-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "butcher-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "cheese-wrapping-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "kraft-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "wholesale-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "wax-paper-sheets": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "wax-paper-rolls": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "food-wrapping-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "printed-greaseproof-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "custom-deli-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "custom-burger-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "custom-sandwich-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "branded-greaseproof-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "custom-bakery-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "eco-friendly-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "christmas-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "personalised-wax-paper-uk": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "wax-paper-packaging": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "custom-food-wrapping-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "printed-food-wrapping-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "logo-printed-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "custom-branded-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "custom-food-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "white-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  },
+  "black-wax-paper": {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "142",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "_source": "git cc23cc7:src/app/[slug]/page.tsx"
+  }
+}
