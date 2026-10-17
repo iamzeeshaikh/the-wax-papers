@@ -1,3 +1,5 @@
+import { withExtras, plainText } from "@/lib/page-faqs";
+import FaqAnswer from "@/components/FaqAnswer";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -879,7 +881,7 @@ export default function HomePage() {
             className="bg-white rounded-2xl px-6 py-2"
             style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.07)" }}
           >
-            {FAQS.map((faq, i) => (
+            {withExtras("/", FAQS).map((faq, i) => (
               <details key={i} className="faq-item">
                 <summary>
                   <span>{faq.q}</span>
@@ -894,7 +896,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <p className="faq-answer">{faq.a}</p>
+                <p className="faq-answer"><FaqAnswer text={faq.a} /></p>
               </details>
             ))}
           </div>
@@ -905,10 +907,10 @@ export default function HomePage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
-                mainEntity: FAQS.map((faq) => ({
+                mainEntity: withExtras("/", FAQS).map((faq) => ({
                   "@type": "Question",
                   name: faq.q,
-                  acceptedAnswer: { "@type": "Answer", text: faq.a },
+                  acceptedAnswer: { "@type": "Answer", text: plainText(faq.a) },
                 })),
               }),
             }}

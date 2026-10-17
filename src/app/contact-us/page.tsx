@@ -1,3 +1,4 @@
+import ExtraFaqSection from "@/components/ExtraFaqSection";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -78,6 +79,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <ExtraFaqSection route={"/contact-us"} />
     </>
   );
 }

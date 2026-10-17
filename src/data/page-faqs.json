@@ -1,0 +1,913 @@
+{
+ "/": {
+  "h2": "More Questions About Custom Wax Paper",
+  "faqs": [
+   {
+    "q": "What printing options does The Wax Papers offer for food paper?",
+    "a": "We offer three print routes: single-colour printing for logos and simple designs, full-colour CMYK printing for complex artwork and photography, and natural kraft printing on brown paper for an artisan look. Every option is printed on food-safe paper."
+   },
+   {
+    "q": "Where in the UK does The Wax Papers deliver custom wax paper?",
+    "a": "We are based in Warrington and deliver to food businesses throughout England, Scotland and Wales. Orders go straight to your business address, and bulk orders are palletised so they arrive safely. You can <a href=\"/locations\">see the UK cities we supply</a>."
+   }
+  ]
+ },
+ "/custom-wax-paper": {
+  "h2": "More Questions About Custom Wax Paper",
+  "faqs": [
+   {
+    "q": "What sizes can custom wax paper be cut to?",
+    "a": "Custom wax paper can be made in sizes from 200mm × 200mm up to 900mm × 600mm, alongside our standard sheet and roll formats. Tell us what you wrap and we will suggest a size that fits your products."
+   },
+   {
+    "q": "Is custom wax paper suitable for both hot and cold foods?",
+    "a": "Yes. Custom wax paper suits hot and cold food applications, and its grease-resistant coating stands up to sauces, oils and steam. That makes it practical for burgers and hot sandwiches as well as cold deli items and pastries."
+   }
+  ]
+ },
+ "/custom-printed-wax-paper": {
+  "h2": "More Questions About Custom Printed Wax Paper",
+  "faqs": [
+   {
+    "q": "Which businesses order custom printed wax paper from The Wax Papers?",
+    "a": "Independent cafés, delis and sandwich shops order custom printed wax paper for a consistent counter look, while restaurant groups use it to keep branding uniform across sites. Food brands, ghost kitchens, caterers and event kitchens order it too."
+   },
+   {
+    "q": "Can custom printed wax paper help a ghost kitchen's delivery branding?",
+    "a": "Yes. Ghost kitchens and delivery operations use custom printed wax paper so their brand is visible even when the customer never visits the premises. Opening the order at home becomes a branded moment rather than plain packaging."
+   }
+  ]
+ },
+ "/greaseproof-paper": {
+  "h2": "More Questions About Greaseproof Paper",
+  "faqs": [
+   {
+    "q": "Do you supply greaseproof paper in white and unbleached grades?",
+    "a": "Yes. Our greaseproof paper comes in standard white and natural unbleached grades. Both can be custom printed with food-safe inks without changing the paper's grease-resistant properties, so you can choose the look that suits your brand."
+   },
+   {
+    "q": "Can greaseproof paper be used to line bakery tins and trays?",
+    "a": "Yes. UK bakeries use greaseproof paper to line tins and wrap pastries, and it is suitable for oven use at moderate temperatures. Caterers also use greaseproof sheets for tray lining and buffet service presentation."
+   }
+  ]
+ },
+ "/burger-wrapping-paper": {
+  "h2": "More Questions About Burger Wrapping Paper",
+  "faqs": [
+   {
+    "q": "Does burger wrapping paper keep burgers warm during counter service?",
+    "a": "Yes. Burger wrapping paper helps keep burgers warm during plating, counter service and table delivery. It also contains sauce and grease while the customer eats, which makes a fully loaded burger far easier to handle."
+   },
+   {
+    "q": "Do street food vans and festival caterers use burger wrapping paper?",
+    "a": "Yes. Street food vendors, food vans and festival caterers use burger wrapping paper for fast wrapping that keeps food fresh during busy service. School canteens and stadium caterers also order it in bulk for high-volume events."
+   }
+  ]
+ },
+ "/sandwich-wrapping-paper": {
+  "h2": "More Questions About Sandwich Wrapping Paper",
+  "faqs": [
+   {
+    "q": "Which sandwich wrapping paper suits an artisan or farm shop brand?",
+    "a": "Kraft sandwich wrapping paper gives a rustic look that suits farm shops, farmers markets and independent food businesses, while greaseproof has a natural feel preferred by artisan and health-focused brands. Wax-coated paper is the choice for vivid branded printing."
+   },
+   {
+    "q": "Can sandwich wrapping paper be used for meal deal packaging?",
+    "a": "Yes. Cafés and coffee shops use printed sandwich wrapping paper for to-go sandwiches and meal deals, and online food businesses use it in branded delivery packaging. It keeps grab-and-go products looking consistent and professional."
+   }
+  ]
+ },
+ "/deli-paper": {
+  "h2": "More Questions About Deli Paper",
+  "faqs": [
+   {
+    "q": "Is deli paper available in wax-coated and greaseproof grades?",
+    "a": "Yes. Our deli paper comes in greaseproof and wax-coated grades, both resistant to grease and moisture from meats, cheeses and fillings. Either grade can be printed, and consistent print registration puts your logo in the same position on every sheet."
+   },
+   {
+    "q": "Can deli paper be used to line burger baskets and trays?",
+    "a": "Yes. Deli-weight paper is often used as a basket and tray liner at burger bars and fish and chip shops. Caterers also use flat deli sheets to separate and organise food on platters and buffet tables."
+   }
+  ]
+ },
+ "/bakery-wrapping-paper": {
+  "h2": "More Questions About Bakery Wrapping Paper",
+  "faqs": [
+   {
+    "q": "Which bakery wrapping paper is best for croissants and pastries?",
+    "a": "Greaseproof paper suits croissants, pastries and filled breads because it resists butter and grease without transferring flavour. Patisseries often choose white or parchment paper so the product stands out while the bakery brand stays visible."
+   },
+   {
+    "q": "Do wholesale bakeries use bakery wrapping paper on production lines?",
+    "a": "Yes. Wholesale and production bakeries use our bakery wrapping paper on production lines for consistent, efficient wrapping at scale. We supply both rolls and sheets, so manual wrapping and line wrapping are both covered."
+   }
+  ]
+ },
+ "/butcher-paper": {
+  "h2": "More Questions About Butcher Paper",
+  "faqs": [
+   {
+    "q": "Why is butcher paper better than plastic wrap for raw meat?",
+    "a": "Plastic wrap traps moisture and causes condensation, which speeds up spoilage and discolouration. Butcher paper is breathable, allowing gas exchange that keeps meat in better condition, and it is strong enough to hold heavy cuts of beef, lamb and pork."
+   },
+   {
+    "q": "Can online meat delivery businesses use printed butcher paper?",
+    "a": "Yes. Online meat delivery businesses use butcher paper to protect cuts in transit while keeping their brand visible when the box is opened. Farm shops use printed butcher paper in the same way for premium counter presentation."
+   }
+  ]
+ },
+ "/cheese-wrapping-paper": {
+  "h2": "More Questions About Cheese Wrapping Paper",
+  "faqs": [
+   {
+    "q": "Which cheese varieties can cheese wrapping paper be used for?",
+    "a": "Our cheese wrapping paper suits soft, semi-soft, hard and blue cheese varieties and is non-reactive with all cheese types. It comes in sizes for portions, quarters and whole cheeses, so one supplier covers the whole counter."
+   },
+   {
+    "q": "Is cheese wrapping paper suitable for hampers and mail order?",
+    "a": "Yes. Farm shops and artisan cheese producers use our cheese wrapping paper for retail and mail order sales, and gift and hamper businesses use it for premium presentation. Printed versions keep your shop name on every wrapped portion."
+   }
+  ]
+ },
+ "/kraft-wax-paper": {
+  "h2": "More Questions About Kraft Wax Paper",
+  "faqs": [
+   {
+    "q": "Which ink colours look best on brown kraft wax paper?",
+    "a": "White or lighter inks work best against the brown kraft base, giving striking logo contrast. Full-colour printing is also available for complex designs, and artwork that works with the natural paper tone tends to look more premium."
+   },
+   {
+    "q": "Is kraft wax paper available in coated and uncoated grades?",
+    "a": "Yes. Our kraft paper comes in wax-coated and uncoated grades. The wax-coated version adds grease resistance for heavier food items, while the uncoated grade is recyclable and suits restaurants and cafés with sustainability messaging."
+   }
+  ]
+ },
+ "/wholesale-wax-paper": {
+  "h2": "More Questions About Wholesale Wax Paper",
+  "faqs": [
+   {
+    "q": "Do packaging distributors buy wholesale wax paper for resale?",
+    "a": "Yes. Packaging distributors and catering supply companies buy our wholesale wax paper to resell to their own customers. Trade accounts and dedicated account management make regular resale orders straightforward to plan."
+   },
+   {
+    "q": "Does a wholesale wax paper account come with a dedicated contact?",
+    "a": "Yes. Regular wholesale buyers get a dedicated account manager who knows their specifications and order schedule, which keeps repeat orders consistent. For planning tips, read <a href=\"/blog/wholesale-wax-paper-buying-guide\">our wholesale wax paper buying guide</a>."
+   }
+  ]
+ },
+ "/wax-paper-sheets": {
+  "h2": "More Questions About Wax Paper Sheets",
+  "faqs": [
+   {
+    "q": "How do pre-cut wax paper sheets save time during service?",
+    "a": "Pre-cut wax paper sheets arrive cut to the size you need, so staff lift a sheet and wrap with no cutting from a roll and no off-cut waste. Those saved seconds add up across a busy lunch service."
+   },
+   {
+    "q": "How are wax paper sheets packed for storage at the counter?",
+    "a": "Wax paper sheets are supplied in box quantities for easy storage and stock rotation. You can choose flat-pack boxes or interleaved pop-up dispenser formats, and both can carry your custom printing."
+   }
+  ]
+ },
+ "/wax-paper-rolls": {
+  "h2": "More Questions About Wax Paper Rolls",
+  "faqs": [
+   {
+    "q": "Does the print line up wherever a wax paper roll is torn?",
+    "a": "Custom printed wax paper rolls are printed continuously, so your logo or pattern appears consistently regardless of where the sheet is torn. Staff can cut any length for each item without losing the branding."
+   },
+   {
+    "q": "Which food businesses use wax paper rolls rather than sheets?",
+    "a": "Wax paper rolls suit production kitchens, food manufacturers and wholesale deli operations wrapping hundreds or thousands of items daily. Sandwich shops, butchers, bakeries and caterers also use rolls when they need flexible lengths for different products."
+   }
+  ]
+ },
+ "/food-wrapping-paper": {
+  "h2": "More Questions About Food Wrapping Paper",
+  "faqs": [
+   {
+    "q": "Which food wrapping paper suits pastries and confectionery?",
+    "a": "Tissue paper suits delicate items such as pastries and confectionery, while greaseproof paper works for baked goods that stay in contact with the paper for longer. Parchment is the choice when items go into the oven."
+   },
+   {
+    "q": "What food wrapping paper do butchers and fish and chip shops use?",
+    "a": "Fish and chip shops rely on greaseproof paper for hot, greasy portions, while butchers use breathable kraft paper for wrapping meat. Both carry custom printing, and you can compare options for <a href=\"/butcher-paper\">custom printed butcher paper</a>."
+   }
+  ]
+ },
+ "/printed-greaseproof-paper": {
+  "h2": "More Questions About Printed Greaseproof Paper",
+  "faqs": [
+   {
+    "q": "How does ink look when printed on greaseproof paper?",
+    "a": "Greaseproof paper has a slightly translucent, matte surface, so inks sit on top and give a clean, crisp result. Single-colour logos look bold, while full-colour prints are slightly more muted than on card, a character many food brands prefer."
+   },
+   {
+    "q": "Can your team adjust my artwork for printed greaseproof paper?",
+    "a": "Yes. Our print team works with your artwork to optimise it for the greaseproof surface, advising on ink coverage and colour selection. If you do not have print-ready files, design assistance is available as well."
+   }
+  ]
+ },
+ "/custom-deli-paper": {
+  "h2": "More Questions About Custom Deli Paper",
+  "faqs": [
+   {
+    "q": "Is custom deli paper available on a kraft base?",
+    "a": "Yes. Custom deli paper comes on white or kraft base paper, in flat and interleaved formats. White gives the brightest print results, while kraft suits delis and market traders wanting a more natural, artisan look."
+   },
+   {
+    "q": "How can market traders use custom deli paper at busy stalls?",
+    "a": "Market traders use printed custom deli sheets to wrap individual portions quickly while keeping their brand on every serve. Flat sheets fold fast around rolls, wraps and deli portions, which helps when queues build up."
+   }
+  ]
+ },
+ "/custom-burger-paper": {
+  "h2": "More Questions About Custom Burger Paper",
+  "faqs": [
+   {
+    "q": "Is custom burger paper available in wax and greaseproof finishes?",
+    "a": "Yes. Custom burger paper comes in a wax or greaseproof finish. Both resist grease and sauce across all fillings, and both keep your branding visible from first unwrap to last bite, so the choice comes down to the look you want."
+   },
+   {
+    "q": "Does custom burger paper work for festival and outdoor catering?",
+    "a": "Yes. Festival and event caterers use durable custom burger paper that holds up in outdoor conditions, and food vans use it for fast, consistent service. Heavier-weight options are worth considering when burgers travel before being eaten."
+   }
+  ]
+ },
+ "/custom-sandwich-paper": {
+  "h2": "More Questions About Custom Sandwich Paper",
+  "faqs": [
+   {
+    "q": "Which custom sandwich paper weight suits stuffed baguettes?",
+    "a": "Heavier-weight custom sandwich paper suits stuffed baguettes and rolls with multiple fillings, while lighter, flexible grades work for wraps and lightly filled sandwiches. Tell us what you serve and we will match the weight to it."
+   },
+   {
+    "q": "Do café groups order custom sandwich paper for several sites?",
+    "a": "Yes. Deli chains and café groups order custom sandwich paper in volume across multiple sites, while independent cafés order smaller branded batches. We keep production specs on file so repeat orders match your first order."
+   }
+  ]
+ },
+ "/branded-greaseproof-paper": {
+  "h2": "More Questions About Branded Greaseproof Paper",
+  "faqs": [
+   {
+    "q": "Will the print on branded greaseproof paper smear during handling?",
+    "a": "No. Branded greaseproof paper is printed with food-safe inks that will not smear or transfer during normal food handling, so your logo stays clean as burgers are unwrapped, pastries are served and sandwiches are handed over."
+   },
+   {
+    "q": "Can restaurants use branded greaseproof paper on sharing boards?",
+    "a": "Yes. Restaurants use branded greaseproof paper to dress sharing boards and baskets for casual food presentation. Takeaways also use it on collected and delivered orders, so the brand travels with the food."
+   }
+  ]
+ },
+ "/custom-bakery-paper": {
+  "h2": "More Questions About Custom Bakery Paper",
+  "faqs": [
+   {
+    "q": "Why do sourdough loaves suit breathable kraft custom bakery paper?",
+    "a": "Sourdough and artisan loaves benefit from breathable kraft paper because it helps preserve the crust. We print kraft bakery paper with your logo, so every loaf leaves the counter protected and clearly branded."
+   },
+   {
+    "q": "Can online bakeries use custom bakery paper for posted orders?",
+    "a": "Yes. Online bakeries use custom bakery paper as branded packaging for postal and delivery orders. It gives baked goods a professional presentation when the customer opens the parcel, matching the quality of what is inside."
+   }
+  ]
+ },
+ "/eco-friendly-wax-paper": {
+  "h2": "More Questions About Eco-Friendly Wax Paper",
+  "faqs": [
+   {
+    "q": "Are the inks on eco-friendly wax paper compatible with composting?",
+    "a": "Yes. All our eco grades are printed with water-based, food-safe inks that are compatible with composting and recycling processes, so adding your branding does not undermine the paper's end-of-life credentials."
+   },
+   {
+    "q": "Can you provide certification details for eco-friendly wax paper?",
+    "a": "Yes. Certifications are available for our eco grades, and our team can provide certification information where required, for example when corporate caterers must meet sustainability procurement rules. Ask for details when you request a quote."
+   }
+  ]
+ },
+ "/christmas-wax-paper": {
+  "h2": "More Questions About Christmas Wax Paper",
+  "faqs": [
+   {
+    "q": "Which Christmas foods suit festive wax paper wrapping?",
+    "a": "Bakeries wrap stollen, mince pies and Christmas cakes in festive wax paper, while delis and cheesemongers use it for hampers and cheese boards. Chocolatiers and charcuterie producers also use it for Christmas gift packaging."
+   },
+   {
+    "q": "Can Christmas wax paper be used for corporate gifting?",
+    "a": "Yes. Businesses use Christmas wax paper with their own branding to wrap festive food gifts for clients. You can combine your logo with a seasonal design, and a free digital proof lets you approve the artwork before printing."
+   }
+  ]
+ },
+ "/personalised-wax-paper-uk": {
+  "h2": "More Questions About Personalised Wax Paper",
+  "faqs": [
+   {
+    "q": "Can personalised wax paper feature a couple's names for a wedding?",
+    "a": "Yes. Wedding food service is a speciality, and personalised wax paper can show the couple's names and date in single or full colour. It adds a tailored touch to wedding catering alongside the rest of the event design."
+   },
+   {
+    "q": "Do charities and schools order personalised wax paper for fundraisers?",
+    "a": "Yes. Schools, charities and community food events use personalised wax paper for fundraisers and celebrations. Any text, name, date or image can be printed, and we can create the artwork if you do not have a design."
+   }
+  ]
+ },
+ "/wax-paper-packaging": {
+  "h2": "More Questions About Wax Paper Packaging",
+  "faqs": [
+   {
+    "q": "Which paper types are included in your wax paper packaging range?",
+    "a": "Our wax paper packaging range covers wax paper, greaseproof, kraft, heat-seal and tissue paper, from small sheets for single portions to large rolls for production lines. Custom printing is available across every type."
+   },
+   {
+    "q": "Is invoicing simpler when wax paper packaging comes from one supplier?",
+    "a": "Yes. Buying all your wax paper packaging from one account gives you one point of contact and a single invoice for every paper need. Volume discounts also apply to mixed orders across paper types."
+   }
+  ]
+ },
+ "/custom-food-wrapping-paper": {
+  "h2": "More Questions About Custom Food Wrapping Paper",
+  "faqs": [
+   {
+    "q": "Do food franchises use custom food wrapping paper across sites?",
+    "a": "Yes. Food franchises use custom food wrapping paper to keep presentation uniform at every location, and repeat orders are matched exactly to your first run. That way each franchisee wraps food in the same branded paper."
+   },
+   {
+    "q": "Can a new café launch with custom food wrapping paper?",
+    "a": "Yes. New independent restaurants and cafés use custom food wrapping paper to establish their brand from the first day of service. We start with a free digital proof, so you can check the design before anything is printed."
+   }
+  ]
+ },
+ "/printed-food-wrapping-paper": {
+  "h2": "More Questions About Printed Food Wrapping Paper",
+  "faqs": [
+   {
+    "q": "Is full-bleed printing possible on printed food wrapping paper?",
+    "a": "Yes. Full-bleed printing is available for edge-to-edge designs on printed food wrapping paper. Combined with consistent registration across every sheet, it suits brands that want full coverage rather than a single logo."
+   },
+   {
+    "q": "How do fine dining restaurants use printed food wrapping paper?",
+    "a": "Fine dining restaurants tend to use subtly branded printed food wrapping paper as a premium presentation surface, whereas casual dining and burger bars favour bold full-colour designs. We print either style with Pantone colour matching."
+   }
+  ]
+ },
+ "/logo-printed-wax-paper": {
+  "h2": "More Questions About Logo Printed Wax Paper",
+  "faqs": [
+   {
+    "q": "Is single-colour logo printed wax paper cheaper than full colour?",
+    "a": "Yes. A single-colour logo print is the most cost-effective branded paper option, costing a fraction of full-colour printing. It is often the crispest-looking choice too, and two-colour or full-colour logo printing is available if you want more."
+   },
+   {
+    "q": "Does logo printed wax paper keep the logo in one position?",
+    "a": "Yes. Logo printed wax paper is produced with consistent logo position and registration on every sheet, so your branding looks identical on each wrap across the whole order, whether on white or kraft paper."
+   }
+  ]
+ },
+ "/custom-branded-wax-paper": {
+  "h2": "More Questions About Custom Branded Wax Paper",
+  "faqs": [
+   {
+    "q": "How does custom branded wax paper differ from a logo stamp?",
+    "a": "Custom branded wax paper carries your full brand identity, including colours, typography and imagery, rather than just a logo. It is printed in full-colour CMYK with Pantone matching, so every sheet reflects your brand guidelines accurately."
+   },
+   {
+    "q": "Can hotels and venues use custom branded wax paper for brand standards?",
+    "a": "Yes. Hospitality businesses use custom branded wax paper to meet the brand standards required by hotel and venue clients, and food franchises use it to give every franchisee brand-compliant paper. It is available on white, kraft and greaseproof bases."
+   }
+  ]
+ },
+ "/custom-food-paper": {
+  "h2": "More Questions About Custom Food Paper",
+  "faqs": [
+   {
+    "q": "Can custom food paper be supplied as tray paper for catering?",
+    "a": "Yes. Catering companies use custom food paper as tray paper for events, functions and buffet presentation, and restaurants use it for table and plating paper. Every tray paper format can carry your logo or design."
+   },
+   {
+    "q": "Does ordering all custom food paper formats together help on price?",
+    "a": "Ordering all your custom food paper formats from one supplier often unlocks better pricing through combined order volumes. It also simplifies buying and keeps quality consistent, from basket liners to interleaved deli sheets."
+   }
+  ]
+ },
+ "/white-wax-paper": {
+  "h2": "More Questions About White Wax Paper",
+  "faqs": [
+   {
+    "q": "What weights does white wax paper come in?",
+    "a": "White wax paper is available in a range of weights, from lighter grades for delicate pastries to heavier grades for hot, greasy foods. We can recommend the right grade once we know what you are wrapping."
+   },
+   {
+    "q": "Why do bakeries choose white wax paper for pastries?",
+    "a": "The bright white base makes food colours and textures stand out, so a croissant wrapped in white wax paper looks considerably more appealing than one in kraft. Bakeries use it for both pastry wrapping and counter display."
+   }
+  ]
+ },
+ "/black-wax-paper": {
+  "h2": "More Questions About Black Wax Paper",
+  "faqs": [
+   {
+    "q": "Does black wax paper work well in food photography?",
+    "a": "Yes. Black wax paper works exceptionally well in food photography and on social media, because the dark background creates dramatic contrast with colourful food. That suits businesses that rely on customer photos to spread the word."
+   },
+   {
+    "q": "Is black wax paper suitable for seasonal bakery collections?",
+    "a": "Yes. High-end bakeries and patisseries use black wax paper for special product ranges and seasonal collections, giving those items a premium look. Custom sizes are available if your products need a specific sheet dimension."
+   }
+  ]
+ },
+ "/about-us": {
+  "h2": "Questions About The Wax Papers",
+  "faqs": [
+   {
+    "q": "Where is The Wax Papers based in the UK?",
+    "a": "The Wax Papers is based in Warrington and supplies custom food paper nationwide across England, Scotland and Wales, with reliable, trackable delivery to your business address."
+   },
+   {
+    "q": "What kinds of food businesses does The Wax Papers work with?",
+    "a": "We work with food businesses of all sizes, from independent market traders and cafés to artisan bakeries, delis, wholesale buyers and multi-site restaurant groups. Each gets food-safe, custom-printed paper that makes their products look the part."
+   },
+   {
+    "q": "Are all papers from The Wax Papers food-contact certified?",
+    "a": "Yes. Every paper we supply is food-contact certified, and we use only food-safe inks, coatings and materials with no exceptions. That applies equally to our greaseproof, wax-coated and kraft papers."
+   },
+   {
+    "q": "Why does The Wax Papers keep minimums low for custom printing?",
+    "a": "We believe small businesses deserve quality branded packaging too, so we make custom printing accessible with low minimums. Independent cafés and market traders can brand their paper without ordering thousands of sheets."
+   },
+   {
+    "q": "How does The Wax Papers keep repeat orders consistent?",
+    "a": "We maintain production specs for every customer, so repeat orders match your first order exactly. Consistent quality and consistent lead times mean you can plan stock without worrying about changes in colour or size."
+   },
+   {
+    "q": "Does The Wax Papers add hidden extras to its pricing?",
+    "a": "No. Our pricing is clear, with no hidden extras, and volume discounts are transparent and straightforward. The quote you receive sets out what you are paying for before you commit to an order."
+   },
+   {
+    "q": "How quickly does The Wax Papers respond to enquiries?",
+    "a": "We respond to enquiries within 24 hours. When you get in touch, you speak to people who know food paper and can answer questions about stocks, sizes and printing straight away."
+   },
+   {
+    "q": "Can The Wax Papers advise me on choosing the right food paper?",
+    "a": "Yes. Our team understands the pressures and pace of the UK food industry and offers practical advice, not just products. We help you match the paper type, format and print to what you serve."
+   },
+   {
+    "q": "Which paper products does The Wax Papers specialise in?",
+    "a": "We specialise in custom wax paper, printed greaseproof paper and branded food wrapping paper, including kraft, deli, burger and bakery papers. You can start by exploring <a href=\"/custom-wax-paper\">custom wax paper for your brand</a>."
+   },
+   {
+    "q": "How do I get a free quote from The Wax Papers?",
+    "a": "Tell us your requirements through our quote form and we will come back with pricing within 24 hours. Every order includes a free digital proof that you approve before anything goes to print."
+   }
+  ]
+ },
+ "/contact-us": {
+  "h2": "Questions About Contacting Our Team",
+  "faqs": [
+   {
+    "q": "How quickly will The Wax Papers reply to my message?",
+    "a": "We aim to respond to all enquiries within 24 hours. Messages are answered by our UK team, so you hear back from someone who understands custom food paper rather than an automated reply."
+   },
+   {
+    "q": "What should I include when contacting The Wax Papers?",
+    "a": "Tell us the paper type, size and quantity you have in mind, whether you need custom printing, and what food you serve. The more detail you share, the more accurate our advice and pricing will be."
+   },
+   {
+    "q": "Can I contact The Wax Papers before I am ready to order?",
+    "a": "Yes. You can get in touch with general questions about our products, formats or printing at any stage. There is no obligation and no pressure, whether you are comparing options or planning a future launch."
+   },
+   {
+    "q": "Who answers messages sent to The Wax Papers contact form?",
+    "a": "Our UK team reads and answers every message. They know food paper well and can talk through stocks, sizes, print methods and lead times for your type of food business."
+   },
+   {
+    "q": "Can The Wax Papers help me choose between wax and greaseproof?",
+    "a": "Yes. Send us details of what you wrap and we will recommend the right stock. For background first, read our guide on <a href=\"/blog/wax-paper-vs-greaseproof-paper\">wax paper versus greaseproof paper</a>."
+   },
+   {
+    "q": "Can I contact The Wax Papers about a wholesale trade account?",
+    "a": "Yes. Trade accounts with agreed credit terms are available for regular wholesale buyers. Mention your typical volumes and order frequency in your message and our team will set out the options for you."
+   },
+   {
+    "q": "Can I contact The Wax Papers to reorder a previous design?",
+    "a": "Yes. Get in touch with details of your earlier order and we will arrange a repeat. We maintain production specs so repeat orders match your first order exactly in size, stock and print."
+   },
+   {
+    "q": "Does The Wax Papers handle enquiries from anywhere in the UK?",
+    "a": "Yes. We operate from Warrington and supply food businesses across England, Scotland and Wales, so you can contact us wherever your business is based and we will quote for delivery to your address."
+   },
+   {
+    "q": "Should I message The Wax Papers or use the quote form?",
+    "a": "If you already know your paper type, size and quantity, the quote form is the quickest route to pricing. For general questions about products, formats or printing, send a message and our team will reply."
+   },
+   {
+    "q": "Can I ask The Wax Papers about a rush order?",
+    "a": "Yes. Rush options are available for time-sensitive requirements. Include your deadline in your message so our team can confirm what is achievable alongside our standard dispatch of 7–10 working days."
+   }
+  ]
+ },
+ "/get-quote": {
+  "h2": "Questions About Requesting a Quote",
+  "faqs": [
+   {
+    "q": "What details do I need for a custom wax paper quote?",
+    "a": "Tell us the paper type, size and quantity you need, plus whether you want custom printing and any artwork details. If you are unsure about a detail, describe the food you serve and our team will advise."
+   },
+   {
+    "q": "How long does it take to receive a custom wax paper quote?",
+    "a": "We review your requirements within 24 hours and come back with pricing within one business day. Our team prepares a detailed quote based on the paper type, size, quantity and printing you specify."
+   },
+   {
+    "q": "What happens after I submit a wax paper quote request?",
+    "a": "We review your requirements, our team prepares a detailed quote, and we send a free digital proof if you have provided artwork. Once you confirm the order, it goes to print."
+   },
+   {
+    "q": "Am I obliged to order after requesting a free wax paper quote?",
+    "a": "No. Requesting a quote is free, with no obligation and no pressure. You can review the pricing and proof in your own time and only confirm the order when you are happy."
+   },
+   {
+    "q": "Do I need artwork ready before requesting a wax paper quote?",
+    "a": "No. You can request pricing without artwork and send files later. If you provide artwork with your request, we send a free digital proof, and we also offer a design service for businesses without brand assets."
+   },
+   {
+    "q": "When do I see a digital proof after requesting a quote?",
+    "a": "If you include artwork with your quote request, our team prepares a free digital proof as part of the quote process. You approve the design before anything goes to print, so there are no surprises."
+   },
+   {
+    "q": "Can I request a quote for several paper types at once?",
+    "a": "Yes. We supply wax paper, greaseproof, kraft and tissue paper from a single account, so you can list every product you need in one request and receive pricing for the full set."
+   },
+   {
+    "q": "Can I get wholesale pricing through the free quote form?",
+    "a": "Yes. Include your volumes and whether the order is a one-off or regular, and we will price the run accordingly. Regular wholesale buyers can also ask about trade accounts with credit terms."
+   },
+   {
+    "q": "Can I request a rush turnaround on a wax paper quote?",
+    "a": "Yes. Rush options are available for time-sensitive requirements, so mention your deadline in the request. Standard orders are dispatched within 7–10 working days from artwork approval."
+   },
+   {
+    "q": "What size should I put on my wax paper quote request?",
+    "a": "If you know your size, include it. If not, tell us what you wrap and we will suggest one. You can also compare <a href=\"/wax-paper-sheets\">standard wax paper sheet sizes</a> before you request pricing."
+   }
+  ]
+ },
+ "/blog": {
+  "h2": "Questions About The Wax Papers Blog",
+  "faqs": [
+   {
+    "q": "What topics does The Wax Papers blog cover?",
+    "a": "The blog shares practical advice on custom food paper, packaging and branding for UK food businesses, from choosing between paper types to burger paper design ideas and buying wax paper in bulk."
+   },
+   {
+    "q": "Which blog article explains wax paper versus greaseproof paper?",
+    "a": "Our guide to <a href=\"/blog/wax-paper-vs-greaseproof-paper\">wax paper versus greaseproof paper</a> explains how each paper resists grease, where each performs best and why many UK food businesses choose to use both."
+   },
+   {
+    "q": "Is there a blog guide to buying wax paper wholesale?",
+    "a": "Yes. The wholesale wax paper buying guide covers estimating usage, choosing printed or plain paper, sheets versus rolls, storage and what to look for in a UK wholesale supplier."
+   },
+   {
+    "q": "Does The Wax Papers blog share burger paper design ideas?",
+    "a": "Yes. One article covers burger wrapping paper ideas for UK restaurants, including minimal kraft logos, bold full-colour prints, illustrated patterns, seasonal editions and designs that photograph well for social media."
+   },
+   {
+    "q": "Which blog post helps cafés choose food wrapping paper?",
+    "a": "The article on the best food wrapping paper for cafés and takeaways compares wax, greaseproof and kraft paper, covers sandwich paper formats and lists the questions to ask before choosing."
+   },
+   {
+    "q": "Does the blog explain how printed wax paper helps food brands?",
+    "a": "Yes. That article looks at how printed wax paper builds consistency, earns social sharing, works during delivery and signals quality at the counter, with tips on what makes a design effective."
+   },
+   {
+    "q": "Where on the blog can I read about uses for custom wax paper?",
+    "a": "The article on what custom wax paper is used for covers sandwich wrapping, burger packaging, deli service, bakery lining, cheese wrapping and fish and chip shops, explaining what makes wax paper suited to each."
+   },
+   {
+    "q": "Who are The Wax Papers blog articles written for?",
+    "a": "The articles are written for UK food businesses, including cafés, takeaways, burger restaurants, bakeries, delis and wholesale buyers who want packaging that protects food and carries their brand."
+   },
+   {
+    "q": "Can I ask The Wax Papers about advice from a blog article?",
+    "a": "Yes. If an article raises questions about your own business, get in touch with our UK team. We respond within 24 hours and can recommend the right paper type, format and print."
+   },
+   {
+    "q": "Can the blog guides help me before requesting a wax paper quote?",
+    "a": "Yes. Reading the guides first helps you decide on paper type, size and print style, so your quote request is more specific. Our team will still advise on the right stock when you get in touch."
+   }
+  ]
+ },
+ "/blog/what-is-custom-wax-paper-used-for": {
+  "h2": "More Questions on Custom Wax Paper Uses",
+  "faqs": [
+   {
+    "q": "How is wax paper different from plastic wrap and foil?",
+    "a": "According to this guide, wax paper is semi-breathable, unlike plastic wrap, and flexible and lightweight, unlike foil. That middle ground makes it practical for everyday food service where you want protection without an airtight seal."
+   },
+   {
+    "q": "Does custom wax paper trap steam when wrapping hot food?",
+    "a": "No. The wax coating resists grease, moisture and light liquids without making the paper airtight. That means hot food gets protection without the steam being trapped inside, which helps keep wrapped items from turning soggy."
+   },
+   {
+    "q": "Why do cafés use wax paper for sandwiches and wraps?",
+    "a": "Wax paper is easy to fold, holds its shape during service and stops grease soaking through to customers' hands. Custom printed versions carry the café name or logo, turning every sandwich into a small piece of branding."
+   },
+   {
+    "q": "How does wax paper help burger bars during the handover?",
+    "a": "Wax paper holds the burger together between kitchen and customer, keeps heat in and stops grease making the packaging soggy. Many independent burger businesses now use <a href=\"/custom-burger-paper\">custom printed burger paper</a> for presentation."
+   },
+   {
+    "q": "What are the two ways delis use wax paper?",
+    "a": "Delis use wax paper as interleaved sheets between sliced meats and cheeses to stop them sticking, and as wrapping material at the counter. Printed versions with the shop name reinforce the local, artisan feel deli customers value."
+   },
+   {
+    "q": "Why do bakeries line trays and baskets with wax paper?",
+    "a": "Lining trays, baskets and boards with wax or greaseproof paper prevents sticking and makes service cleaner. Some bakeries use branded bakery paper to add a premium feel to their counter display."
+   },
+   {
+    "q": "How does two-ply cheese paper keep artisan cheese in condition?",
+    "a": "Specialist cheese paper combines an outer waxed layer with an inner breathable layer, letting cheese breathe while retaining moisture. The guide explains this keeps artisan cheeses in better condition than plastic wrap does."
+   },
+   {
+    "q": "Do fish and chip shops still use printed wrapping paper?",
+    "a": "Yes. UK fish and chip shops have used greaseproof and wax paper for generations, and printed greaseproof paper with the shop name remains a common branding choice that gives a classic chip shop a more professional look."
+   },
+   {
+    "q": "Is custom wax paper worth it for businesses with repeat customers?",
+    "a": "For businesses serving repeat customers, custom printed wax paper is one of the most cost-effective forms of branding. The per-sheet cost is low, and every customer interaction with your food involves the paper."
+   },
+   {
+    "q": "What does printed wax paper signal that plain paper does not?",
+    "a": "Plain white paper says nothing about your business. Paper carrying your logo, colours and brand name shows customers you care about the details, which is exactly the impression food businesses want to give."
+   }
+  ]
+ },
+ "/blog/wax-paper-vs-greaseproof-paper": {
+  "h2": "More on Wax Paper vs Greaseproof Paper",
+  "faqs": [
+   {
+    "q": "How does wax paper get its grease resistance?",
+    "a": "Wax paper is coated on one or both sides with a thin layer of food-grade wax, usually paraffin or soy-based. The coating creates a barrier against grease, moisture and light liquids."
+   },
+   {
+    "q": "How does greaseproof paper resist grease without any coating?",
+    "a": "Greaseproof paper is densely calendered, with the fibres pressed tightly together during manufacture. That leaves very little space for grease molecules to pass through, so the resistance comes from the paper structure itself."
+   },
+   {
+    "q": "Can wax paper go in the oven like greaseproof paper?",
+    "a": "No. Wax paper is not suitable for oven use because the wax melts at high temperatures. Greaseproof paper can handle moderate oven temperatures, which is why bakeries tend to choose it."
+   },
+   {
+    "q": "Is wax or greaseproof paper better for wet sandwich fillings?",
+    "a": "Wax paper is the better choice for wet fillings. Greaseproof paper is less effective against very wet or greasy foods and offers less moisture resistance than wax-coated paper, so wax handles the toughest food service conditions."
+   },
+   {
+    "q": "Should a burger business choose wax or greaseproof paper?",
+    "a": "Choose wax paper for burgers, sandwiches with wet fillings, deli meats or anything with significant grease or moisture. Greaseproof suits lighter, drier items, so most burger businesses lean towards wax for their main wrap."
+   },
+   {
+    "q": "Why do bakeries and chip shops often choose greaseproof paper?",
+    "a": "Greaseproof paper is widely used in bakeries and fish and chip shops and can go into moderate oven temperatures. Printed greaseproof paper is the classic choice for these businesses when they want branded presentation."
+   },
+   {
+    "q": "Is wax paper more expensive than greaseproof paper?",
+    "a": "Wax paper is slightly more expensive than uncoated greaseproof paper because of its coating. For very greasy or wet foods, that extra protection is usually worth it, while greaseproof keeps costs down for drier items."
+   },
+   {
+    "q": "Is wax paper available in different weights and formats?",
+    "a": "Yes. Wax paper comes in a wide range of weights and formats, including sheets and rolls, so you can match the grade to the food. Heavier weights suit greasy, hot items and lighter grades suit simple wrapping."
+   },
+   {
+    "q": "Can one food business use both wax and greaseproof paper?",
+    "a": "Yes. Many food businesses use greaseproof for bakery and counter lining and wax paper for burgers and sandwich wrapping. We supply both from the same account, so you can manage everything in one place."
+   },
+   {
+    "q": "How can I get advice on wax versus greaseproof for my menu?",
+    "a": "Tell us what you wrap and how you serve it, and our team will recommend the right stock. You can <a href=\"/get-quote\">request a free quote</a> and we will come back within 24 hours."
+   }
+  ]
+ },
+ "/blog/best-food-wrapping-paper-for-cafes-and-takeaways": {
+  "h2": "More on Café and Takeaway Wrapping Paper",
+  "faqs": [
+   {
+    "q": "Why does wrapping paper matter so much for takeaway delivery?",
+    "a": "For UK cafés and takeaways, packaging is often the only branded touchpoint in the customer's home. If you do delivery, the paper a customer unrolls at their kitchen table is your last impression."
+   },
+   {
+    "q": "Which foods suit custom printed wax paper at cafés and takeaways?",
+    "a": "Custom printed wax paper suits sandwiches, wraps, baguettes, pastries, doughnuts, fried chicken, fish and chips and burgers. Its grease and moisture resistance handles most food service conditions, and it comes as sheets, rolls and interleaved deli sheets."
+   },
+   {
+    "q": "Which wrapping paper base gives cafés the best full-colour logo print?",
+    "a": "White wax paper is the best base for full-colour logo printing, giving clean, accurate colour. Kraft suits artisan brands but is typically printed in one or two colours rather than full colour."
+   },
+   {
+    "q": "When should a café choose greaseproof paper over wax paper?",
+    "a": "Greaseproof paper suits baked goods, pastries, fish and chips, basket liners and tray lining. It is also oven-safe at moderate temperatures, so choose it if your food needs to go into an oven."
+   },
+   {
+    "q": "What kind of café or takeaway suits kraft wrapping paper?",
+    "a": "Brown kraft paper has a warm, artisan look that suits farm shops, independent bakeries and street food businesses wanting to signal quality. It works well for bread, artisan sandwiches and deli or farm shop use."
+   },
+   {
+    "q": "Which sandwich paper sizes suit baguettes and filled rolls?",
+    "a": "Larger sheets wrap baguettes cleanly, while smaller squares suit rolls and hot wraps. Sandwich paper comes in formats designed for filled rolls, baguettes and wraps, so see our <a href=\"/custom-sandwich-paper\">custom printed sandwich paper</a> options."
+   },
+   {
+    "q": "What is thinner deli paper used for at café counters?",
+    "a": "Thinner, more flexible deli paper is used for interleaving sliced meats at the counter and for wrapping lighter sandwiches. It folds quickly, which helps during busy counter service."
+   },
+   {
+    "q": "What questions should a café ask before choosing wrapping paper?",
+    "a": "Ask how greasy the food is, whether you need oven compatibility, what portion sizes you serve, whether sustainability matters to your brand and whether you want branding. The answers point you to the right paper type."
+   },
+   {
+    "q": "Which wrapping paper should a sustainability-focused café consider?",
+    "a": "The guide suggests uncoated greaseproof or kraft paper if sustainability is important to your brand. Greaseproof paper is generally recyclable, which appeals to sustainability-conscious cafés and takeaways."
+   },
+   {
+    "q": "Why test sample paper before ordering café wrapping paper in bulk?",
+    "a": "Material samples let you assess weight, texture and print quality in your own operation before committing to a full order. Testing with your real menu shows how the paper handles your food and service."
+   }
+  ]
+ },
+ "/blog/how-printed-wax-paper-helps-food-brands": {
+  "h2": "More on Printed Wax Paper for Brands",
+  "faqs": [
+   {
+    "q": "Why is food packaging such important brand communication?",
+    "a": "Every piece of packaging that leaves your kitchen communicates your brand, and wax paper is often the closest contact point with the customer. A customer holds that paper for several minutes, so plain white wastes the opportunity."
+   },
+   {
+    "q": "How does printed wax paper create consistency for a food brand?",
+    "a": "When every serve is wrapped in the same branded paper, your business looks organised and professional. Consistency in packaging signals consistency in quality, which is exactly what food businesses want customers to perceive."
+   },
+   {
+    "q": "Can printed wax paper earn a food brand social media exposure?",
+    "a": "Yes. Customers photograph food, and a well-branded wrap with a striking logo or interesting design gets noticed and shared. That extends your reach without any paid promotion."
+   },
+   {
+    "q": "How does printed wax paper help a brand on delivery orders?",
+    "a": "For delivery businesses, the moment a customer opens their order at home is a second brand touchpoint. Plain packaging says nothing, while printed paper shows your brand cared enough to get the details right."
+   },
+   {
+    "q": "Does branded wax paper change how customers judge a food counter?",
+    "a": "Yes. At a busy counter customers make quick judgements, and branded packaging, even just your name printed on greaseproof paper, signals that you run a serious food business rather than treating packaging as an afterthought."
+   },
+   {
+    "q": "What design elements make printed wax paper most effective?",
+    "a": "Keep it simple: one strong logo that reads clearly at small sizes, your brand colour on a white or kraft base, legible text such as a website or tagline, and a repeat pattern if you want full coverage."
+   },
+   {
+    "q": "Should an artisan food brand choose single-colour or full-colour print?",
+    "a": "Full-colour designs with photography can work well for premium brands, but a clean single-colour logo on kraft paper can be just as effective for an artisan business. Choose the style that fits your identity."
+   },
+   {
+    "q": "How does printed wax paper compare with paid social advertising?",
+    "a": "Custom printed wax paper costs far less than paid advertising for a similar number of impressions. Unlike a social ad that disappears in seconds, a branded wrap is held, handled and often photographed."
+   },
+   {
+    "q": "Which paper types can a food brand choose for printed wrapping?",
+    "a": "Food brands can print on wax, greaseproof or kraft paper. The guide recommends choosing your paper type first, then preparing artwork, ideally as PDF, AI or EPS files, before requesting a free quote."
+   },
+   {
+    "q": "What are the steps to order printed wax paper for a brand?",
+    "a": "Choose your paper type, prepare your artwork, request a free quote, approve a free digital proof and receive your order in 7–10 working days. A simple <a href=\"/logo-printed-wax-paper\">logo printed wax paper</a> run is an easy starting point."
+   }
+  ]
+ },
+ "/blog/burger-wrapping-paper-ideas-for-uk-restaurants": {
+  "h2": "More Burger Wrapping Paper Questions",
+  "faqs": [
+   {
+    "q": "Why does burger wrapping paper matter in the UK burger market?",
+    "a": "In a competitive market, presentation separates the memorable from the forgettable. Burger paper is in customers' hands for every bite, making it the longest-lasting touchpoint in the meal experience."
+   },
+   {
+    "q": "Why does a minimal kraft logo suit independent burger restaurants?",
+    "a": "A clean single-colour logo in white or black on natural kraft burger paper signals artisan quality. It photographs well and looks premium without a premium price, and the rustic contrast complements a well-crafted burger."
+   },
+   {
+    "q": "Which burger brands benefit from full-colour burger paper?",
+    "a": "Burger brands with strong visual identities get maximum impact from full-colour paper carrying their colours, typography and imagery. It works especially well for chains and ghost kitchen brands building recognition across multiple locations."
+   },
+   {
+    "q": "How does an illustrated repeat pattern work on burger paper?",
+    "a": "Instead of a single logo, a repeat pattern of illustrated ingredients, abstract shapes or a brand motif tiles across the paper. When the burger is unwrapped, the pattern is revealed and creates a distinct visual moment."
+   },
+   {
+    "q": "Are seasonal limited-edition burger papers worth ordering?",
+    "a": "Short-run seasonal papers, such as Christmas designs in December or summer patterns in July, create novelty and give loyal customers something to talk about. Our <a href=\"/christmas-wax-paper\">seasonal Christmas wax paper designs</a> suit this approach."
+   },
+   {
+    "q": "How should burger paper be designed for customer photos?",
+    "a": "Design with photography in mind: high contrast, bold text and a visually interesting pattern that reads in the background of a flat lay or as the wrap in the foreground. Think about how it looks in a phone photo."
+   },
+   {
+    "q": "Is greaseproof paper an option for lighter burgers?",
+    "a": "Yes. Greaseproof paper is a good alternative for lighter burgers, although wax-coated paper gives the best grease resistance for fully loaded ones. Match the paper to how greasy and saucy your burgers are."
+   },
+   {
+    "q": "Should burger wrapping paper be white or kraft?",
+    "a": "Both work. White paper gives the cleanest print results for bold, colourful branding, while kraft gives an artisan feel that suits independent restaurants. The right choice depends on the look your brand wants."
+   },
+   {
+    "q": "What are the steps to get custom burger paper made?",
+    "a": "Choose your paper size and type, submit your artwork or brief, approve a free digital proof and receive your order in 7–10 working days from artwork approval."
+   },
+   {
+    "q": "Which design approach suits a personality-driven burger brand?",
+    "a": "Illustrated patterns suit burger businesses that want a personality-driven look rather than a corporate logo feel. Brands with established identities often prefer full-colour prints, while artisan operators lean towards a simple logo on kraft."
+   }
+  ]
+ },
+ "/blog/wholesale-wax-paper-buying-guide": {
+  "h2": "More Wholesale Wax Paper Buying Questions",
+  "faqs": [
+   {
+    "q": "Which food businesses should buy wax paper wholesale?",
+    "a": "Wholesale buying makes sense for any business using more than a few hundred sheets a week. Typical buyers include catering companies, packaging distributors and large independent delis, bakeries and takeaways."
+   },
+   {
+    "q": "How do I estimate my wax paper usage before buying wholesale?",
+    "a": "Count how many sheets or rolls you use in a typical week and multiply up to a monthly or quarterly figure. That shows whether wholesale pricing is viable and helps you avoid over-ordering."
+   },
+   {
+    "q": "Is plain or printed wholesale wax paper better for my business?",
+    "a": "Plain wholesale wax paper is less expensive and faster to supply. Printed paper in wholesale quantities brings the per-unit cost down considerably and is almost always worth it for branded businesses, though it needs an artwork approval stage."
+   },
+   {
+    "q": "Which paper types can I buy wholesale for food service?",
+    "a": "The main wholesale options are wax paper, greaseproof paper, kraft paper and tissue or deli paper. Most buyers stock one primary type and add others as needed, and we supply all of them from one account."
+   },
+   {
+    "q": "Are sheets or rolls better for a wholesale wax paper order?",
+    "a": "Sheets are more convenient for manual wrapping at counters, while rolls are more economical per square metre for busy wrapping stations and production lines. Large operations usually choose rolls, counter-based businesses sheets or interleaved formats."
+   },
+   {
+    "q": "How should I store a wholesale wax paper delivery?",
+    "a": "Wholesale wax paper arrives in case packs or on pallets, so you need sufficient dry storage away from direct sunlight and moisture. Stored correctly, wax paper has a long shelf life."
+   },
+   {
+    "q": "What should I look for in a UK wholesale wax paper supplier?",
+    "a": "Look for consistent quality, reliable lead times, UK-based supply, trade accounts with credit terms and a dedicated account contact who knows your requirements. Together these make stock planning far easier."
+   },
+   {
+    "q": "What affects the price of a wholesale wax paper order?",
+    "a": "Price depends on quantity, paper type and size, the number of print colours for custom orders, and whether the order is a one-off or on a regular schedule. Larger quantities lower the per-unit cost."
+   },
+   {
+    "q": "How quickly will I receive a wholesale wax paper quote?",
+    "a": "Send us your paper type, size, quantity and printing needs, and you will usually receive a tailored quote within 24 hours. Share your typical order frequency too so we can price regular runs."
+   },
+   {
+    "q": "What are the steps to place a wholesale wax paper order?",
+    "a": "Contact us with your requirements, receive a tailored quote, approve artwork for printed orders, confirm the order and receive delivery, palletised for large orders. See our <a href=\"/wholesale-wax-paper\">wholesale wax paper supply</a> options."
+   }
+  ]
+ },
+ "/locations": {
+  "h2": "Questions About UK Delivery Locations",
+  "faqs": [
+   {
+    "q": "Do you deliver custom food papers across the whole UK?",
+    "a": "Yes. We deliver custom food papers right across the UK, not just to the cities listed. From London street-food markets to Glasgow's late-night counters, we print branded, food-safe wrapping papers for food businesses everywhere."
+   },
+   {
+    "q": "What if my city is not on the delivery locations list?",
+    "a": "We still deliver to you. The listed cities are only examples, so tell us where you are based and what you serve and we will send a free quote for your area."
+   },
+   {
+    "q": "Which English cities do you deliver custom food papers to?",
+    "a": "Our English locations include London, Birmingham, Manchester, Leeds, Liverpool, Bristol, Sheffield, Newcastle upon Tyne, Nottingham, Leicester, Southampton and Brighton. Read how we supply <a href=\"/locations/london\">custom food papers in London</a>."
+   },
+   {
+    "q": "Do you deliver custom wax paper to Scotland?",
+    "a": "Yes. We supply food businesses in Scotland, including Glasgow and Edinburgh, with branded, food-safe wrapping papers. Businesses elsewhere in Scotland can request a free quote for delivery to their address."
+   },
+   {
+    "q": "Can food businesses in Wales order custom food paper?",
+    "a": "Yes. We deliver to Wales, including Cardiff, and to Welsh businesses outside the city too. Tell us where you are based and what you serve, and we will quote for delivery to your premises."
+   },
+   {
+    "q": "Do you supply custom food papers to Northern Ireland?",
+    "a": "Yes. Belfast is one of our delivery locations, and food businesses elsewhere in Northern Ireland can also request a free quote. Share your location and requirements and we will confirm delivery details."
+   },
+   {
+    "q": "Is turnaround the same wherever my UK business is based?",
+    "a": "Standard orders are dispatched within 7–10 working days of artwork approval wherever you are. Rush options are available for time-sensitive requirements, so mention your deadline when you request a quote."
+   },
+   {
+    "q": "How are bulk food paper orders delivered to UK cities?",
+    "a": "Orders are delivered to your business address, and bulk orders are palletised so they arrive safely. For large wholesale deliveries, we coordinate timing so someone is available to receive the order."
+   },
+   {
+    "q": "What food businesses do you supply across UK cities?",
+    "a": "We supply street-food traders, cafés, takeaways, restaurants, bakeries, delis and wholesale buyers in every corner of the UK, all with branded, food-safe wrapping papers printed to order."
+   },
+   {
+    "q": "How do I get a quote for delivery to my area?",
+    "a": "Tell us where you are based, what you serve and what paper you need. We will come back with a free quote within 24 hours covering pricing and delivery to your business address."
+   }
+  ]
+ }
+}

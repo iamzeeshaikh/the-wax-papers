@@ -1,3 +1,4 @@
+import ExtraFaqSection from "@/components/ExtraFaqSection";
 import type { Metadata } from "next";
 import QuoteForm from "@/components/QuoteForm";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -75,6 +76,7 @@ export default function GetQuotePage() {
           </div>
         </div>
       </section>
+      <ExtraFaqSection route={"/get-quote"} />
     </>
   );
 }

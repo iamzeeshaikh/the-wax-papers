@@ -1,3 +1,5 @@
+import { withExtras, plainText } from "@/lib/page-faqs";
+import FaqAnswer from "@/components/FaqAnswer";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -228,13 +230,14 @@ export default async function ProductPage({ params }: Props) {
     },
   };
 
+  const faqs = withExtras(`/${slug}`, product.faqs);
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: product.faqs.map((faq) => ({
+    mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
-      acceptedAnswer: { "@type": "Answer", text: faq.a },
+      acceptedAnswer: { "@type": "Answer", text: plainText(faq.a) },
     })),
   };
 
@@ -603,7 +606,7 @@ export default async function ProductPage({ params }: Props) {
             Frequently Asked Questions
           </h2>
           <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: "white", boxShadow: "0 2px 20px rgba(0,0,0,0.07)", padding: "0 1.5rem" }}>
-            {product.faqs.map((faq, i) => (
+            {faqs.map((faq, i) => (
               <details key={i} className="faq-item" open={i < 2 || undefined}>
                 <summary>
                   <span>{faq.q}</span>
@@ -611,7 +614,7 @@ export default async function ProductPage({ params }: Props) {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <p className="faq-answer">{faq.a}</p>
+                <p className="faq-answer"><FaqAnswer text={faq.a} /></p>
               </details>
             ))}
           </div>

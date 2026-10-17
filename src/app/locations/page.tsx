@@ -1,3 +1,4 @@
+import ExtraFaqSection from "@/components/ExtraFaqSection";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { locations } from "@/lib/locations";
@@ -83,6 +84,7 @@ export default function LocationsHubPage() {
         </div>
       </section>
 
+      <ExtraFaqSection route={"/locations"} />
       <CTASection
         heading="Don’t See Your City?"
         subtext="We deliver custom food papers right across the UK — not just the cities listed here. Tell us where you’re based and what you serve, and we’ll get you a free quote."

@@ -1,3 +1,4 @@
+import ExtraFaqSection from "@/components/ExtraFaqSection";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -85,6 +86,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <ExtraFaqSection route={"/about-us"} />
       <CTASection />
     </>
   );

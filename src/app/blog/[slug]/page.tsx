@@ -1,3 +1,4 @@
+import ExtraFaqSection from "@/components/ExtraFaqSection";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -241,6 +242,7 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
       )}
 
+      <ExtraFaqSection route={`/blog/${slug}`} />
       <CTASection />
     </>
   );
