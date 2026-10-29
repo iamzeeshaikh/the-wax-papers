@@ -182,7 +182,7 @@ export default function QuoteForm() {
                   {artwork.name}
                 </p>
                 <p className="text-xs mt-1" style={{ color: "var(--color-text-muted)" }}>
-                  {(artwork.size / (1024 * 1024)).toFixed(artwork.size < 100 * 1024 ? 2 : 1)} MB · attached, will be sent with your request
+                  {artwork.size < 1024 * 1024 ? `${Math.max(1, Math.round(artwork.size / 1024))} KB` : `${(artwork.size / (1024 * 1024)).toFixed(1)} MB`} · attached, will be sent with your request
                 </p>
                 <div className="flex justify-center gap-4 mt-3 text-xs font-medium">
                   <label htmlFor="q-artwork" className="cursor-pointer underline" style={{ color: "var(--color-gold-text)" }}>
