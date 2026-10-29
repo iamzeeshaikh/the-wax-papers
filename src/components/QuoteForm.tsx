@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const PRODUCT_TYPES = [
@@ -23,6 +23,13 @@ export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [artwork, setArtwork] = useState<File | null>(null);
+  const artworkInput = useRef<HTMLInputElement>(null);
+
+  function clearArtwork() {
+    setArtwork(null);
+    if (artworkInput.current) artworkInput.current.value = "";
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -40,7 +47,7 @@ export default function QuoteForm() {
         return;
       } else {
         const data = await res.json();
-        setError(data?.errors?.[0]?.message ?? "Something went wrong. Please try again or email us directly.");
+        setError(data?.error ?? data?.errors?.[0]?.message ?? "Something went wrong. Please try again or email us directly.");
       }
     } catch {
       setError("Could not send your request. Please email us at Info@thewaxpapers.co.uk");
@@ -151,21 +158,54 @@ export default function QuoteForm() {
         <div className="sm:col-span-2">
           <label className="form-label" htmlFor="q-artwork">Artwork File</label>
           <div
-            className="border-2 border-dashed rounded-lg p-6 text-center cursor-pointer transition-colors"
-            style={{ borderColor: "var(--color-paper)" }}
+            className="border-2 border-dashed rounded-lg p-6 text-center transition-colors"
+            style={{
+              borderColor: artwork ? "var(--color-gold-text)" : "var(--color-paper)",
+              backgroundColor: artwork ? "var(--color-gold-pale)" : undefined,
+            }}
           >
-            <input id="q-artwork" name="artwork" type="file" accept=".pdf,.ai,.eps,.png,.jpg" className="hidden" />
-            <label htmlFor="q-artwork" className="cursor-pointer">
-              <svg className="w-8 h-8 mx-auto mb-2" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-              </svg>
-              <span className="text-sm font-medium" style={{ color: "var(--color-charcoal)" }}>
-                Click to upload artwork
-              </span>
-              <p className="text-xs mt-1" style={{ color: "var(--color-text-muted)" }}>
-                PDF, AI, EPS, PNG or JPG — 300 dpi minimum
-              </p>
-            </label>
+            <input
+              ref={artworkInput}
+              id="q-artwork"
+              name="artwork"
+              type="file"
+              accept=".pdf,.ai,.eps,.png,.jpg,.jpeg"
+              className="sr-only"
+              onChange={(e) => setArtwork(e.target.files?.[0] ?? null)}
+            />
+            {artwork ? (
+              <div aria-live="polite">
+                <svg className="w-8 h-8 mx-auto mb-2" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-sm font-semibold" style={{ color: "var(--color-charcoal)" }}>
+                  {artwork.name}
+                </p>
+                <p className="text-xs mt-1" style={{ color: "var(--color-text-muted)" }}>
+                  {(artwork.size / (1024 * 1024)).toFixed(artwork.size < 100 * 1024 ? 2 : 1)} MB · attached, will be sent with your request
+                </p>
+                <div className="flex justify-center gap-4 mt-3 text-xs font-medium">
+                  <label htmlFor="q-artwork" className="cursor-pointer underline" style={{ color: "var(--color-gold-text)" }}>
+                    Choose a different file
+                  </label>
+                  <button type="button" onClick={clearArtwork} className="underline" style={{ color: "var(--color-text-muted)" }}>
+                    Remove
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <label htmlFor="q-artwork" className="cursor-pointer block">
+                <svg className="w-8 h-8 mx-auto mb-2" style={{ color: "var(--color-gold-text)" }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                </svg>
+                <span className="text-sm font-medium" style={{ color: "var(--color-charcoal)" }}>
+                  Click to upload artwork
+                </span>
+                <p className="text-xs mt-1" style={{ color: "var(--color-text-muted)" }}>
+                  PDF, AI, EPS, PNG or JPG — up to 10 MB, 300 dpi minimum. You can also email it after sending.
+                </p>
+              </label>
+            )}
           </div>
         </div>
 
